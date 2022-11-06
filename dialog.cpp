@@ -39,6 +39,7 @@ void Dialog::generate_surface(int* xy_s, int length){
     }
     metasurface.push_back(Line(xy_s[length-1], xy_s[length-2],xy_s[0], xy_s[1]));
 }
+
 /*
 DebugTools().intMsg(sizeof(xy_s));
 DebugTools().intMsg(sizeof(xy_s[0]));
