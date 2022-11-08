@@ -2,6 +2,8 @@
 #define PHYSICS_ENGINE_H
 
 #include <iostream>
+#include <vector>
+#include <QPolygonF>
 
 class Point;
 class Line;
@@ -43,6 +45,17 @@ public:
     friend std::ostream & operator<<(std::ostream & out, Line & L);
 };
 
+class Polygon
+{
+public:
+    std::vector<Line> polygon;
+
+    Polygon();
+    Polygon(std::vector<Line>);
+    QPolygonF to_qpoly();
+
+    friend std::ostream & operator<<(std::ostream & out, Polygon & Poly);
+};
 
 #endif // PHYSICS_ENGINE_H
 /*

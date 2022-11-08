@@ -21,6 +21,7 @@ set(PROJECT_SOURCES
 
     debugtools.h
     lemonade.h lemonade.cpp
+    painter.h painter.cpp
     physics_engine.h physics_engine.cpp
 
     dialog.h dialog.cpp

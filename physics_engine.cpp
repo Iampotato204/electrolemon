@@ -1,3 +1,4 @@
+#include "debugtools.h"
 #include "physics_engine.h"
 #include "lemonade.h"
 #include <math.h>
@@ -93,6 +94,36 @@ bool Physics_engine::check_kollision(Line moving, Line surface_line){
     return true;
 }
 
+
+/*
+std::ostream & operator<<(std::ostream & out, Point & P){
+    out<<"("<<P.x<<";"<<P.y<<")";
+    return out;
+}
+
+std::ostream & operator<<(std::ostream & out, Line & L){
+    out<<L.p0<<"_"<<L.p1;
+    return out;
+}
+
+std::ostream & operator<<(std::ostream & out, Polygon & Poly){
+    for(Line l: Poly.polygon){
+        out<<"<"<<l<<">  ";
+    }
+    out<<std::endl;
+}*/
+
+std::ostream & operator<<(std::ostream & out, Point & P){
+    return out<<"("<<P.x<<";"<<P.y<<")";}
+
+std::ostream & operator<<(std::ostream & out, Line & L){
+    return out<<L.p0<<"_"<<L.p1;}
+
+std::ostream & operator<<(std::ostream & out, Polygon & Poly){
+    for(Line l: Poly.polygon) out<<"<"<<l<<">  ";
+    return out<<std::endl;
+}
+
 //             //
 // class Point //
 //             //
@@ -145,14 +176,27 @@ int Line::y1(){
     return this->p1.y;
 }
 
-std::ostream & operator<<(std::ostream & out, Point & P){
-    out<<"("<<P.x<<";"<<P.y<<")";
-    return out;
+//               //
+// class Polygon //
+//               //
+
+Polygon::Polygon(){
+    DebugTools().strMsg("ERROR: polygon not initialized!");
 }
 
-std::ostream & operator<<(std::ostream & out, Line & L){
-    out<<L.p0<<"_"<<L.p1;
-    return out;
+Polygon::Polygon(std::vector<Line> poly){
+    this->polygon=poly;
+}
+
+QPolygonF Polygon::to_qpoly(){
+    QVector<QPointF> qpoints;
+    //std::cout<<"current poly is: "<<this<<std::endl<<std::endl;
+    for(Line l: this->polygon){
+        qpoints.push_back(QPointF(l.x0(),l.y0()));
+        std::cout<<l.x0()<<" "<<l.y0()<<std::endl;
+    }
+    for(QPointF p: qpoints) std::cout<<p.rx()<<" "<<p.ry()<<std::endl<<std::endl;
+    return QPolygonF(qpoints);
 }
 
 /*

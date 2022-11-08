@@ -3,6 +3,8 @@
 
 #include <QDialog>
 #include <QLabel>
+#include <QGraphicsScene>
+#include "painter.h"
 #include "physics_engine.h"
 #include <vector>
 
@@ -17,16 +19,18 @@ class Dialog : public QDialog
 public:
     const int DISPLAY_WIDTH=600,
               DISPLAY_HEIGTH=600;
+    Painter *painter;
+    QGraphicsScene *canvas;
 
     explicit Dialog(QWidget *parent = nullptr);
     ~Dialog();
-    std::vector<Line> metasurface;
+    std::vector<Polygon> metasurface;
 private slots:
     void on_test1_clicked();
 
 private:
     void simulate();
-    void generate_surface(int[], int);
+    void generate_surface(std::vector<int>[], int);
     Ui::Dialog *ui;
     void verticalFlatSurfaceMR();//from middle to right
 };
