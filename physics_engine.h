@@ -58,18 +58,3 @@ public:
 };
 
 #endif // PHYSICS_ENGINE_H
-/*
-
-class Vector
-{
-public:
-    Point p;
-    Vector();
-    Vector(Point _p0, Point _p1);
-    Vector(int _x0, int _y0, int _x1, int _y1);
-    double angle(Vector v0, Vector v1);
-    int x();
-    int y();
-};
-
-*/

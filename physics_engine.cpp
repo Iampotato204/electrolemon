@@ -190,38 +190,8 @@ Polygon::Polygon(std::vector<Line> poly){
 
 QPolygonF Polygon::to_qpoly(){
     QVector<QPointF> qpoints;
-    //std::cout<<"current poly is: "<<this<<std::endl<<std::endl;
     for(Line l: this->polygon){
         qpoints.push_back(QPointF(l.x0(),l.y0()));
-        std::cout<<l.x0()<<" "<<l.y0()<<std::endl;
     }
-    for(QPointF p: qpoints) std::cout<<p.rx()<<" "<<p.ry()<<std::endl<<std::endl;
     return QPolygonF(qpoints);
 }
-
-/*
-//              //
-// class Vector //
-//              //
-
-
-Vector::Vector(){
-    this->p=Point();
-}
-
-Vector::Vector(Point _p0, Point _p1){
-    this->p=Point(_p1.x-_p0.x, _p1.y-_p0.y);
-}
-
-Vector::Vector(int _x0, int _y0, int _x1, int _y1){
-    this->p=Point(_x1-_x0, _y1-_y0);
-}
-
-int Vector::x(){
-    return this->p.x;
-}
-
-int Vector::y(){
-    return this->p.y;
-}
-*/

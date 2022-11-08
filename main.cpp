@@ -10,9 +10,6 @@
 #include <QLocale>
 #include <QTranslator>
 
-#include <GLES3/gl3.h>
-#include <GL/freeglut.h>
-
 using namespace std;
 
 string get_cwd(QApplication *qapp){return qapp->applicationDirPath().toStdString();}     //std::filesystem::path cwd = std::filesystem::current_path();
