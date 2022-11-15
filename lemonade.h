@@ -19,8 +19,8 @@ EXTERN double
     d1, l,
     p_V0_x, p_V0_y,
     k,
-//temp values
-    d2, time_prev, time_current;
+
+    F;
 
 EXTERN int
     p_m_exponent, p_q_exponent, k_exponent,

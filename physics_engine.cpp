@@ -18,7 +18,32 @@ void Physics_engine::recalculate(double time){
 
 }
 
-bool Physics_engine::check_kollision(Line moving, Line surface_line){
+Line Physics_engine::rotateVector(Point p0, Point p1, int eulerAngle){
+    double radian = eulerAngle*PI/180;
+    int x0=p0.x,
+        y0=p0.y,
+        x1=p1.x-x0,
+        y1=p1.y-y0;
+    return Line(p0,Point(
+                    x0 + x1*cos(radian)-y1*sin(radian),
+                    y0 + x1*sin(radian)+y1*cos(radian)));
+}
+
+Line Physics_engine::scaleVector(Point p0, Point p1, double multiplier){
+    int x0=p0.x,
+        y0=p0.y,
+        x1=p1.x-x0,
+        y1=p1.y-y0;
+    return Line(p0,Point(
+                    x0 + x1*multiplier,
+                    y0 + y1*multiplier));
+}
+
+bool Physics_engine::findProjection(Point, Line){
+    return true;
+}
+
+bool Physics_engine::findKollision(Line moving, Line surface_line){
     Point p1=moving.p0;
     Point p2=moving.p1;
     Point p3=surface_line.p0;
@@ -56,8 +81,7 @@ bool Physics_engine::check_kollision(Line moving, Line surface_line){
         b2= y[2]-k2 * x[2];
         Yres= k2*Xres+b2;
         if ((x[2]<=Xres && x[3]>=Xres)  &&  (min(y[0],y[1])<=Yres && max(y[0],y[1])>=Yres)) {
-            intersection->x=Xres;
-            intersection->y=Yres;
+            this->kollision=Point(Xres, Yres);
             return true;
         }
         return false;
@@ -70,8 +94,7 @@ bool Physics_engine::check_kollision(Line moving, Line surface_line){
         b1= y[0]-k1*x[0];
         Yres= k1*Xres+b1;
         if ((x[0]<=Xres && x[1]>=Xres)  &&  (min(y[2],y[3])<=Yres && max(y[2],y[3])>=Yres)) {
-            intersection->x=Xres;
-            intersection->y=Yres;
+            this->kollision=Point(Xres, Yres);
             return true;
         }
         return false;
@@ -89,8 +112,7 @@ bool Physics_engine::check_kollision(Line moving, Line surface_line){
         return false;
     }*/
     Yres=k1*Xres+b1;
-    intersection->x=Xres;
-    intersection->y=Yres;
+    this->kollision=Point(Xres, Yres);
     return true;
 }
 
@@ -176,12 +198,16 @@ int Line::y1(){
     return this->p1.y;
 }
 
+QLineF Line::to_qline(){
+    return QLineF(QPointF(x0(), y0()), QPointF(x1(), y1()));
+}
+
 //               //
 // class Polygon //
 //               //
 
 Polygon::Polygon(){
-    DebugTools().strMsg("ERROR: polygon not initialized!");
+    this->polygon={};
 }
 
 Polygon::Polygon(std::vector<Line> poly){

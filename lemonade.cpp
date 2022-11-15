@@ -7,7 +7,7 @@ std::string
 double
 //allows "hand-input" - input from ui, now stores default values
     p_x=0, p_y=0,
-    v_x=1,v_y=0,
+    v_x=100,v_y=100,
     p_m_mantissa=9.1093837015, p_q_mantissa=-1.602176634,
 
 //not hand-inputed yet
@@ -19,10 +19,7 @@ double
     g=9.8067,
 
 //semi-nonsts (defined almost on very start of programm)
-    kqCU_2m,
-
-//temp values
-    d2, time_prev, time_current;
+    kqCU_2m;
 
 int
     p_m_exponent=-31, p_q_exponent=-19,
