@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="struct_debug_tools" kind="struct" language="C++" prot="public">
+    <compoundname>DebugTools</compoundname>
+    <includes refid="debugtools_8h" local="no">debugtools.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_debug_tools_1a18ef815a1af33c03d5377dc99b57648c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DebugTools::DebugTools</definition>
+        <argsstring>()</argsstring>
+        <name>DebugTools</name>
+        <qualifiedname>DebugTools::DebugTools</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/debugtools.h" line="8" column="5" bodyfile="/home/kirill/electrolemon/debugtools.h" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DebugTools::strMsgInline</definition>
+        <argsstring>(string data)</argsstring>
+        <name>strMsgInline</name>
+        <qualifiedname>DebugTools::strMsgInline</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/debugtools.h" line="9" column="10" bodyfile="/home/kirill/electrolemon/debugtools.h" bodystart="9" bodyend="11"/>
+        <referencedby refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" compoundref="lemonade_8cpp" startline="25" endline="39">debug_output_available_data</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DebugTools::strMsg</definition>
+        <argsstring>(string data)</argsstring>
+        <name>strMsg</name>
+        <qualifiedname>DebugTools::strMsg</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/debugtools.h" line="12" column="10" bodyfile="/home/kirill/electrolemon/debugtools.h" bodystart="12" bodyend="14"/>
+        <referencedby refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" compoundref="lemonade_8cpp" startline="25" endline="39">debug_output_available_data</referencedby>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="18" endline="41">main</referencedby>
+        <referencedby refid="class_painter_1a32e59ad4d0e130f57c419bd9e9c84675" compoundref="painter_8cpp" startline="16" endline="18">Painter::Painter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_debug_tools_1af1aea84fac2252882572fd442a1c19b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DebugTools::intMsg</definition>
+        <argsstring>(int val)</argsstring>
+        <name>intMsg</name>
+        <qualifiedname>DebugTools::intMsg</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/debugtools.h" line="15" column="10" bodyfile="/home/kirill/electrolemon/debugtools.h" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DebugTools::doubMsg</definition>
+        <argsstring>(double val)</argsstring>
+        <name>doubMsg</name>
+        <qualifiedname>DebugTools::doubMsg</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/debugtools.h" line="18" column="10" bodyfile="/home/kirill/electrolemon/debugtools.h" bodystart="18" bodyend="23"/>
+        <referencedby refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" compoundref="lemonade_8cpp" startline="25" endline="39">debug_output_available_data</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_debug_tools_1a8643ae9a3f155fcd6b0a3405b66fe04e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DebugTools::boolMsg</definition>
+        <argsstring>(bool expr)</argsstring>
+        <name>boolMsg</name>
+        <qualifiedname>DebugTools::boolMsg</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/debugtools.h" line="24" column="10" bodyfile="/home/kirill/electrolemon/debugtools.h" bodystart="24" bodyend="28"/>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="18" endline="41">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kirill/electrolemon/debugtools.h" line="6" column="1" bodyfile="/home/kirill/electrolemon/debugtools.h" bodystart="7" bodyend="29"/>
+    <listofallmembers>
+      <member refid="struct_debug_tools_1a8643ae9a3f155fcd6b0a3405b66fe04e" prot="public" virt="non-virtual"><scope>DebugTools</scope><name>boolMsg</name></member>
+      <member refid="struct_debug_tools_1a18ef815a1af33c03d5377dc99b57648c" prot="public" virt="non-virtual"><scope>DebugTools</scope><name>DebugTools</name></member>
+      <member refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" prot="public" virt="non-virtual"><scope>DebugTools</scope><name>doubMsg</name></member>
+      <member refid="struct_debug_tools_1af1aea84fac2252882572fd442a1c19b0" prot="public" virt="non-virtual"><scope>DebugTools</scope><name>intMsg</name></member>
+      <member refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" prot="public" virt="non-virtual"><scope>DebugTools</scope><name>strMsg</name></member>
+      <member refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" prot="public" virt="non-virtual"><scope>DebugTools</scope><name>strMsgInline</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

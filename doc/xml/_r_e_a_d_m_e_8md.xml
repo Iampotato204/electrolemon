@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>About<sp/>program</highlight></codeline>
+<codeline><highlight class="normal">Simulates<sp/>movement<sp/>of<sp/>charged<sp/>particle...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Created<sp/>using<sp/>QT<sp/>(https://www.qt.io/).<sp/>&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal">Originally<sp/>intended<sp/>for<sp/>Linux,<sp/>may<sp/>not<sp/>work<sp/>for<sp/>Windows<sp/>or<sp/>MacOS.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Documentation<sp/>(to<sp/>be<sp/>added)</highlight></codeline>
+<codeline><highlight class="normal">Documentation<sp/>lies<sp/>in<sp/>&apos;doc&apos;<sp/>folder.<sp/>To<sp/>open<sp/>it,<sp/>open<sp/>&apos;doc/html&apos;<sp/>and<sp/>run<sp/>&apos;index.html&apos;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>How<sp/>to<sp/>run<sp/>program:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>download<sp/>source<sp/>code<sp/></highlight></codeline>
+<codeline><highlight class="normal">-<sp/>install<sp/>libraries<sp/>(I<sp/>could<sp/>miss<sp/>few,<sp/>or<sp/>add<sp/>unrequired):<sp/>&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal">qtbase5*<sp/>qt5-qmake<sp/>qtcreator*<sp/>qtlocation5*<sp/>qttools5-dev*<sp/>qtwayland5<sp/>qtwebengine5-dev<sp/>make<sp/>cmake<sp/>gcc<sp/>mesa-utils<sp/>freeglut3-dev<sp/>mesa-common-dev<sp/>libglew-dev</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>build<sp/>project</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>put<sp/>.qm<sp/>files<sp/>in<sp/>build<sp/>directory,<sp/>if<sp/>you<sp/>want<sp/>program<sp/>to<sp/>be<sp/>translated<sp/>(ru&amp;ua<sp/>supported,<sp/>+en<sp/>as<sp/>default)</highlight></codeline>
+    </programlisting>
+    <location file="/home/kirill/electrolemon/README.md"/>
+  </compounddef>
+</doxygen>

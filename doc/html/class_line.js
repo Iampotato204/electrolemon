@@ -1,0 +1,27 @@
+var class_line =
+[
+    [ "Line", "class_line.html#acc11b8a429d8cdd63ba6803dff5602b3", null ],
+    [ "Line", "class_line.html#af9742c860cc6727ed40e7f6304a66d79", null ],
+    [ "Line", "class_line.html#a84514c45e4442aca81f6823008931080", null ],
+    [ "Line", "class_line.html#a842b9f079379ba02937427b224b74938", null ],
+    [ "dx", "class_line.html#a601918470f05fb3b4df6fda60ea63bb2", null ],
+    [ "dy", "class_line.html#abde9e6674a81864076bbd38c47074a75", null ],
+    [ "extendedCopy", "class_line.html#aafde7d6efee1b66a5edf861ae389722e", null ],
+    [ "find_equationOfPerpendicular", "class_line.html#ad4c712851de289ce1c277e35e561b452", null ],
+    [ "find_equationOfSelf", "class_line.html#aba8be5f5dab07d51390f782e088acc8c", null ],
+    [ "find_equations", "class_line.html#a868f647b3eb4467c4cce5616fb082d68", null ],
+    [ "length", "class_line.html#ab655933c08ce8e2ba3786273d9e349c4", null ],
+    [ "movedCopy", "class_line.html#a2d3081c2ab8ba0cd9a353ea40e24e1f9", null ],
+    [ "movedCopy", "class_line.html#a1965a774ca2f52050bf7709d96466b2b", null ],
+    [ "square_of_length", "class_line.html#a072032f150b7e9ca22127973b9f1824a", null ],
+    [ "to_qline", "class_line.html#a6213a45b6df0eea9d0fdfff6d8c814c1", null ],
+    [ "x0", "class_line.html#a558c5b1b10035aab9f8280d2c0a85762", null ],
+    [ "x1", "class_line.html#a0cedabb654f8f7c5f3494a5d1ae2cc20", null ],
+    [ "y0", "class_line.html#a1c667162027e53277ea2c617c1dc02b5", null ],
+    [ "y1", "class_line.html#ae56a4221e8198da95cee9127842b0b7b", null ],
+    [ "operator<<", "class_line.html#a75392947251eb42c272c7e4da1839c00", null ],
+    [ "equation_of_perpendicular", "class_line.html#acf13ed04c74c28475f92b2e981ec4150", null ],
+    [ "equation_of_self", "class_line.html#a85e8158ee051bb734722490819beaae1", null ],
+    [ "p0", "class_line.html#a0c8832b19491c1157a55e81f92f48a44", null ],
+    [ "p1", "class_line.html#a2ae082894080ee1d0757c40c2b4a7daf", null ]
+];

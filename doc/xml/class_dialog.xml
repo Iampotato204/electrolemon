@@ -1,0 +1,711 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_dialog" kind="class" language="C++" prot="public">
+    <compoundname>Dialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <includes refid="dialog_8h" local="no">dialog.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_dialog_1a9fdebda9ae05e29ae71dcc2d655ba7e2" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Dialog::DISPLAY_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>DISPLAY_WIDTH</name>
+        <qualifiedname>Dialog::DISPLAY_WIDTH</qualifiedname>
+        <initializer>=1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="46" column="15" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1a4efd81fdde71371af645d939490c441a" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Dialog::DISPLAY_HEIGTH</definition>
+        <argsstring></argsstring>
+        <name>DISPLAY_HEIGTH</name>
+        <qualifiedname>Dialog::DISPLAY_HEIGTH</qualifiedname>
+        <initializer>=600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="47" column="15" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1a47868ba69d8f731ba552dcb5f14f607b" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Dialog::BUTTON_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>BUTTON_WIDTH</name>
+        <qualifiedname>Dialog::BUTTON_WIDTH</qualifiedname>
+        <initializer>=200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="48" column="15" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1aac4ec026ba1c3faeb69ee06510179103" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Dialog::BUTTON_HEIGTH</definition>
+        <argsstring></argsstring>
+        <name>BUTTON_HEIGTH</name>
+        <qualifiedname>Dialog::BUTTON_HEIGTH</qualifiedname>
+        <initializer>=50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="49" column="15" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1a669a5650388052e3f044269adff7ed3c" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Dialog::SMOL_LABEL_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>SMOL_LABEL_WIDTH</name>
+        <qualifiedname>Dialog::SMOL_LABEL_WIDTH</qualifiedname>
+        <initializer>=60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="50" column="15" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1ad60f408d92c43bd3c57c3fc5735e0562" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Dialog::SMOL_LABEL_HEIGTH</definition>
+        <argsstring></argsstring>
+        <name>SMOL_LABEL_HEIGTH</name>
+        <qualifiedname>Dialog::SMOL_LABEL_HEIGTH</qualifiedname>
+        <initializer>=30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="51" column="15" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1a97fedc679cf81b550c4ef1b2be82acb1" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Dialog::BIG_LABEL_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>BIG_LABEL_WIDTH</name>
+        <qualifiedname>Dialog::BIG_LABEL_WIDTH</qualifiedname>
+        <initializer>=160</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="52" column="15" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1aa2e8a7e1dfd2555bee0a001b8c342e06" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Dialog::BIG_LABEL_HEIGTH</definition>
+        <argsstring></argsstring>
+        <name>BIG_LABEL_HEIGTH</name>
+        <qualifiedname>Dialog::BIG_LABEL_HEIGTH</qualifiedname>
+        <initializer>=50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="53" column="15" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1ab5265624f6d8909b4f9277a4614ba7a4" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Dialog::SPACER_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>SPACER_WIDTH</name>
+        <qualifiedname>Dialog::SPACER_WIDTH</qualifiedname>
+        <initializer>=20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="54" column="15" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1af4054ba32920a861de19f480432f22d8" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Dialog::SPACER_HEIGTH</definition>
+        <argsstring></argsstring>
+        <name>SPACER_HEIGTH</name>
+        <qualifiedname>Dialog::SPACER_HEIGTH</qualifiedname>
+        <initializer>=20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="55" column="15" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1a8f9aea78af0c82653a913196240509ad" prot="private" static="no" mutable="no">
+        <type>const QColor</type>
+        <definition>const QColor Dialog::DISPLAY_BACKGROUND_COLOR</definition>
+        <argsstring></argsstring>
+        <name>DISPLAY_BACKGROUND_COLOR</name>
+        <qualifiedname>Dialog::DISPLAY_BACKGROUND_COLOR</qualifiedname>
+        <initializer>=QColor(&quot;#B9CEFF&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="57" column="18" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1a24dc81452f5f4c8e0cbcff0d2f35afb5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_painter" kindref="compound">Painter</ref> *</type>
+        <definition>Painter* Dialog::painter</definition>
+        <argsstring></argsstring>
+        <name>painter</name>
+        <qualifiedname>Dialog::painter</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="59" column="13" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1a1a2449be77814677fe409fa32d059b9a" prot="private" static="no" mutable="no">
+        <type>QGraphicsScene *</type>
+        <definition>QGraphicsScene* Dialog::canvas</definition>
+        <argsstring></argsstring>
+        <name>canvas</name>
+        <qualifiedname>Dialog::canvas</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="60" column="20" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1aebd4b630e4a42400c0695ed45ba0b579" prot="private" static="no" mutable="no">
+        <type><ref refid="class_physics__engine" kindref="compound">Physics_engine</ref> *</type>
+        <definition>Physics_engine* Dialog::environmentHandler</definition>
+        <argsstring></argsstring>
+        <name>environmentHandler</name>
+        <qualifiedname>Dialog::environmentHandler</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="61" column="20" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1a8dfd0d8de4b38cdfacbbcf211d1174dd" prot="private" static="no" mutable="no">
+        <type>QGraphicsItemGroup *</type>
+        <definition>QGraphicsItemGroup* Dialog::movementCurves</definition>
+        <argsstring></argsstring>
+        <name>movementCurves</name>
+        <qualifiedname>Dialog::movementCurves</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="62" column="24" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1aed16dca9a35dec15de193366edb73a3f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Dialog::surface_holder</definition>
+        <argsstring></argsstring>
+        <name>surface_holder</name>
+        <qualifiedname>Dialog::surface_holder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="63" column="17" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1a53ccee8599b73c6a9215c9853d48508b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_preset" kindref="compound">Preset</ref> &gt;</type>
+        <definition>std::vector&lt;Preset&gt; Dialog::presets</definition>
+        <argsstring></argsstring>
+        <name>presets</name>
+        <qualifiedname>Dialog::presets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="65" column="17" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1aaa4b5bfb9a0f64900d524f14bc32e6df" prot="private" static="no" mutable="no">
+        <type>Ui::Dialog *</type>
+        <definition>Ui::Dialog* Dialog::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>Dialog::ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="68" column="16" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_1a06e96b5c2fcaa8147da1b966126aa3a6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Dialog::isRunning</definition>
+        <argsstring></argsstring>
+        <name>isRunning</name>
+        <qualifiedname>Dialog::isRunning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="78" column="10" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dialog_1ab30ac48588a82983f653f58d50a52ddc" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Dialog::Dialog</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>Dialog</name>
+        <qualifiedname>Dialog::Dialog</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="26" column="14" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="58" bodyend="201"/>
+        <references refid="lemonade_8cpp_1ab365ce012c509bcfb71692dc1872e71a" compoundref="lemonade_8cpp" startline="18">p_m_exponent</references>
+        <references refid="lemonade_8cpp_1a7e35685e5045a32feab2328c43988870" compoundref="lemonade_8cpp" startline="11">p_m_mantissa</references>
+        <references refid="lemonade_8cpp_1a7be8fff5ab7f5353b889c27a4d37cb8b" compoundref="lemonade_8cpp" startline="18">p_q_exponent</references>
+        <references refid="lemonade_8cpp_1a4c0174f3f60960de06298986da5114c3" compoundref="lemonade_8cpp" startline="11">p_q_mantissa</references>
+        <references refid="lemonade_8cpp_1a64ce85b30a893c03da394bb97f9416b0" compoundref="lemonade_8cpp" startline="8">v0_x</references>
+        <references refid="lemonade_8cpp_1a5e1bd90c4349289033734b0e1282d024" compoundref="lemonade_8cpp" startline="8">v0_y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_1a2a1fe6ef28513eed13bfcd3a4da83ccb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Dialog::~Dialog</definition>
+        <argsstring>()</argsstring>
+        <name>~Dialog</name>
+        <qualifiedname>Dialog::~Dialog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="27" column="5" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="203" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_dialog_1a863cd93e83ea1bbc775ac7021eb89fc1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::on_test1_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_test1_clicked</name>
+        <qualifiedname>Dialog::on_test1_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="29" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="382" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_dialog_1a91f295aec4716c79905ba73c764b732d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::on_test0_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_test0_clicked</name>
+        <qualifiedname>Dialog::on_test0_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="30" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="379" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_dialog_1a332850f13482e1cc89fbe6322d2b67ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::on_test2_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_test2_clicked</name>
+        <qualifiedname>Dialog::on_test2_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="31" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="386" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_dialog_1a64bcfd95693aeed1a1467fbcbad453b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::on_spinBox0_valueChanged</definition>
+        <argsstring>(int arg1)</argsstring>
+        <name>on_spinBox0_valueChanged</name>
+        <qualifiedname>Dialog::on_spinBox0_valueChanged</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="33" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="400" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_dialog_1adb5aa96aa1079846eeb1716248d30078" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::on_spinBox1_valueChanged</definition>
+        <argsstring>(int arg1)</argsstring>
+        <name>on_spinBox1_valueChanged</name>
+        <qualifiedname>Dialog::on_spinBox1_valueChanged</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="35" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="405" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_dialog_1ab41cd56c0365fd26e6d0cd6c0f9cf99b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::on_spinBox0_2_valueChanged</definition>
+        <argsstring>(int arg1)</argsstring>
+        <name>on_spinBox0_2_valueChanged</name>
+        <qualifiedname>Dialog::on_spinBox0_2_valueChanged</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="37" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="410" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_dialog_1a6c37481aa89ddd20944a2e2cc85c9efd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::on_spinBox1_2_valueChanged</definition>
+        <argsstring>(int arg1)</argsstring>
+        <name>on_spinBox1_2_valueChanged</name>
+        <qualifiedname>Dialog::on_spinBox1_2_valueChanged</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="39" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="414" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_dialog_1aa9af39bc16465f5daae5f0cad005fb9b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::on_spinBox0_3_valueChanged</definition>
+        <argsstring>(int arg1)</argsstring>
+        <name>on_spinBox0_3_valueChanged</name>
+        <qualifiedname>Dialog::on_spinBox0_3_valueChanged</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="41" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="418" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_dialog_1a01a421b595f231a359e4063683ab0ad8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::on_spinBox1_3_valueChanged</definition>
+        <argsstring>(int arg1)</argsstring>
+        <name>on_spinBox1_3_valueChanged</name>
+        <qualifiedname>Dialog::on_spinBox1_3_valueChanged</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="43" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="422" bodyend="424"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_dialog_1a2ef0672da45114f21b29ce2a515f98c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::run_preset</definition>
+        <argsstring>(int)</argsstring>
+        <name>run_preset</name>
+        <qualifiedname>Dialog::run_preset</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="66" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="46" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_1a37ae41fed771fa4f1aa0166e5494b0d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::resetData</definition>
+        <argsstring>()</argsstring>
+        <name>resetData</name>
+        <qualifiedname>Dialog::resetData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="69" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="367" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_1a34ad1264dc3ea1e6341ea66ca014b671" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::resetData</definition>
+        <argsstring>(int, int)</argsstring>
+        <name>resetData</name>
+        <qualifiedname>Dialog::resetData</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>_frame_duration</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>_frames</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="70" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="371" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_1a6e2c001232048d5d4cd8ed56ffb9b4be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::resetData</definition>
+        <argsstring>(Preset *P)</argsstring>
+        <name>resetData</name>
+        <qualifiedname>Dialog::resetData</qualifiedname>
+        <param>
+          <type><ref refid="class_preset" kindref="compound">Preset</ref> *</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_1a93c6228ca30fe7f7400d383937b562dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_polygon" kindref="compound">Polygon</ref></type>
+        <definition>Polygon Dialog::generate_surface</definition>
+        <argsstring>(std::vector&lt; int &gt;)</argsstring>
+        <name>generate_surface</name>
+        <qualifiedname>Dialog::generate_surface</qualifiedname>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="73" column="13" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="207" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_1aba56e45513a0452d7899a956fa2d7676" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::drawVector</definition>
+        <argsstring>(Line)</argsstring>
+        <name>drawVector</name>
+        <qualifiedname>Dialog::drawVector</qualifiedname>
+        <param>
+          <type><ref refid="class_line" kindref="compound">Line</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_1a7f65ba9793051278f291b5b8de6c6028" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::simulate</definition>
+        <argsstring>()</argsstring>
+        <name>simulate</name>
+        <qualifiedname>Dialog::simulate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="79" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="216" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_1a28d0d14db21c7debc82c2b914c825756" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::updateFrame</definition>
+        <argsstring>()</argsstring>
+        <name>updateFrame</name>
+        <qualifiedname>Dialog::updateFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="80" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="360" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_1a87542a9ebc93d710a428398aa622371c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dialog::debug_items_count</definition>
+        <argsstring>(int, std::string _label)</argsstring>
+        <name>debug_items_count</name>
+        <qualifiedname>Dialog::debug_items_count</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>testPoint</defname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>_label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.h" line="83" column="10" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Dialog</label>
+        <link refid="class_dialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Dialog</label>
+        <link refid="class_dialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/kirill/electrolemon/dialog.h" line="21" column="1" bodyfile="/home/kirill/electrolemon/dialog.h" bodystart="22" bodyend="84"/>
+    <listofallmembers>
+      <member refid="class_dialog_1aa2e8a7e1dfd2555bee0a001b8c342e06" prot="private" virt="non-virtual"><scope>Dialog</scope><name>BIG_LABEL_HEIGTH</name></member>
+      <member refid="class_dialog_1a97fedc679cf81b550c4ef1b2be82acb1" prot="private" virt="non-virtual"><scope>Dialog</scope><name>BIG_LABEL_WIDTH</name></member>
+      <member refid="class_dialog_1aac4ec026ba1c3faeb69ee06510179103" prot="private" virt="non-virtual"><scope>Dialog</scope><name>BUTTON_HEIGTH</name></member>
+      <member refid="class_dialog_1a47868ba69d8f731ba552dcb5f14f607b" prot="private" virt="non-virtual"><scope>Dialog</scope><name>BUTTON_WIDTH</name></member>
+      <member refid="class_dialog_1a1a2449be77814677fe409fa32d059b9a" prot="private" virt="non-virtual"><scope>Dialog</scope><name>canvas</name></member>
+      <member refid="class_dialog_1a87542a9ebc93d710a428398aa622371c" prot="private" virt="non-virtual"><scope>Dialog</scope><name>debug_items_count</name></member>
+      <member refid="class_dialog_1ab30ac48588a82983f653f58d50a52ddc" prot="public" virt="non-virtual"><scope>Dialog</scope><name>Dialog</name></member>
+      <member refid="class_dialog_1a8f9aea78af0c82653a913196240509ad" prot="private" virt="non-virtual"><scope>Dialog</scope><name>DISPLAY_BACKGROUND_COLOR</name></member>
+      <member refid="class_dialog_1a4efd81fdde71371af645d939490c441a" prot="private" virt="non-virtual"><scope>Dialog</scope><name>DISPLAY_HEIGTH</name></member>
+      <member refid="class_dialog_1a9fdebda9ae05e29ae71dcc2d655ba7e2" prot="private" virt="non-virtual"><scope>Dialog</scope><name>DISPLAY_WIDTH</name></member>
+      <member refid="class_dialog_1aba56e45513a0452d7899a956fa2d7676" prot="private" virt="non-virtual"><scope>Dialog</scope><name>drawVector</name></member>
+      <member refid="class_dialog_1aebd4b630e4a42400c0695ed45ba0b579" prot="private" virt="non-virtual"><scope>Dialog</scope><name>environmentHandler</name></member>
+      <member refid="class_dialog_1a93c6228ca30fe7f7400d383937b562dc" prot="private" virt="non-virtual"><scope>Dialog</scope><name>generate_surface</name></member>
+      <member refid="class_dialog_1a06e96b5c2fcaa8147da1b966126aa3a6" prot="private" virt="non-virtual"><scope>Dialog</scope><name>isRunning</name></member>
+      <member refid="class_dialog_1a8dfd0d8de4b38cdfacbbcf211d1174dd" prot="private" virt="non-virtual"><scope>Dialog</scope><name>movementCurves</name></member>
+      <member refid="class_dialog_1ab41cd56c0365fd26e6d0cd6c0f9cf99b" prot="private" virt="non-virtual"><scope>Dialog</scope><name>on_spinBox0_2_valueChanged</name></member>
+      <member refid="class_dialog_1aa9af39bc16465f5daae5f0cad005fb9b" prot="private" virt="non-virtual"><scope>Dialog</scope><name>on_spinBox0_3_valueChanged</name></member>
+      <member refid="class_dialog_1a64bcfd95693aeed1a1467fbcbad453b0" prot="private" virt="non-virtual"><scope>Dialog</scope><name>on_spinBox0_valueChanged</name></member>
+      <member refid="class_dialog_1a6c37481aa89ddd20944a2e2cc85c9efd" prot="private" virt="non-virtual"><scope>Dialog</scope><name>on_spinBox1_2_valueChanged</name></member>
+      <member refid="class_dialog_1a01a421b595f231a359e4063683ab0ad8" prot="private" virt="non-virtual"><scope>Dialog</scope><name>on_spinBox1_3_valueChanged</name></member>
+      <member refid="class_dialog_1adb5aa96aa1079846eeb1716248d30078" prot="private" virt="non-virtual"><scope>Dialog</scope><name>on_spinBox1_valueChanged</name></member>
+      <member refid="class_dialog_1a91f295aec4716c79905ba73c764b732d" prot="private" virt="non-virtual"><scope>Dialog</scope><name>on_test0_clicked</name></member>
+      <member refid="class_dialog_1a863cd93e83ea1bbc775ac7021eb89fc1" prot="private" virt="non-virtual"><scope>Dialog</scope><name>on_test1_clicked</name></member>
+      <member refid="class_dialog_1a332850f13482e1cc89fbe6322d2b67ba" prot="private" virt="non-virtual"><scope>Dialog</scope><name>on_test2_clicked</name></member>
+      <member refid="class_dialog_1a24dc81452f5f4c8e0cbcff0d2f35afb5" prot="private" virt="non-virtual"><scope>Dialog</scope><name>painter</name></member>
+      <member refid="class_dialog_1a53ccee8599b73c6a9215c9853d48508b" prot="private" virt="non-virtual"><scope>Dialog</scope><name>presets</name></member>
+      <member refid="class_dialog_1a37ae41fed771fa4f1aa0166e5494b0d9" prot="private" virt="non-virtual"><scope>Dialog</scope><name>resetData</name></member>
+      <member refid="class_dialog_1a34ad1264dc3ea1e6341ea66ca014b671" prot="private" virt="non-virtual"><scope>Dialog</scope><name>resetData</name></member>
+      <member refid="class_dialog_1a6e2c001232048d5d4cd8ed56ffb9b4be" prot="private" virt="non-virtual"><scope>Dialog</scope><name>resetData</name></member>
+      <member refid="class_dialog_1a2ef0672da45114f21b29ce2a515f98c7" prot="private" virt="non-virtual"><scope>Dialog</scope><name>run_preset</name></member>
+      <member refid="class_dialog_1a7f65ba9793051278f291b5b8de6c6028" prot="private" virt="non-virtual"><scope>Dialog</scope><name>simulate</name></member>
+      <member refid="class_dialog_1ad60f408d92c43bd3c57c3fc5735e0562" prot="private" virt="non-virtual"><scope>Dialog</scope><name>SMOL_LABEL_HEIGTH</name></member>
+      <member refid="class_dialog_1a669a5650388052e3f044269adff7ed3c" prot="private" virt="non-virtual"><scope>Dialog</scope><name>SMOL_LABEL_WIDTH</name></member>
+      <member refid="class_dialog_1af4054ba32920a861de19f480432f22d8" prot="private" virt="non-virtual"><scope>Dialog</scope><name>SPACER_HEIGTH</name></member>
+      <member refid="class_dialog_1ab5265624f6d8909b4f9277a4614ba7a4" prot="private" virt="non-virtual"><scope>Dialog</scope><name>SPACER_WIDTH</name></member>
+      <member refid="class_dialog_1aed16dca9a35dec15de193366edb73a3f" prot="private" virt="non-virtual"><scope>Dialog</scope><name>surface_holder</name></member>
+      <member refid="class_dialog_1aaa4b5bfb9a0f64900d524f14bc32e6df" prot="private" virt="non-virtual"><scope>Dialog</scope><name>ui</name></member>
+      <member refid="class_dialog_1a28d0d14db21c7debc82c2b914c825756" prot="private" virt="non-virtual"><scope>Dialog</scope><name>updateFrame</name></member>
+      <member refid="class_dialog_1a2a1fe6ef28513eed13bfcd3a4da83ccb" prot="public" virt="non-virtual"><scope>Dialog</scope><name>~Dialog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes refid="debugtools_8h" local="yes">debugtools.h</includes>
+    <includes refid="lemonade_8h" local="yes">lemonade.h</includes>
+    <includes refid="mainwindow_8h" local="yes">mainwindow.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">QApplication</includes>
+    <includes local="no">QLocale</includes>
+    <includes local="no">QTranslator</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>debugtools.h</label>
+        <link refid="debugtools_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lemonade.h</label>
+        <link refid="lemonade_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>QApplication</label>
+      </node>
+      <node id="10">
+        <label>QLocale</label>
+      </node>
+      <node id="8">
+        <label>QMainWindow</label>
+      </node>
+      <node id="11">
+        <label>QTranslator</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>sstream</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a0e2b48ba6b1dddd93fe5c2ec62cd86ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string get_cwd</definition>
+        <argsstring>(QApplication *qapp)</argsstring>
+        <name>get_cwd</name>
+        <param>
+          <type>QApplication *</type>
+          <declname>qapp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/main.cpp" line="15" column="8" bodyfile="/home/kirill/electrolemon/main.cpp" bodystart="15" bodyend="15"/>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="18" endline="41">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1adeab346fbbd59aae472e97478e72237b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString str2qstr</definition>
+        <argsstring>(string s)</argsstring>
+        <name>str2qstr</name>
+        <param>
+          <type>string</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/main.cpp" line="16" column="9" bodyfile="/home/kirill/electrolemon/main.cpp" bodystart="16" bodyend="16"/>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="18" endline="41">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/main.cpp" line="18" column="5" bodyfile="/home/kirill/electrolemon/main.cpp" bodystart="18" bodyend="41"/>
+        <references refid="struct_debug_tools_1a8643ae9a3f155fcd6b0a3405b66fe04e" compoundref="debugtools_8h" startline="24" endline="28">DebugTools::boolMsg</references>
+        <references refid="lemonade_8cpp_1a162c38e92cbb73ab04f73bf590ece400" compoundref="lemonade_8cpp" startline="4">exec_dir</references>
+        <references refid="main_8cpp_1a0e2b48ba6b1dddd93fe5c2ec62cd86ca" compoundref="main_8cpp" startline="15" endline="15">get_cwd</references>
+        <references refid="main_8cpp_1adeab346fbbd59aae472e97478e72237b" compoundref="main_8cpp" startline="16" endline="16">str2qstr</references>
+        <references refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" compoundref="debugtools_8h" startline="12" endline="14">DebugTools::strMsg</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="debugtools_8h" kindref="compound">debugtools.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lemonade_8h" kindref="compound">lemonade.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mainwindow_8h" kindref="compound">mainwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLocale&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTranslator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="main_8cpp_1a0e2b48ba6b1dddd93fe5c2ec62cd86ca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0e2b48ba6b1dddd93fe5c2ec62cd86ca" kindref="member">get_cwd</ref>(QApplication<sp/>*qapp){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>qapp-&gt;applicationDirPath().toStdString();}<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::filesystem::path<sp/>cwd<sp/>=<sp/>std::filesystem::current_path();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="main_8cpp_1adeab346fbbd59aae472e97478e72237b" refkind="member"><highlight class="normal">QString<sp/><ref refid="main_8cpp_1adeab346fbbd59aae472e97478e72237b" kindref="member">str2qstr</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QString::fromStdString(s);}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//creating<sp/>app<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>QApplication<sp/>electrolemon(argc,<sp/>argv);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//translating<sp/>to<sp/>system<sp/>language</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_debug_tools" kindref="compound">DebugTools</ref><sp/>Debugger;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>QTranslator<sp/>translator;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStringList<sp/>uiLanguages<sp/>=<sp/>QLocale::system().uiLanguages();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;locale<sp/>=<sp/>uiLanguages.at(0);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" kindref="member">strMsg</ref>(</highlight><highlight class="stringliteral">&quot;locale:<sp/>&quot;</highlight><highlight class="normal">+locale.toStdString());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>baseName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;electrolemon_&quot;</highlight><highlight class="normal"><sp/>+<sp/>QLocale(locale).name();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" kindref="member">strMsg</ref>(</highlight><highlight class="stringliteral">&quot;baseName:<sp/>&quot;</highlight><highlight class="normal">+baseName.toStdString());</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" kindref="member">strMsg</ref>(</highlight><highlight class="stringliteral">&quot;App<sp/>path:<sp/>&quot;</highlight><highlight class="normal">+<ref refid="main_8cpp_1a0e2b48ba6b1dddd93fe5c2ec62cd86ca" kindref="member">get_cwd</ref>(&amp;electrolemon));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lemonade_8cpp_1a162c38e92cbb73ab04f73bf590ece400" kindref="member">exec_dir</ref><sp/>=<sp/><ref refid="main_8cpp_1a0e2b48ba6b1dddd93fe5c2ec62cd86ca" kindref="member">get_cwd</ref>(&amp;electrolemon);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a8643ae9a3f155fcd6b0a3405b66fe04e" kindref="member">boolMsg</ref>(translator.load(QLocale(locale),<sp/>baseName,<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">,<sp/><ref refid="main_8cpp_1adeab346fbbd59aae472e97478e72237b" kindref="member">str2qstr</ref>(<ref refid="lemonade_8cpp_1a162c38e92cbb73ab04f73bf590ece400" kindref="member">exec_dir</ref>),</highlight><highlight class="stringliteral">&quot;.qm&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="comment">//do<sp/>NOT<sp/>comment<sp/>out;<sp/>translator.load(args[])<sp/>call<sp/>is<sp/>required!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>electrolemon.installTranslator(&amp;translator);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window" kindref="compound">MainWindow</ref><sp/>w;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>w.show();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>electrolemon.exec();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment">//void<sp/>render()<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>glClearColor(0.0f,<sp/>0.0f,<sp/>0.0f,<sp/>1.0f);<sp/>//<sp/>Set<sp/>background<sp/>color<sp/>to<sp/>black<sp/>and<sp/>opaque</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>glClear(GL_COLOR_BUFFER_BIT);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Clear<sp/>the<sp/>color<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>//<sp/>Draw<sp/>a<sp/>Red<sp/>1x1<sp/>Square<sp/>centered<sp/>at<sp/>origin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>glBegin(GL_QUADS);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Each<sp/>set<sp/>of<sp/>4<sp/>vertices<sp/>form<sp/>a<sp/>quad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>glColor3f(1.0f,<sp/>0.0f,<sp/>0.0f);<sp/>//<sp/>Red</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>glVertex2f(-0.5f,<sp/>-0.5f);<sp/><sp/><sp/><sp/>//<sp/>x,<sp/>y</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>glVertex2f(<sp/>0.5f,<sp/>-0.5f);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>glVertex2f(<sp/>0.5f,<sp/><sp/>0.5f);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>glVertex2f(-0.5f,<sp/><sp/>0.5f);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>glEnd();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>glFlush();<sp/><sp/>//<sp/>Render<sp/>now</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/kirill/electrolemon/main.cpp"/>
+  </compounddef>
+</doxygen>

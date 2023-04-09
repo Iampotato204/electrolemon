@@ -1,29 +1,30 @@
-#ifdef LEMONADE_H
+/*#ifdef LEMONADE_H
     #define EXTERN
 #else
     #define EXTERN extern
-#endif
+#endif*/
 
 #include <iostream>
 #include <string>
+
 using std::string;
 
-EXTERN string
+extern string
     exec_dir;
 
-EXTERN double
+extern double
     p_x, p_y,
-    v_x, v_y,
+    v0_x, v0_y,
     p_m_mantissa, p_q_mantissa,
 
-    d1, l,
-    p_V0_x, p_V0_y,
-    k,
+    k_mantissa;
 
-    F;
-
-EXTERN int
+extern int
     p_m_exponent, p_q_exponent, k_exponent,
-    resulting_exponent;
+    //distance_scale_exponent,
+    resulting_exponent,
+
+    animFrames,
+    animFrame_duration;
 
 void debug_output_available_data();

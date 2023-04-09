@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="lemonade_8cpp" kind="file" language="C++">
+    <compoundname>lemonade.cpp</compoundname>
+    <includes refid="lemonade_8h" local="yes">lemonade.h</includes>
+    <includes refid="debugtools_8h" local="yes">debugtools.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>debugtools.h</label>
+        <link refid="debugtools_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lemonade.cpp</label>
+        <link refid="lemonade_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lemonade.h</label>
+        <link refid="lemonade_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lemonade_8cpp_1a162c38e92cbb73ab04f73bf590ece400" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string exec_dir</definition>
+        <argsstring></argsstring>
+        <name>exec_dir</name>
+        <initializer>=&quot;/&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="4" column="5" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="4" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="18" endline="41">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1ac3ca5b1f6c77b23663b004b1bfea29b4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double p_x</definition>
+        <argsstring></argsstring>
+        <name>p_x</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="7" column="5" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="7" bodyend="-1"/>
+        <referencedby refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" compoundref="lemonade_8cpp" startline="25" endline="39">debug_output_available_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1af2dd1f4f1aa6696f64fa6a65a5a00cb3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double p_y</definition>
+        <argsstring></argsstring>
+        <name>p_y</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="7" column="9" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="7" bodyend="-1"/>
+        <referencedby refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" compoundref="lemonade_8cpp" startline="25" endline="39">debug_output_available_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1a64ce85b30a893c03da394bb97f9416b0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double v0_x</definition>
+        <argsstring></argsstring>
+        <name>v0_x</name>
+        <initializer>=20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="8" column="5" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="8" bodyend="-1"/>
+        <referencedby refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" compoundref="lemonade_8cpp" startline="25" endline="39">debug_output_available_data</referencedby>
+        <referencedby refid="class_dialog_1ab30ac48588a82983f653f58d50a52ddc" compoundref="dialog_8cpp" startline="58" endline="201">Dialog::Dialog</referencedby>
+        <referencedby refid="class_physics__engine_1ab02e65f29552555962e04d800c6b2a9f" compoundref="physics__engine_8cpp" startline="32" endline="35">Physics_engine::movementVectorStart_length</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1a5e1bd90c4349289033734b0e1282d024" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double v0_y</definition>
+        <argsstring></argsstring>
+        <name>v0_y</name>
+        <initializer>=10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="8" column="9" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="8" bodyend="-1"/>
+        <referencedby refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" compoundref="lemonade_8cpp" startline="25" endline="39">debug_output_available_data</referencedby>
+        <referencedby refid="class_dialog_1ab30ac48588a82983f653f58d50a52ddc" compoundref="dialog_8cpp" startline="58" endline="201">Dialog::Dialog</referencedby>
+        <referencedby refid="class_physics__engine_1ab02e65f29552555962e04d800c6b2a9f" compoundref="physics__engine_8cpp" startline="32" endline="35">Physics_engine::movementVectorStart_length</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1a7e35685e5045a32feab2328c43988870" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double p_m_mantissa</definition>
+        <argsstring></argsstring>
+        <name>p_m_mantissa</name>
+        <initializer>=910938.37015</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="11" column="5" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="11" bodyend="-1"/>
+        <referencedby refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" compoundref="lemonade_8cpp" startline="25" endline="39">debug_output_available_data</referencedby>
+        <referencedby refid="class_dialog_1ab30ac48588a82983f653f58d50a52ddc" compoundref="dialog_8cpp" startline="58" endline="201">Dialog::Dialog</referencedby>
+        <referencedby refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" compoundref="physics__engine_8cpp" startline="22" endline="26">Physics_engine::get_acceleration_mantissa</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1a4c0174f3f60960de06298986da5114c3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double p_q_mantissa</definition>
+        <argsstring></argsstring>
+        <name>p_q_mantissa</name>
+        <initializer>=-160217.6634</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="11" column="18" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="11" bodyend="-1"/>
+        <referencedby refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" compoundref="lemonade_8cpp" startline="25" endline="39">debug_output_available_data</referencedby>
+        <referencedby refid="class_dialog_1ab30ac48588a82983f653f58d50a52ddc" compoundref="dialog_8cpp" startline="58" endline="201">Dialog::Dialog</referencedby>
+        <referencedby refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" compoundref="physics__engine_8cpp" startline="22" endline="26">Physics_engine::get_acceleration_mantissa</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1adc37ebb8a13551dbb5b4662c3fe20b09" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double k_mantissa</definition>
+        <argsstring></argsstring>
+        <name>k_mantissa</name>
+        <initializer>=8.987551787368176</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="13" column="5" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" compoundref="physics__engine_8cpp" startline="22" endline="26">Physics_engine::get_acceleration_mantissa</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1ab30c765b9be1b7776c97c899a12a66bb" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <initializer>=9.8067</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="14" column="5" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1ab365ce012c509bcfb71692dc1872e71a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int p_m_exponent</definition>
+        <argsstring></argsstring>
+        <name>p_m_exponent</name>
+        <initializer>=-38</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="18" column="5" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="18" bodyend="-1"/>
+        <referencedby refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" compoundref="lemonade_8cpp" startline="25" endline="39">debug_output_available_data</referencedby>
+        <referencedby refid="class_dialog_1ab30ac48588a82983f653f58d50a52ddc" compoundref="dialog_8cpp" startline="58" endline="201">Dialog::Dialog</referencedby>
+        <referencedby refid="class_physics__engine_1a8826f833dee26671523256f2cc4b80cc" compoundref="physics__engine_8cpp" startline="28" endline="30">Physics_engine::get_acceleration_exponent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1a7be8fff5ab7f5353b889c27a4d37cb8b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int p_q_exponent</definition>
+        <argsstring></argsstring>
+        <name>p_q_exponent</name>
+        <initializer>=-24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="18" column="18" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="18" bodyend="-1"/>
+        <referencedby refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" compoundref="lemonade_8cpp" startline="25" endline="39">debug_output_available_data</referencedby>
+        <referencedby refid="class_dialog_1ab30ac48588a82983f653f58d50a52ddc" compoundref="dialog_8cpp" startline="58" endline="201">Dialog::Dialog</referencedby>
+        <referencedby refid="class_physics__engine_1a8826f833dee26671523256f2cc4b80cc" compoundref="physics__engine_8cpp" startline="28" endline="30">Physics_engine::get_acceleration_exponent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1a97686c2cff1326d408854daf510dcdbf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int k_exponent</definition>
+        <argsstring></argsstring>
+        <name>k_exponent</name>
+        <initializer>=9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="20" column="5" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_physics__engine_1a8826f833dee26671523256f2cc4b80cc" compoundref="physics__engine_8cpp" startline="28" endline="30">Physics_engine::get_acceleration_exponent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1ae210f44407fdf7b1994c3be63ba3658b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int animFrame_duration</definition>
+        <argsstring></argsstring>
+        <name>animFrame_duration</name>
+        <initializer>=100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="22" column="5" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_preset_1af779f83521f070aacf17a86454090b07" compoundref="dialog_8cpp" startline="34" endline="38">Preset::Preset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="lemonade_8cpp_1af84c9d43eb66f16a84f65f3af8ce5ace" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int animFrames</definition>
+        <argsstring></argsstring>
+        <name>animFrames</name>
+        <initializer>=60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="23" column="5" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_preset_1af779f83521f070aacf17a86454090b07" compoundref="dialog_8cpp" startline="34" endline="38">Preset::Preset</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void debug_output_available_data</definition>
+        <argsstring>()</argsstring>
+        <name>debug_output_available_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/lemonade.cpp" line="25" column="6" bodyfile="/home/kirill/electrolemon/lemonade.cpp" bodystart="25" bodyend="39"/>
+        <references refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" compoundref="debugtools_8h" startline="18" endline="23">DebugTools::doubMsg</references>
+        <references refid="lemonade_8cpp_1ab365ce012c509bcfb71692dc1872e71a" compoundref="lemonade_8cpp" startline="18">p_m_exponent</references>
+        <references refid="lemonade_8cpp_1a7e35685e5045a32feab2328c43988870" compoundref="lemonade_8cpp" startline="11">p_m_mantissa</references>
+        <references refid="lemonade_8cpp_1a7be8fff5ab7f5353b889c27a4d37cb8b" compoundref="lemonade_8cpp" startline="18">p_q_exponent</references>
+        <references refid="lemonade_8cpp_1a4c0174f3f60960de06298986da5114c3" compoundref="lemonade_8cpp" startline="11">p_q_mantissa</references>
+        <references refid="lemonade_8cpp_1ac3ca5b1f6c77b23663b004b1bfea29b4" compoundref="lemonade_8cpp" startline="7">p_x</references>
+        <references refid="lemonade_8cpp_1af2dd1f4f1aa6696f64fa6a65a5a00cb3" compoundref="lemonade_8cpp" startline="7">p_y</references>
+        <references refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" compoundref="debugtools_8h" startline="12" endline="14">DebugTools::strMsg</references>
+        <references refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" compoundref="debugtools_8h" startline="9" endline="11">DebugTools::strMsgInline</references>
+        <references refid="lemonade_8cpp_1a64ce85b30a893c03da394bb97f9416b0" compoundref="lemonade_8cpp" startline="8">v0_x</references>
+        <references refid="lemonade_8cpp_1a5e1bd90c4349289033734b0e1282d024" compoundref="lemonade_8cpp" startline="8">v0_y</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lemonade_8h" kindref="compound">lemonade.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="debugtools_8h" kindref="compound">debugtools.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">std::string</highlight></codeline>
+<codeline lineno="4" refid="lemonade_8cpp_1a162c38e92cbb73ab04f73bf590ece400" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lemonade_8cpp_1a162c38e92cbb73ab04f73bf590ece400" kindref="member">exec_dir</ref>=</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="lemonade_8cpp_1ac3ca5b1f6c77b23663b004b1bfea29b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lemonade_8cpp_1ac3ca5b1f6c77b23663b004b1bfea29b4" kindref="member">p_x</ref>=0,<sp/><ref refid="lemonade_8cpp_1af2dd1f4f1aa6696f64fa6a65a5a00cb3" kindref="member">p_y</ref>=0,</highlight></codeline>
+<codeline lineno="8" refid="lemonade_8cpp_1a64ce85b30a893c03da394bb97f9416b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lemonade_8cpp_1a64ce85b30a893c03da394bb97f9416b0" kindref="member">v0_x</ref>=20,<ref refid="lemonade_8cpp_1a5e1bd90c4349289033734b0e1282d024" kindref="member">v0_y</ref>=10,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//v0_x=-3,v0_y=15,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//p_m_mantissa=9.1093837015,<sp/>p_q_mantissa=-1.602176634,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="lemonade_8cpp_1a7e35685e5045a32feab2328c43988870" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lemonade_8cpp_1a7e35685e5045a32feab2328c43988870" kindref="member">p_m_mantissa</ref>=910938.37015,<sp/><ref refid="lemonade_8cpp_1a4c0174f3f60960de06298986da5114c3" kindref="member">p_q_mantissa</ref>=-160217.6634,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="lemonade_8cpp_1adc37ebb8a13551dbb5b4662c3fe20b09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lemonade_8cpp_1adc37ebb8a13551dbb5b4662c3fe20b09" kindref="member">k_mantissa</ref>=8.987551787368176,</highlight></codeline>
+<codeline lineno="14" refid="lemonade_8cpp_1ab30c765b9be1b7776c97c899a12a66bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lemonade_8cpp_1ab30c765b9be1b7776c97c899a12a66bb" kindref="member">g</ref>=9.8067;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//p_m_exponent=-31,<sp/>p_q_exponent=-19,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="lemonade_8cpp_1ab365ce012c509bcfb71692dc1872e71a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lemonade_8cpp_1ab365ce012c509bcfb71692dc1872e71a" kindref="member">p_m_exponent</ref>=-38,<sp/><ref refid="lemonade_8cpp_1a7be8fff5ab7f5353b889c27a4d37cb8b" kindref="member">p_q_exponent</ref>=-24,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//distance_scale_exponent=2,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="lemonade_8cpp_1a97686c2cff1326d408854daf510dcdbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lemonade_8cpp_1a97686c2cff1326d408854daf510dcdbf" kindref="member">k_exponent</ref>=9,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="lemonade_8cpp_1ae210f44407fdf7b1994c3be63ba3658b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lemonade_8cpp_1ae210f44407fdf7b1994c3be63ba3658b" kindref="member">animFrame_duration</ref>=100,</highlight></codeline>
+<codeline lineno="23" refid="lemonade_8cpp_1af84c9d43eb66f16a84f65f3af8ce5ace" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lemonade_8cpp_1af84c9d43eb66f16a84f65f3af8ce5ace" kindref="member">animFrames</ref>=60;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" kindref="member">debug_output_available_data</ref>(){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_debug_tools" kindref="compound">DebugTools</ref><sp/>Debugger;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" kindref="member">strMsg</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" kindref="member">strMsg</ref>(</highlight><highlight class="stringliteral">&quot;onClickDataProcessing:&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" kindref="member">strMsgInline</ref>(</highlight><highlight class="stringliteral">&quot;p_x0=&quot;</highlight><highlight class="normal">);Debugger.<ref refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" kindref="member">doubMsg</ref>(<ref refid="lemonade_8cpp_1ac3ca5b1f6c77b23663b004b1bfea29b4" kindref="member">p_x</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" kindref="member">strMsgInline</ref>(</highlight><highlight class="stringliteral">&quot;p_y0=&quot;</highlight><highlight class="normal">);Debugger.<ref refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" kindref="member">doubMsg</ref>(<ref refid="lemonade_8cpp_1af2dd1f4f1aa6696f64fa6a65a5a00cb3" kindref="member">p_y</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" kindref="member">strMsgInline</ref>(</highlight><highlight class="stringliteral">&quot;p_m_mantissa=&quot;</highlight><highlight class="normal">);Debugger.<ref refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" kindref="member">doubMsg</ref>(<ref refid="lemonade_8cpp_1a7e35685e5045a32feab2328c43988870" kindref="member">p_m_mantissa</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" kindref="member">strMsgInline</ref>(</highlight><highlight class="stringliteral">&quot;p_m_exponent=&quot;</highlight><highlight class="normal">);Debugger.<ref refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" kindref="member">doubMsg</ref>(<ref refid="lemonade_8cpp_1ab365ce012c509bcfb71692dc1872e71a" kindref="member">p_m_exponent</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" kindref="member">strMsgInline</ref>(</highlight><highlight class="stringliteral">&quot;p_q_mantissa=&quot;</highlight><highlight class="normal">);Debugger.<ref refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" kindref="member">doubMsg</ref>(<ref refid="lemonade_8cpp_1a4c0174f3f60960de06298986da5114c3" kindref="member">p_q_mantissa</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" kindref="member">strMsgInline</ref>(</highlight><highlight class="stringliteral">&quot;p_q_exponent=&quot;</highlight><highlight class="normal">);Debugger.<ref refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" kindref="member">doubMsg</ref>(<ref refid="lemonade_8cpp_1a7be8fff5ab7f5353b889c27a4d37cb8b" kindref="member">p_q_exponent</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" kindref="member">strMsgInline</ref>(</highlight><highlight class="stringliteral">&quot;v0_x=&quot;</highlight><highlight class="normal">);Debugger.<ref refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" kindref="member">doubMsg</ref>(<ref refid="lemonade_8cpp_1a64ce85b30a893c03da394bb97f9416b0" kindref="member">v0_x</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" kindref="member">strMsgInline</ref>(</highlight><highlight class="stringliteral">&quot;v0_y=&quot;</highlight><highlight class="normal">);Debugger.<ref refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" kindref="member">doubMsg</ref>(<ref refid="lemonade_8cpp_1a5e1bd90c4349289033734b0e1282d024" kindref="member">v0_y</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>Debugger.<ref refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" kindref="member">strMsg</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/kirill/electrolemon/lemonade.cpp"/>
+  </compounddef>
+</doxygen>

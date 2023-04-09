@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_point" kind="class" language="C++" prot="public">
+    <compoundname>Point</compoundname>
+    <includes refid="physics__engine_8h" local="no">physics_engine.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Point::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>Point::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="12" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_line_1aafde7d6efee1b66a5edf861ae389722e" compoundref="physics__engine_8h" startline="70" endline="76">Line::extendedCopy</referencedby>
+        <referencedby refid="class_line_1ad4c712851de289ce1c277e35e561b452" compoundref="physics__engine_8cpp" startline="305" endline="312">Line::find_equationOfPerpendicular</referencedby>
+        <referencedby refid="class_point_1ad48a8bdbda80841860be5f76ba70ee3e" compoundref="physics__engine_8cpp" startline="205" endline="209">move</referencedby>
+        <referencedby refid="class_line_1a2d3081c2ab8ba0cd9a353ea40e24e1f9" compoundref="physics__engine_8h" startline="78" endline="84">Line::movedCopy</referencedby>
+        <referencedby refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" compoundref="physics__engine_8cpp" startline="179" endline="182">Point</referencedby>
+        <referencedby refid="class_point_1acd364e308066f5997bce0546d82bf29f" compoundref="physics__engine_8cpp" startline="189" endline="195">rotate</referencedby>
+        <referencedby refid="class_point_1acd2fcff18ab1f602ceca73104ab5c9d5" compoundref="physics__engine_8cpp" startline="197" endline="203">rotateAround00</referencedby>
+        <referencedby refid="class_physics__engine_1a91903d386ccbcf88df328849c464f970" compoundref="physics__engine_8cpp" startline="53" endline="61">Physics_engine::scaleVector</referencedby>
+        <referencedby refid="class_point_1aa74e550bb9dc0da0e1ffec0fbf097825" compoundref="physics__engine_8cpp" startline="211" endline="215">stat_move</referencedby>
+        <referencedby refid="class_point_1a3dc1ddbe89354d0336a70a2ac9b53fbd" compoundref="physics__engine_8cpp" startline="221" endline="223">toQPoint</referencedby>
+        <referencedby refid="class_point_1a8fa9a62a33de3c414df4b86b1b358355" compoundref="physics__engine_8cpp" startline="217" endline="219">toQPointF</referencedby>
+        <referencedby refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" compoundref="physics__engine_8cpp" startline="267" endline="269">Line::x0</referencedby>
+        <referencedby refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" compoundref="physics__engine_8cpp" startline="275" endline="277">Line::x1</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Point::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>Point::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="12" column="14" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_line_1ad4c712851de289ce1c277e35e561b452" compoundref="physics__engine_8cpp" startline="305" endline="312">Line::find_equationOfPerpendicular</referencedby>
+        <referencedby refid="class_point_1ad48a8bdbda80841860be5f76ba70ee3e" compoundref="physics__engine_8cpp" startline="205" endline="209">move</referencedby>
+        <referencedby refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" compoundref="physics__engine_8cpp" startline="179" endline="182">Point</referencedby>
+        <referencedby refid="class_point_1acd364e308066f5997bce0546d82bf29f" compoundref="physics__engine_8cpp" startline="189" endline="195">rotate</referencedby>
+        <referencedby refid="class_point_1acd2fcff18ab1f602ceca73104ab5c9d5" compoundref="physics__engine_8cpp" startline="197" endline="203">rotateAround00</referencedby>
+        <referencedby refid="class_physics__engine_1a91903d386ccbcf88df328849c464f970" compoundref="physics__engine_8cpp" startline="53" endline="61">Physics_engine::scaleVector</referencedby>
+        <referencedby refid="class_point_1aa74e550bb9dc0da0e1ffec0fbf097825" compoundref="physics__engine_8cpp" startline="211" endline="215">stat_move</referencedby>
+        <referencedby refid="class_point_1a3dc1ddbe89354d0336a70a2ac9b53fbd" compoundref="physics__engine_8cpp" startline="221" endline="223">toQPoint</referencedby>
+        <referencedby refid="class_point_1a8fa9a62a33de3c414df4b86b1b358355" compoundref="physics__engine_8cpp" startline="217" endline="219">toQPointF</referencedby>
+        <referencedby refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" compoundref="physics__engine_8cpp" startline="271" endline="273">Line::y0</referencedby>
+        <referencedby refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" compoundref="physics__engine_8cpp" startline="279" endline="281">Line::y1</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_point_1ad92f2337b839a94ce97dcdb439b4325a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Point::Point</definition>
+        <argsstring>()</argsstring>
+        <name>Point</name>
+        <qualifiedname>Point::Point</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="14" column="5" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="179" bodyend="182"/>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">x</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">y</references>
+        <referencedby refid="class_point_1acd364e308066f5997bce0546d82bf29f" compoundref="physics__engine_8cpp" startline="189" endline="195">rotate</referencedby>
+        <referencedby refid="class_point_1acd2fcff18ab1f602ceca73104ab5c9d5" compoundref="physics__engine_8cpp" startline="197" endline="203">rotateAround00</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a483cf6bf601889eb922e89f5820045c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Point::Point</definition>
+        <argsstring>(double _x, double _y)</argsstring>
+        <name>Point</name>
+        <qualifiedname>Point::Point</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="15" column="5" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="184" bodyend="187"/>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">x</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1acd364e308066f5997bce0546d82bf29f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_point" kindref="compound">Point</ref></type>
+        <definition>Point Point::rotate</definition>
+        <argsstring>(Point *center, double rad)</argsstring>
+        <name>rotate</name>
+        <qualifiedname>Point::rotate</qualifiedname>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref> *</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="16" column="11" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="189" bodyend="195"/>
+        <references refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" compoundref="physics__engine_8cpp" startline="179" endline="182">Point</references>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">x</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">y</references>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">Painter::drawArrow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1acd2fcff18ab1f602ceca73104ab5c9d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_point" kindref="compound">Point</ref></type>
+        <definition>Point Point::rotateAround00</definition>
+        <argsstring>(double rad)</argsstring>
+        <name>rotateAround00</name>
+        <qualifiedname>Point::rotateAround00</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>rad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="17" column="11" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="197" bodyend="203"/>
+        <references refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" compoundref="physics__engine_8cpp" startline="179" endline="182">Point</references>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">x</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a3dc1ddbe89354d0336a70a2ac9b53fbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QPoint</type>
+        <definition>QPoint Point::toQPoint</definition>
+        <argsstring>()</argsstring>
+        <name>toQPoint</name>
+        <qualifiedname>Point::toQPoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="18" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="221" bodyend="223"/>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">x</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">y</references>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">Painter::drawArrow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a8fa9a62a33de3c414df4b86b1b358355" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QPointF</type>
+        <definition>QPointF Point::toQPointF</definition>
+        <argsstring>()</argsstring>
+        <name>toQPointF</name>
+        <qualifiedname>Point::toQPointF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="19" column="13" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="217" bodyend="219"/>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">x</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1ad48a8bdbda80841860be5f76ba70ee3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_point" kindref="compound">Point</ref> *</type>
+        <definition>Point * Point::move</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>move</name>
+        <qualifiedname>Point::move</qualifiedname>
+        <param>
+          <type>double</type>
+          <defname>dx</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>dy</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="20" column="11" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="205" bodyend="209"/>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">x</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1aa74e550bb9dc0da0e1ffec0fbf097825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_point" kindref="compound">Point</ref></type>
+        <definition>Point Point::stat_move</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>stat_move</name>
+        <qualifiedname>Point::stat_move</qualifiedname>
+        <param>
+          <type>double</type>
+          <defname>dx</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>dy</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="21" column="11" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="211" bodyend="215"/>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">x</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">y</references>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">Painter::drawArrow</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_point_1ad4d60c28b5651241ec693dcd2f6762c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Point &amp;P)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Point::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref> &amp;</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="23" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="23" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kirill/electrolemon/physics_engine.h" line="9" column="1" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="10" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_point_1ad48a8bdbda80841860be5f76ba70ee3e" prot="public" virt="non-virtual"><scope>Point</scope><name>move</name></member>
+      <member refid="class_point_1ad4d60c28b5651241ec693dcd2f6762c3" prot="public" virt="non-virtual"><scope>Point</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="class_point_1a483cf6bf601889eb922e89f5820045c1" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="class_point_1acd364e308066f5997bce0546d82bf29f" prot="public" virt="non-virtual"><scope>Point</scope><name>rotate</name></member>
+      <member refid="class_point_1acd2fcff18ab1f602ceca73104ab5c9d5" prot="public" virt="non-virtual"><scope>Point</scope><name>rotateAround00</name></member>
+      <member refid="class_point_1aa74e550bb9dc0da0e1ffec0fbf097825" prot="public" virt="non-virtual"><scope>Point</scope><name>stat_move</name></member>
+      <member refid="class_point_1a3dc1ddbe89354d0336a70a2ac9b53fbd" prot="public" virt="non-virtual"><scope>Point</scope><name>toQPoint</name></member>
+      <member refid="class_point_1a8fa9a62a33de3c414df4b86b1b358355" prot="public" virt="non-virtual"><scope>Point</scope><name>toQPointF</name></member>
+      <member refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" prot="public" virt="non-virtual"><scope>Point</scope><name>x</name></member>
+      <member refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" prot="public" virt="non-virtual"><scope>Point</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

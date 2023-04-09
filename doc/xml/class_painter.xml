@@ -1,0 +1,599 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_painter" kind="class" language="C++" prot="public">
+    <compoundname>Painter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="painter_8h" local="no">painter.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" prot="public" static="no" mutable="no">
+        <type>QTimeLine *</type>
+        <definition>QTimeLine* Painter::animation_timer</definition>
+        <argsstring></argsstring>
+        <name>animation_timer</name>
+        <qualifiedname>Painter::animation_timer</qualifiedname>
+        <initializer>=nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="31" column="15" bodyfile="/home/kirill/electrolemon/painter.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_painter_1af24d488ff401cb1a0a2d4a37492a06bc" compoundref="painter_8cpp" startline="173" endline="177">init_timer</referencedby>
+        <referencedby refid="class_painter_1a5f9cb100b56f1010179cba0ccb0f0798" compoundref="painter_8cpp" startline="154" endline="165">setupAnimations</referencedby>
+        <referencedby refid="class_painter_1a9143ca2b5047a9815abd26ac55b25b09" compoundref="painter_8cpp" startline="167" endline="171">stop_timer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_painter_1a5380186a44e26f665d8af30325efcccd" prot="public" static="no" mutable="no">
+        <type>QGraphicsItemAnimation *</type>
+        <definition>QGraphicsItemAnimation* Painter::animation_genuine</definition>
+        <argsstring></argsstring>
+        <name>animation_genuine</name>
+        <qualifiedname>Painter::animation_genuine</qualifiedname>
+        <initializer>=nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="32" column="28" bodyfile="/home/kirill/electrolemon/painter.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_painter_1a5f9cb100b56f1010179cba0ccb0f0798" compoundref="painter_8cpp" startline="154" endline="165">setupAnimations</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_painter_1ac0920a270cd0cf379d0a4ee53b61137f" prot="public" static="no" mutable="no">
+        <type>QGraphicsItemAnimation *</type>
+        <definition>QGraphicsItemAnimation * Painter::animation_virt</definition>
+        <argsstring></argsstring>
+        <name>animation_virt</name>
+        <qualifiedname>Painter::animation_virt</qualifiedname>
+        <initializer>=nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="33" column="28" bodyfile="/home/kirill/electrolemon/painter.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_painter_1a5f9cb100b56f1010179cba0ccb0f0798" compoundref="painter_8cpp" startline="154" endline="165">setupAnimations</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_painter_1a2dd77da1c8a8dc8f040bf9a9525f319d" prot="private" static="no" mutable="no">
+        <type>QBrush</type>
+        <definition>QBrush Painter::brush</definition>
+        <argsstring></argsstring>
+        <name>brush</name>
+        <qualifiedname>Painter::brush</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="44" column="12" bodyfile="/home/kirill/electrolemon/painter.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_painter_1ac24cc2eb7e96436af0afd69acafcb40a" prot="private" static="no" mutable="no">
+        <type>QPen</type>
+        <definition>QPen Painter::pen</definition>
+        <argsstring></argsstring>
+        <name>pen</name>
+        <qualifiedname>Painter::pen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="45" column="10" bodyfile="/home/kirill/electrolemon/painter.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_painter_1a95e3b9cbe4d2b0bf2718fe6632018092" prot="private" static="no" mutable="no">
+        <type>QGraphicsScene *</type>
+        <definition>QGraphicsScene* Painter::canvas</definition>
+        <argsstring></argsstring>
+        <name>canvas</name>
+        <qualifiedname>Painter::canvas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="46" column="20" bodyfile="/home/kirill/electrolemon/painter.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_painter_1a5975275e10d270be3542d582468c2274" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Painter::total_animation_duration</definition>
+        <argsstring></argsstring>
+        <name>total_animation_duration</name>
+        <qualifiedname>Painter::total_animation_duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="56" column="9" bodyfile="/home/kirill/electrolemon/painter.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_painter_1ab01456297851ae8f2e5221c11cbf3689" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Painter::frames</definition>
+        <argsstring></argsstring>
+        <name>frames</name>
+        <qualifiedname>Painter::frames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="57" column="9" bodyfile="/home/kirill/electrolemon/painter.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_painter_1a32e59ad4d0e130f57c419bd9e9c84675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Painter::Painter</definition>
+        <argsstring>()</argsstring>
+        <name>Painter</name>
+        <qualifiedname>Painter::Painter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="16" column="5" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="16" bodyend="18"/>
+        <references refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" compoundref="debugtools_8h" startline="12" endline="14">DebugTools::strMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1aa02d19d9d05da7472bdcc516d429bcf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Painter::Painter</definition>
+        <argsstring>(QGraphicsScene *, int frame_duration, int frames, QBrush=QBrush(QColor(&quot;#b9ffd1&quot;)), QPen=QPen(Qt::black, 2))</argsstring>
+        <name>Painter</name>
+        <qualifiedname>Painter::Painter</qualifiedname>
+        <param>
+          <type>QGraphicsScene *</type>
+          <defname>scene</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frame_duration</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frames</declname>
+        </param>
+        <param>
+          <type>QBrush</type>
+          <defname>qbrush</defname>
+          <defval>QBrush(QColor(&quot;#b9ffd1&quot;))</defval>
+        </param>
+        <param>
+          <type>QPen</type>
+          <defname>qpen</defname>
+          <defval>QPen(Qt::black, 2)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="17" column="5" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="20" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1a487a624af9706236405295fde9c060a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsItem *</type>
+        <definition>QGraphicsItem * Painter::drawSurface</definition>
+        <argsstring>(Polygon *Poly)</argsstring>
+        <name>drawSurface</name>
+        <qualifiedname>Painter::drawSurface</qualifiedname>
+        <param>
+          <type><ref refid="class_polygon" kindref="compound">Polygon</ref> *</type>
+          <declname>Poly</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="19" column="19" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1a55234592e4decf145be2971fa4d3325a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsEllipseItem *</type>
+        <definition>QGraphicsEllipseItem * Painter::drawElectron</definition>
+        <argsstring>(Point *P)</argsstring>
+        <name>drawElectron</name>
+        <qualifiedname>Painter::drawElectron</qualifiedname>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref> *</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="20" column="26" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="130" bodyend="132"/>
+        <referencedby refid="class_painter_1a5f9cb100b56f1010179cba0ccb0f0798" compoundref="painter_8cpp" startline="154" endline="165">setupAnimations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1a1c74e6555aa34d788a0a620f07fc2e69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsEllipseItem *</type>
+        <definition>QGraphicsEllipseItem * Painter::drawVirt</definition>
+        <argsstring>(Point *P)</argsstring>
+        <name>drawVirt</name>
+        <qualifiedname>Painter::drawVirt</qualifiedname>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref> *</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="21" column="26" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="134" bodyend="136"/>
+        <referencedby refid="class_painter_1a5f9cb100b56f1010179cba0ccb0f0798" compoundref="painter_8cpp" startline="154" endline="165">setupAnimations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1a742c49bb37dd00766c5edfb5cb263477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsItem *</type>
+        <definition>QGraphicsItem * Painter::drawVector</definition>
+        <argsstring>(Line)</argsstring>
+        <name>drawVector</name>
+        <qualifiedname>Painter::drawVector</qualifiedname>
+        <param>
+          <type><ref refid="class_line" kindref="compound">Line</ref></type>
+          <defname>_vector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="22" column="19" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="138" bodyend="145"/>
+        <references refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" compoundref="painter_8cpp" startline="33" endline="35">drawLine</references>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1acf76ac2a782c9a105b8aebc56d735960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsItem *</type>
+        <definition>QGraphicsItem * Painter::drawLine</definition>
+        <argsstring>(Line)</argsstring>
+        <name>drawLine</name>
+        <qualifiedname>Painter::drawLine</qualifiedname>
+        <param>
+          <type><ref refid="class_line" kindref="compound">Line</ref></type>
+          <defname>L</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="24" column="19" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="33" bodyend="35"/>
+        <references refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" compoundref="painter_8cpp" startline="33" endline="35">drawLine</references>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">drawArrow</referencedby>
+        <referencedby refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" compoundref="painter_8cpp" startline="33" endline="35">drawLine</referencedby>
+        <referencedby refid="class_painter_1a742c49bb37dd00766c5edfb5cb263477" compoundref="painter_8cpp" startline="138" endline="145">drawVector</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1a5611a5705c820e24bc2d5ee3589ad574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsItem *</type>
+        <definition>QGraphicsItem * Painter::drawLine</definition>
+        <argsstring>(Line, QColor)</argsstring>
+        <name>drawLine</name>
+        <qualifiedname>Painter::drawLine</qualifiedname>
+        <param>
+          <type><ref refid="class_line" kindref="compound">Line</ref></type>
+          <defname>L</defname>
+        </param>
+        <param>
+          <type>QColor</type>
+          <defname>color</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="25" column="19" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="36" bodyend="38"/>
+        <references refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" compoundref="physics__engine_8cpp" startline="267" endline="269">Line::x0</references>
+        <references refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" compoundref="physics__engine_8cpp" startline="275" endline="277">Line::x1</references>
+        <references refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" compoundref="physics__engine_8cpp" startline="271" endline="273">Line::y0</references>
+        <references refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" compoundref="physics__engine_8cpp" startline="279" endline="281">Line::y1</references>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1a6340d4d45585abc64f8cf50190084554" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsItem *</type>
+        <definition>QGraphicsItem * Painter::drawLine</definition>
+        <argsstring>(QPointF, QPointF)</argsstring>
+        <name>drawLine</name>
+        <qualifiedname>Painter::drawLine</qualifiedname>
+        <param>
+          <type>QPointF</type>
+          <defname>P0</defname>
+        </param>
+        <param>
+          <type>QPointF</type>
+          <defname>P1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="26" column="19" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="40" bodyend="42"/>
+        <references refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" compoundref="painter_8cpp" startline="33" endline="35">drawLine</references>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1aa7810c70fbb1df121b5791eabac4eea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsItem *</type>
+        <definition>QGraphicsItem * Painter::drawLine</definition>
+        <argsstring>(QPointF, QPointF, QColor)</argsstring>
+        <name>drawLine</name>
+        <qualifiedname>Painter::drawLine</qualifiedname>
+        <param>
+          <type>QPointF</type>
+          <defname>P0</defname>
+        </param>
+        <param>
+          <type>QPointF</type>
+          <defname>P1</defname>
+        </param>
+        <param>
+          <type>QColor</type>
+          <defname>color</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="27" column="19" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsItemGroup *</type>
+        <definition>QGraphicsItemGroup * Painter::drawArrow</definition>
+        <argsstring>(Line, QColor)</argsstring>
+        <name>drawArrow</name>
+        <qualifiedname>Painter::drawArrow</qualifiedname>
+        <param>
+          <type><ref refid="class_line" kindref="compound">Line</ref></type>
+          <defname>L</defname>
+        </param>
+        <param>
+          <type>QColor</type>
+          <defname>color</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="28" column="24" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="50" bodyend="112"/>
+        <references refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" compoundref="painter_8cpp" startline="33" endline="35">drawLine</references>
+        <references refid="class_line_1a601918470f05fb3b4df6fda60ea63bb2" compoundref="physics__engine_8cpp" startline="283" endline="285">Line::dx</references>
+        <references refid="class_line_1abde9e6674a81864076bbd38c47074a75" compoundref="physics__engine_8cpp" startline="287" endline="289">Line::dy</references>
+        <references refid="class_line_1a85e8158ee051bb734722490819beaae1" compoundref="physics__engine_8h" startline="39">Line::equation_of_self</references>
+        <references refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" compoundref="physics__engine_8cpp" startline="297" endline="303">Line::find_equationOfSelf</references>
+        <references refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" compoundref="physics__engine_8h" startline="31">Line_equation::k</references>
+        <references refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" compoundref="physics__engine_8h" startline="38">Line::p0</references>
+        <references refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" compoundref="physics__engine_8h" startline="38">Line::p1</references>
+        <references refid="class_physics__engine_1ad3e01e7ae7817ad86e6484e9110218b9" compoundref="physics__engine_8h" startline="135">Physics_engine::PI</references>
+        <references refid="class_point_1acd364e308066f5997bce0546d82bf29f" compoundref="physics__engine_8cpp" startline="189" endline="195">Point::rotate</references>
+        <references refid="class_point_1aa74e550bb9dc0da0e1ffec0fbf097825" compoundref="physics__engine_8cpp" startline="211" endline="215">Point::stat_move</references>
+        <references refid="class_point_1a3dc1ddbe89354d0336a70a2ac9b53fbd" compoundref="physics__engine_8cpp" startline="221" endline="223">Point::toQPoint</references>
+        <referencedby refid="class_painter_1a3f48b1183dd1d68a7a83c8fd2d17c14b" compoundref="painter_8cpp" startline="47" endline="49">drawArrow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1a3f48b1183dd1d68a7a83c8fd2d17c14b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsItemGroup *</type>
+        <definition>QGraphicsItemGroup * Painter::drawArrow</definition>
+        <argsstring>(Line)</argsstring>
+        <name>drawArrow</name>
+        <qualifiedname>Painter::drawArrow</qualifiedname>
+        <param>
+          <type><ref refid="class_line" kindref="compound">Line</ref></type>
+          <defname>L0</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="29" column="24" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="47" bodyend="49"/>
+        <references refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">drawArrow</references>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1a5f9cb100b56f1010179cba0ccb0f0798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Painter::setupAnimations</definition>
+        <argsstring>(Point *ElP0, Point *VirP0)</argsstring>
+        <name>setupAnimations</name>
+        <qualifiedname>Painter::setupAnimations</qualifiedname>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref> *</type>
+          <declname>ElP0</declname>
+        </param>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref> *</type>
+          <declname>VirP0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="37" column="10" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="154" bodyend="165"/>
+        <references refid="class_painter_1a5380186a44e26f665d8af30325efcccd" compoundref="painter_8h" startline="32">animation_genuine</references>
+        <references refid="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" compoundref="painter_8h" startline="31">animation_timer</references>
+        <references refid="class_painter_1ac0920a270cd0cf379d0a4ee53b61137f" compoundref="painter_8h" startline="33">animation_virt</references>
+        <references refid="class_painter_1a55234592e4decf145be2971fa4d3325a" compoundref="painter_8cpp" startline="130" endline="132">drawElectron</references>
+        <references refid="class_painter_1a1c74e6555aa34d788a0a620f07fc2e69" compoundref="painter_8cpp" startline="134" endline="136">drawVirt</references>
+        <references refid="class_painter_1af24d488ff401cb1a0a2d4a37492a06bc" compoundref="painter_8cpp" startline="173" endline="177">init_timer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1af24d488ff401cb1a0a2d4a37492a06bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Painter::init_timer</definition>
+        <argsstring>()</argsstring>
+        <name>init_timer</name>
+        <qualifiedname>Painter::init_timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="40" column="10" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="173" bodyend="177"/>
+        <references refid="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" compoundref="painter_8h" startline="31">animation_timer</references>
+        <references refid="class_painter_1a9143ca2b5047a9815abd26ac55b25b09" compoundref="painter_8cpp" startline="167" endline="171">stop_timer</references>
+        <referencedby refid="class_painter_1a5f9cb100b56f1010179cba0ccb0f0798" compoundref="painter_8cpp" startline="154" endline="165">setupAnimations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1a9143ca2b5047a9815abd26ac55b25b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Painter::stop_timer</definition>
+        <argsstring>()</argsstring>
+        <name>stop_timer</name>
+        <qualifiedname>Painter::stop_timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="41" column="10" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="167" bodyend="171"/>
+        <references refid="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" compoundref="painter_8h" startline="31">animation_timer</references>
+        <referencedby refid="class_painter_1af24d488ff401cb1a0a2d4a37492a06bc" compoundref="painter_8cpp" startline="173" endline="177">init_timer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_painter_1adebbcc8f2c6ef0b46912c7b5f417cdcc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsItem *</type>
+        <definition>QGraphicsItem * Painter::drawPoly</definition>
+        <argsstring>(Polygon *, QBrush)</argsstring>
+        <name>drawPoly</name>
+        <qualifiedname>Painter::drawPoly</qualifiedname>
+        <param>
+          <type><ref refid="class_polygon" kindref="compound">Polygon</ref> *</type>
+          <defname>Poly</defname>
+        </param>
+        <param>
+          <type>QBrush</type>
+          <defname>_brush</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="52" column="19" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1aba0385e9285908fae00437fff4762805" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsItem *</type>
+        <definition>QGraphicsItem * Painter::drawPoly</definition>
+        <argsstring>(QPolygon *, QBrush)</argsstring>
+        <name>drawPoly</name>
+        <qualifiedname>Painter::drawPoly</qualifiedname>
+        <param>
+          <type>QPolygon *</type>
+          <defname>QPoly</defname>
+        </param>
+        <param>
+          <type>QBrush</type>
+          <defname>_brush</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="53" column="19" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_painter_1a77bacd964244b38bc35371e84cf476b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsEllipseItem *</type>
+        <definition>QGraphicsEllipseItem * Painter::drawCircle</definition>
+        <argsstring>(Point *, int, QBrush)</argsstring>
+        <name>drawCircle</name>
+        <qualifiedname>Painter::drawCircle</qualifiedname>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref> *</type>
+          <defname>P</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type>QBrush</type>
+          <defname>_brush</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/painter.h" line="54" column="26" bodyfile="/home/kirill/electrolemon/painter.cpp" bodystart="122" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Painter</label>
+        <link refid="class_painter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Painter</label>
+        <link refid="class_painter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/kirill/electrolemon/painter.h" line="12" column="1" bodyfile="/home/kirill/electrolemon/painter.h" bodystart="13" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_painter_1a5380186a44e26f665d8af30325efcccd" prot="public" virt="non-virtual"><scope>Painter</scope><name>animation_genuine</name></member>
+      <member refid="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" prot="public" virt="non-virtual"><scope>Painter</scope><name>animation_timer</name></member>
+      <member refid="class_painter_1ac0920a270cd0cf379d0a4ee53b61137f" prot="public" virt="non-virtual"><scope>Painter</scope><name>animation_virt</name></member>
+      <member refid="class_painter_1a2dd77da1c8a8dc8f040bf9a9525f319d" prot="private" virt="non-virtual"><scope>Painter</scope><name>brush</name></member>
+      <member refid="class_painter_1a95e3b9cbe4d2b0bf2718fe6632018092" prot="private" virt="non-virtual"><scope>Painter</scope><name>canvas</name></member>
+      <member refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" prot="public" virt="non-virtual"><scope>Painter</scope><name>drawArrow</name></member>
+      <member refid="class_painter_1a3f48b1183dd1d68a7a83c8fd2d17c14b" prot="public" virt="non-virtual"><scope>Painter</scope><name>drawArrow</name></member>
+      <member refid="class_painter_1a77bacd964244b38bc35371e84cf476b5" prot="private" virt="non-virtual"><scope>Painter</scope><name>drawCircle</name></member>
+      <member refid="class_painter_1a55234592e4decf145be2971fa4d3325a" prot="public" virt="non-virtual"><scope>Painter</scope><name>drawElectron</name></member>
+      <member refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" prot="public" virt="non-virtual"><scope>Painter</scope><name>drawLine</name></member>
+      <member refid="class_painter_1a5611a5705c820e24bc2d5ee3589ad574" prot="public" virt="non-virtual"><scope>Painter</scope><name>drawLine</name></member>
+      <member refid="class_painter_1a6340d4d45585abc64f8cf50190084554" prot="public" virt="non-virtual"><scope>Painter</scope><name>drawLine</name></member>
+      <member refid="class_painter_1aa7810c70fbb1df121b5791eabac4eea2" prot="public" virt="non-virtual"><scope>Painter</scope><name>drawLine</name></member>
+      <member refid="class_painter_1adebbcc8f2c6ef0b46912c7b5f417cdcc" prot="private" virt="non-virtual"><scope>Painter</scope><name>drawPoly</name></member>
+      <member refid="class_painter_1aba0385e9285908fae00437fff4762805" prot="private" virt="non-virtual"><scope>Painter</scope><name>drawPoly</name></member>
+      <member refid="class_painter_1a487a624af9706236405295fde9c060a7" prot="public" virt="non-virtual"><scope>Painter</scope><name>drawSurface</name></member>
+      <member refid="class_painter_1a742c49bb37dd00766c5edfb5cb263477" prot="public" virt="non-virtual"><scope>Painter</scope><name>drawVector</name></member>
+      <member refid="class_painter_1a1c74e6555aa34d788a0a620f07fc2e69" prot="public" virt="non-virtual"><scope>Painter</scope><name>drawVirt</name></member>
+      <member refid="class_painter_1ab01456297851ae8f2e5221c11cbf3689" prot="private" virt="non-virtual"><scope>Painter</scope><name>frames</name></member>
+      <member refid="class_painter_1af24d488ff401cb1a0a2d4a37492a06bc" prot="public" virt="non-virtual"><scope>Painter</scope><name>init_timer</name></member>
+      <member refid="class_painter_1a32e59ad4d0e130f57c419bd9e9c84675" prot="public" virt="non-virtual"><scope>Painter</scope><name>Painter</name></member>
+      <member refid="class_painter_1aa02d19d9d05da7472bdcc516d429bcf9" prot="public" virt="non-virtual"><scope>Painter</scope><name>Painter</name></member>
+      <member refid="class_painter_1ac24cc2eb7e96436af0afd69acafcb40a" prot="private" virt="non-virtual"><scope>Painter</scope><name>pen</name></member>
+      <member refid="class_painter_1a5f9cb100b56f1010179cba0ccb0f0798" prot="public" virt="non-virtual"><scope>Painter</scope><name>setupAnimations</name></member>
+      <member refid="class_painter_1a9143ca2b5047a9815abd26ac55b25b09" prot="public" virt="non-virtual"><scope>Painter</scope><name>stop_timer</name></member>
+      <member refid="class_painter_1a5975275e10d270be3542d582468c2274" prot="private" virt="non-virtual"><scope>Painter</scope><name>total_animation_duration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

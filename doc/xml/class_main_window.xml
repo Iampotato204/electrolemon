@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_main_window" kind="class" language="C++" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="mainwindow_8h" local="no">mainwindow.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="public" static="no" mutable="no">
+        <type>Ui::MainWindow *</type>
+        <definition>Ui::MainWindow* MainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>MainWindow::ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/mainwindow.h" line="17" column="20" bodyfile="/home/kirill/electrolemon/mainwindow.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a996c5a2b6f77944776856f08ec30858d" compoundref="mainwindow_8cpp" startline="7" endline="16">MainWindow</referencedby>
+        <referencedby refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" compoundref="mainwindow_8cpp" startline="18" endline="20">~MainWindow</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_window_1a996c5a2b6f77944776856f08ec30858d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>MainWindow</name>
+        <qualifiedname>MainWindow::MainWindow</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/mainwindow.h" line="15" column="5" bodyfile="/home/kirill/electrolemon/mainwindow.cpp" bodystart="7" bodyend="16"/>
+        <references refid="class_main_window_1a35466a70ed47252a0191168126a352a5" compoundref="mainwindow_8h" startline="17">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <qualifiedname>MainWindow::~MainWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/mainwindow.h" line="16" column="5" bodyfile="/home/kirill/electrolemon/mainwindow.cpp" bodystart="18" bodyend="20"/>
+        <references refid="class_main_window_1a35466a70ed47252a0191168126a352a5" compoundref="mainwindow_8h" startline="17">ui</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_main_window_1a0c9101652e99fc1630c4c75811f54dfa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::read_input_data</definition>
+        <argsstring>()</argsstring>
+        <name>read_input_data</name>
+        <qualifiedname>MainWindow::read_input_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if no data specified in field, defaults are applied </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/mainwindow.h" line="19" column="10" bodyfile="/home/kirill/electrolemon/mainwindow.cpp" bodystart="26" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_main_window_1a4de79c63c7fa0b8d7c468ac71f20be81" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_pushButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_clicked</name>
+        <qualifiedname>MainWindow::on_pushButton_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/mainwindow.h" line="21" column="10" bodyfile="/home/kirill/electrolemon/mainwindow.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ae0e46dc3da4ee07bf66e73e20300220c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_pushButton_2_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_2_clicked</name>
+        <qualifiedname>MainWindow::on_pushButton_2_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/mainwindow.h" line="22" column="10" bodyfile="/home/kirill/electrolemon/mainwindow.cpp" bodystart="42" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/kirill/electrolemon/mainwindow.h" line="11" column="1" bodyfile="/home/kirill/electrolemon/mainwindow.h" bodystart="11" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_main_window_1a996c5a2b6f77944776856f08ec30858d" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="class_main_window_1ae0e46dc3da4ee07bf66e73e20300220c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_pushButton_2_clicked</name></member>
+      <member refid="class_main_window_1a4de79c63c7fa0b8d7c468ac71f20be81" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_pushButton_clicked</name></member>
+      <member refid="class_main_window_1a0c9101652e99fc1630c4c75811f54dfa" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>read_input_data</name></member>
+      <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

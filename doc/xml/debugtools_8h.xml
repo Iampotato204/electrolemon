@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="debugtools_8h" kind="file" language="C++">
+    <compoundname>debugtools.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">sstream</includes>
+    <includedby refid="dialog_8cpp" local="yes">dialog.cpp</includedby>
+    <includedby refid="lemonade_8cpp" local="yes">lemonade.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">mainwindow.cpp</includedby>
+    <includedby refid="painter_8cpp" local="yes">painter.cpp</includedby>
+    <includedby refid="physics__engine_8cpp" local="yes">physics_engine.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>debugtools.h</label>
+        <link refid="debugtools_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>sstream</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>debugtools.h</label>
+        <link refid="debugtools_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dialog.cpp</label>
+        <link refid="dialog_8cpp"/>
+      </node>
+      <node id="3">
+        <label>lemonade.cpp</label>
+        <link refid="lemonade_8cpp"/>
+      </node>
+      <node id="4">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="6">
+        <label>painter.cpp</label>
+        <link refid="painter_8cpp"/>
+      </node>
+      <node id="7">
+        <label>physics_engine.cpp</label>
+        <link refid="physics__engine_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_debug_tools" prot="public">DebugTools</innerclass>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="6" refid="struct_debug_tools" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_debug_tools" kindref="compound">DebugTools</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="struct_debug_tools_1a18ef815a1af33c03d5377dc99b57648c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_debug_tools_1a18ef815a1af33c03d5377dc99b57648c" kindref="member">DebugTools</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="9" refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" kindref="member">strMsgInline</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>data){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;data;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12" refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" kindref="member">strMsg</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>data){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;data&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15" refid="struct_debug_tools_1af1aea84fac2252882572fd442a1c19b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_debug_tools_1af1aea84fac2252882572fd442a1c19b0" kindref="member">intMsg</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;val&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18" refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" kindref="member">doubMsg</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ostringstream<sp/>msg;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//msg&lt;&lt;val;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this-&gt;strMsg(msg.str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;val&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24" refid="struct_debug_tools_1a8643ae9a3f155fcd6b0a3405b66fe04e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_debug_tools_1a8643ae9a3f155fcd6b0a3405b66fe04e" kindref="member">boolMsg</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>expr){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>expr==1?</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">&lt;&lt;endl:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">#ifndef<sp/>DEBUGTOOLS_H</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">#define<sp/>DEBUGTOOLS_H</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">#include<sp/>&lt;string&gt;</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment">class<sp/>DebugTools</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">public:</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>DebugTools();</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>void<sp/>message(std::string<sp/>data);</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>void<sp/>message(int<sp/>val);</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>void<sp/>message(bool<sp/>expr);</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment">#endif<sp/>//<sp/>DEBUGTOOLS_H</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/kirill/electrolemon/debugtools.h"/>
+  </compounddef>
+</doxygen>

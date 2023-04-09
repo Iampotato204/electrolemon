@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_line__equation" kind="class" language="C++" prot="public">
+    <compoundname>Line_equation</compoundname>
+    <includes refid="physics__engine_8h" local="no">physics_engine.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Line_equation::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <qualifiedname>Line_equation::k</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="31" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">Painter::drawArrow</referencedby>
+        <referencedby refid="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" compoundref="physics__engine_8cpp" startline="63" endline="73">Physics_engine::find_base_of_perpendicular</referencedby>
+        <referencedby refid="class_line__equation_1ab4fd48825d2af62859ff5c374db7c123" compoundref="physics__engine_8cpp" startline="230" endline="233">Line_equation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_line__equation_1af3b42994128dd31a5c7b123df91563a3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Line_equation::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>Line_equation::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="32" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" compoundref="physics__engine_8cpp" startline="63" endline="73">Physics_engine::find_base_of_perpendicular</referencedby>
+        <referencedby refid="class_line__equation_1ab4fd48825d2af62859ff5c374db7c123" compoundref="physics__engine_8cpp" startline="230" endline="233">Line_equation</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_line__equation_1ab4fd48825d2af62859ff5c374db7c123" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Line_equation::Line_equation</definition>
+        <argsstring>()</argsstring>
+        <name>Line_equation</name>
+        <qualifiedname>Line_equation::Line_equation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="29" column="5" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="230" bodyend="233"/>
+        <references refid="class_line__equation_1af3b42994128dd31a5c7b123df91563a3" compoundref="physics__engine_8h" startline="32">b</references>
+        <references refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" compoundref="physics__engine_8h" startline="31">k</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line__equation_1a086ea79415f717a4af28346559dd950c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Line_equation::Line_equation</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>Line_equation</name>
+        <qualifiedname>Line_equation::Line_equation</qualifiedname>
+        <param>
+          <type>double</type>
+          <defname>_k</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>_b</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="30" column="5" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="235" bodyend="238"/>
+        <references refid="class_line__equation_1af3b42994128dd31a5c7b123df91563a3" compoundref="physics__engine_8h" startline="32">b</references>
+        <references refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" compoundref="physics__engine_8h" startline="31">k</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kirill/electrolemon/physics_engine.h" line="27" column="1" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="27" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_line__equation_1af3b42994128dd31a5c7b123df91563a3" prot="public" virt="non-virtual"><scope>Line_equation</scope><name>b</name></member>
+      <member refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" prot="public" virt="non-virtual"><scope>Line_equation</scope><name>k</name></member>
+      <member refid="class_line__equation_1ab4fd48825d2af62859ff5c374db7c123" prot="public" virt="non-virtual"><scope>Line_equation</scope><name>Line_equation</name></member>
+      <member refid="class_line__equation_1a086ea79415f717a4af28346559dd950c" prot="public" virt="non-virtual"><scope>Line_equation</scope><name>Line_equation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

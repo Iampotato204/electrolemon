@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="painter_8cpp" kind="file" language="C++">
+    <compoundname>painter.cpp</compoundname>
+    <includes local="no">QGraphicsScene</includes>
+    <includes local="no">QGraphicsItem</includes>
+    <includes local="no">QGraphicsPolygonItem</includes>
+    <includes local="no">QGraphicsEllipseItem</includes>
+    <includes local="no">QGraphicsItemAnimation</includes>
+    <includes local="no">QPointF</includes>
+    <includes local="no">QTimeLine</includes>
+    <includes local="no">QTransform</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">vector</includes>
+    <includes refid="debugtools_8h" local="yes">debugtools.h</includes>
+    <includes refid="lemonade_8h" local="yes">lemonade.h</includes>
+    <includes refid="painter_8h" local="yes">painter.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>debugtools.h</label>
+        <link refid="debugtools_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lemonade.h</label>
+        <link refid="lemonade_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>painter.cpp</label>
+        <link refid="painter_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>painter.h</label>
+        <link refid="painter_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>physics_engine.h</label>
+        <link refid="physics__engine_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>QColor</label>
+      </node>
+      <node id="5">
+        <label>QGraphicsEllipseItem</label>
+      </node>
+      <node id="3">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="6">
+        <label>QGraphicsItemAnimation</label>
+      </node>
+      <node id="4">
+        <label>QGraphicsPolygonItem</label>
+      </node>
+      <node id="2">
+        <label>QGraphicsScene</label>
+      </node>
+      <node id="23">
+        <label>QLineF</label>
+      </node>
+      <node id="19">
+        <label>QObject</label>
+      </node>
+      <node id="20">
+        <label>QPoint</label>
+      </node>
+      <node id="7">
+        <label>QPointF</label>
+      </node>
+      <node id="22">
+        <label>QPolygonF</label>
+      </node>
+      <node id="8">
+        <label>QTimeLine</label>
+      </node>
+      <node id="9">
+        <label>QTransform</label>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>math.h</label>
+      </node>
+      <node id="15">
+        <label>sstream</label>
+      </node>
+      <node id="14">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;QGraphicsScene&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGraphicsItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGraphicsPolygonItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGraphicsEllipseItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGraphicsItemAnimation&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPointF&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimeLine&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTransform&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="debugtools_8h" kindref="compound">debugtools.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lemonade_8h" kindref="compound">lemonade.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="painter_8h" kindref="compound">painter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_painter_1a32e59ad4d0e130f57c419bd9e9c84675" refkind="member"><highlight class="normal"><ref refid="class_painter_1a32e59ad4d0e130f57c419bd9e9c84675" kindref="member">Painter::Painter</ref>(){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_debug_tools" kindref="compound">DebugTools</ref>().<ref refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" kindref="member">strMsg</ref>(</highlight><highlight class="stringliteral">&quot;ERROR:<sp/>canvas<sp/>not<sp/>initialized!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_painter_1aa02d19d9d05da7472bdcc516d429bcf9" refkind="member"><highlight class="normal"><ref refid="class_painter_1a32e59ad4d0e130f57c419bd9e9c84675" kindref="member">Painter::Painter</ref>(QGraphicsScene<sp/>*scene,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_total_animation_duration,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_frames,<sp/>QBrush<sp/>qbrush,<sp/>QPen<sp/>qpen){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;brush=qbrush;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;pen=qpen;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;canvas=scene;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;total_animation_duration=_total_animation_duration;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;frames=_frames;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*this-&gt;electron=new<sp/>QGraphicsEllipseItem();</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>std::cout&lt;&lt;electron-&gt;x()&lt;&lt;electron-&gt;y()&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/>QTimeLine<sp/>*timer<sp/>=<sp/>new<sp/>QTimeLine(300);</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>timer-&gt;setFrameRange(0,<sp/>100);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" refkind="member"><highlight class="normal">QGraphicsItem*<sp/><ref refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" kindref="member">Painter::drawLine</ref>(<ref refid="class_line" kindref="compound">Line</ref><sp/>L){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" kindref="member">drawLine</ref>(L,<sp/>QColor(</highlight><highlight class="stringliteral">&quot;#000000&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36" refid="class_painter_1a5611a5705c820e24bc2d5ee3589ad574" refkind="member"><highlight class="normal">QGraphicsItem*<sp/><ref refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" kindref="member">Painter::drawLine</ref>(<ref refid="class_line" kindref="compound">Line</ref><sp/>L,<sp/>QColor<sp/>color){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(QGraphicsItem*)(this-&gt;canvas-&gt;addLine(L.<ref refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" kindref="member">x0</ref>(),<sp/>L.<ref refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" kindref="member">y0</ref>(),<sp/>L.<ref refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" kindref="member">x1</ref>(),<sp/>L.<ref refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" kindref="member">y1</ref>(),<sp/>color));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_painter_1a6340d4d45585abc64f8cf50190084554" refkind="member"><highlight class="normal">QGraphicsItem*<sp/><ref refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" kindref="member">Painter::drawLine</ref>(QPointF<sp/>P0,<sp/>QPointF<sp/>P1){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" kindref="member">drawLine</ref>(P0,<sp/>P1,<sp/>QColor(</highlight><highlight class="stringliteral">&quot;#000000&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43" refid="class_painter_1aa7810c70fbb1df121b5791eabac4eea2" refkind="member"><highlight class="normal">QGraphicsItem*<sp/><ref refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" kindref="member">Painter::drawLine</ref>(QPointF<sp/>P0,<sp/>QPointF<sp/>P1,<sp/>QColor<sp/>color){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(QGraphicsItem*)(this-&gt;canvas-&gt;addLine(P0.x(),<sp/>P0.y(),<sp/>P1.x(),<sp/>P1.y(),<sp/>color));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_painter_1a3f48b1183dd1d68a7a83c8fd2d17c14b" refkind="member"><highlight class="normal">QGraphicsItemGroup*<sp/><ref refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" kindref="member">Painter::drawArrow</ref>(<ref refid="class_line" kindref="compound">Line</ref><sp/>L0){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" kindref="member">Painter::drawArrow</ref>(L0,<sp/>QColor(</highlight><highlight class="stringliteral">&quot;#000000&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50" refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" refkind="member"><highlight class="normal">QGraphicsItemGroup*<sp/><ref refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" kindref="member">Painter::drawArrow</ref>(<ref refid="class_line" kindref="compound">Line</ref><sp/>L,<sp/>QColor<sp/>color){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>L.<ref refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" kindref="member">find_equationOfSelf</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>_k<sp/>=<sp/>&amp;(L.<ref refid="class_line_1a85e8158ee051bb734722490819beaae1" kindref="member">equation_of_self</ref>.<ref refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" kindref="member">k</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARROW_HALF_WIDTH=4,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARROW_HEIGTH=16;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*_dx*_dy&lt;0?</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-Physics_engine::PI/2<sp/>-<sp/>atan(*_k):</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Physics_engine::PI/2<sp/>-<sp/>atan(*_k);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p0=&amp;L.<ref refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" kindref="member">p0</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p1=&amp;L.<ref refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" kindref="member">p1</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aH_dx=</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARROW_HEIGTH/</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sqrt<sp/>((*_k)*(*_k)<sp/>+<sp/>1),</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aH_dy=aH_dx*(*_k),</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_dx=L.<ref refid="class_line_1a601918470f05fb3b4df6fda60ea63bb2" kindref="member">dx</ref>(),</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_dy=L.<ref refid="class_line_1abde9e6674a81864076bbd38c47074a75" kindref="member">dy</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>move_dx=</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_dx&gt;0?</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_dx-aH_dx:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_dx+aH_dx,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>move_dy=</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_dx&gt;0?</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-l_dy+aH_dy:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-l_dy-aH_dy,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>angle=l_dx*l_dy&lt;0?</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_physics__engine_1ad3e01e7ae7817ad86e6484e9110218b9" kindref="member">Physics_engine::PI</ref>/2<sp/>+<sp/>atan(*_k):</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<ref refid="class_physics__engine_1ad3e01e7ae7817ad86e6484e9110218b9" kindref="member">Physics_engine::PI</ref>/2<sp/>+<sp/>atan(*_k);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>QPolygon<sp/>arrowHead(</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QVector{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPoint(-ARROW_HALF_WIDTH,<sp/>0),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPoint(0,<sp/>-ARROW_HEIGTH),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPoint(<sp/>ARROW_HALF_WIDTH,<sp/>0),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPoint(-ARROW_HALF_WIDTH,<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref><sp/>arrowHead[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref>(-ARROW_HALF_WIDTH,<sp/>0).<ref refid="class_point_1acd364e308066f5997bce0546d82bf29f" kindref="member">rotate</ref>(p0,<sp/>angle).<ref refid="class_point_1aa74e550bb9dc0da0e1ffec0fbf097825" kindref="member">stat_move</ref>(move_dx,<sp/>move_dy),</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref>(0,<sp/>-ARROW_HEIGTH).<ref refid="class_point_1acd364e308066f5997bce0546d82bf29f" kindref="member">rotate</ref>(p0,<sp/>angle).<ref refid="class_point_1aa74e550bb9dc0da0e1ffec0fbf097825" kindref="member">stat_move</ref>(move_dx,<sp/>move_dy),</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref>(<sp/>ARROW_HALF_WIDTH,<sp/>0).<ref refid="class_point_1acd364e308066f5997bce0546d82bf29f" kindref="member">rotate</ref>(p0,<sp/>angle).<ref refid="class_point_1aa74e550bb9dc0da0e1ffec0fbf097825" kindref="member">stat_move</ref>(move_dx,<sp/>move_dy)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>QPolygon<sp/>arrowHead_moved(</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QVector&lt;QPoint&gt;{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arrowHead[0].<ref refid="class_point_1a3dc1ddbe89354d0336a70a2ac9b53fbd" kindref="member">toQPoint</ref>(),</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arrowHead[1].toQPoint(),</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arrowHead[2].toQPoint(),</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arrowHead[0].toQPoint()</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>canvas-&gt;createItemGroup(</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QList&lt;QGraphicsItem*&gt;{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" kindref="member">drawLine</ref>(L),</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;drawPoly(&amp;arrowHead_moved,<sp/>QBrush(color))</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">QGraphicsItem*<sp/>Painter::drawPoly(<ref refid="class_polygon" kindref="compound">Polygon</ref>*<sp/>Poly,<sp/>QBrush<sp/>_brush){</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(QGraphicsItem*)(this-&gt;canvas-&gt;addPolygon(Poly-&gt;<ref refid="class_polygon_1a7e0d17eb79c5ff1e9ea310cb6e748b14" kindref="member">to_qpoly</ref>(),<sp/>this-&gt;pen,<sp/>_brush));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">QGraphicsItem*<sp/>Painter::drawPoly(QPolygon*<sp/>QPoly,<sp/>QBrush<sp/>_brush){</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(QGraphicsItem*)(this-&gt;canvas-&gt;addPolygon(*QPoly,<sp/>this-&gt;pen,<sp/>_brush));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">QGraphicsEllipseItem*<sp/>Painter::drawCircle(<ref refid="class_point" kindref="compound">Point</ref>*<sp/>P,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,<sp/>QBrush<sp/>_brush){</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;canvas-&gt;addEllipse(P-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>-radius,<sp/>P-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>-radius,<sp/>radius*2,<sp/>radius*2,this-&gt;pen,<sp/>_brush);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="class_painter_1a487a624af9706236405295fde9c060a7" refkind="member"><highlight class="normal">QGraphicsItem*<sp/><ref refid="class_painter_1a487a624af9706236405295fde9c060a7" kindref="member">Painter::drawSurface</ref>(<ref refid="class_polygon" kindref="compound">Polygon</ref>*<sp/>surface){</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;drawPoly(surface,<sp/>QBrush(QColor(</highlight><highlight class="stringliteral">&quot;#B9FFD1&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="class_painter_1a55234592e4decf145be2971fa4d3325a" refkind="member"><highlight class="normal">QGraphicsEllipseItem*<sp/><ref refid="class_painter_1a55234592e4decf145be2971fa4d3325a" kindref="member">Painter::drawElectron</ref>(<ref refid="class_point" kindref="compound">Point</ref>*<sp/>electron){</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;drawCircle(electron,<sp/>5,<sp/>QBrush(QColor(</highlight><highlight class="stringliteral">&quot;#FBFB3F&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="class_painter_1a1c74e6555aa34d788a0a620f07fc2e69" refkind="member"><highlight class="normal">QGraphicsEllipseItem*<sp/><ref refid="class_painter_1a1c74e6555aa34d788a0a620f07fc2e69" kindref="member">Painter::drawVirt</ref>(<ref refid="class_point" kindref="compound">Point</ref>*<sp/>virt){</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;drawCircle(virt,<sp/>5,<sp/>QBrush(QColor(</highlight><highlight class="stringliteral">&quot;#FFB9E7&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="class_painter_1a742c49bb37dd00766c5edfb5cb263477" refkind="member"><highlight class="normal">QGraphicsItem*<sp/><ref refid="class_painter_1a742c49bb37dd00766c5edfb5cb263477" kindref="member">Painter::drawVector</ref>(<ref refid="class_line" kindref="compound">Line</ref><sp/>_vector){</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>QColor<sp/>activeBrush_color<sp/>=<sp/>this-&gt;brush.color();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;brush.setColor(QColor(</highlight><highlight class="stringliteral">&quot;#000000&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>QGraphicsItem*<sp/>returned=(QGraphicsItem*)(this-&gt;<ref refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" kindref="member">drawLine</ref>(_vector));</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//draw<sp/>triangle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;brush.setColor(activeBrush_color);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>returned;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">/*void<sp/>Painter::setupElectronAnimation(Point<sp/>*P0,<sp/>Point<sp/>*P1){</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/><sp/><sp/><sp/>this-&gt;animation_genuine<sp/>=<sp/>new<sp/>QGraphicsItemAnimation;</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/><sp/><sp/><sp/>this-&gt;animation_genuine-&gt;setItem(this-&gt;drawElectron(P0));</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/><sp/><sp/><sp/>this-&gt;init_timer();</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/><sp/><sp/><sp/>this-&gt;animation_genuine-&gt;setTimeLine(this-&gt;animation_timer);</highlight></codeline>
+<codeline lineno="152"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="class_painter_1a5f9cb100b56f1010179cba0ccb0f0798" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_painter_1a5f9cb100b56f1010179cba0ccb0f0798" kindref="member">Painter::setupAnimations</ref>(<ref refid="class_point" kindref="compound">Point</ref>*<sp/>ElP0,<sp/><ref refid="class_point" kindref="compound">Point</ref>*<sp/>VirP0){</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1ac0920a270cd0cf379d0a4ee53b61137f" kindref="member">animation_virt</ref><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGraphicsItemAnimation;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1a5380186a44e26f665d8af30325efcccd" kindref="member">animation_genuine</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGraphicsItemAnimation;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1ac0920a270cd0cf379d0a4ee53b61137f" kindref="member">animation_virt</ref><sp/><sp/><sp/>-&gt;setItem(this-&gt;<ref refid="class_painter_1a1c74e6555aa34d788a0a620f07fc2e69" kindref="member">drawVirt</ref>(VirP0));</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1a5380186a44e26f665d8af30325efcccd" kindref="member">animation_genuine</ref>-&gt;setItem(this-&gt;<ref refid="class_painter_1a55234592e4decf145be2971fa4d3325a" kindref="member">drawElectron</ref>(ElP0));</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1af24d488ff401cb1a0a2d4a37492a06bc" kindref="member">init_timer</ref>();</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1ac0920a270cd0cf379d0a4ee53b61137f" kindref="member">animation_virt</ref><sp/><sp/><sp/>-&gt;setTimeLine(this-&gt;<ref refid="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" kindref="member">animation_timer</ref>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1a5380186a44e26f665d8af30325efcccd" kindref="member">animation_genuine</ref>-&gt;setTimeLine(this-&gt;<ref refid="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" kindref="member">animation_timer</ref>);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="class_painter_1a9143ca2b5047a9815abd26ac55b25b09" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_painter_1a9143ca2b5047a9815abd26ac55b25b09" kindref="member">Painter::stop_timer</ref>(){</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;<ref refid="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" kindref="member">animation_timer</ref>){</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" kindref="member">animation_timer</ref>-&gt;stop();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="class_painter_1af24d488ff401cb1a0a2d4a37492a06bc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_painter_1af24d488ff401cb1a0a2d4a37492a06bc" kindref="member">Painter::init_timer</ref>(){</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1a9143ca2b5047a9815abd26ac55b25b09" kindref="member">stop_timer</ref>();</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" kindref="member">animation_timer</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTimeLine(this-&gt;total_animation_duration);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" kindref="member">animation_timer</ref>-&gt;setFrameRange(0,<sp/>this-&gt;frames);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"></highlight></codeline>
+<codeline lineno="181"><highlight class="comment">class<sp/>Base<sp/>{};</highlight></codeline>
+<codeline lineno="182"><highlight class="comment">class<sp/>Derived<sp/>:<sp/>public<sp/>Base<sp/>{};</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"></highlight></codeline>
+<codeline lineno="184"><highlight class="comment">Derived<sp/>d;</highlight></codeline>
+<codeline lineno="185"><highlight class="comment">Base<sp/>b<sp/>=<sp/>d;</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"></highlight></codeline>
+<codeline lineno="187"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/kirill/electrolemon/painter.cpp"/>
+  </compounddef>
+</doxygen>

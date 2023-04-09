@@ -1,0 +1,15 @@
+<map id="Painter::drawArrow" name="Painter::drawArrow">
+<area shape="rect" id="node1" title=" " alt="" coords="5,181,152,208"/>
+<area shape="rect" id="node2" href="$class_painter.html#acf76ac2a782c9a105b8aebc56d735960" title=" " alt="" coords="226,29,361,56"/>
+<area shape="rect" id="node3" href="$class_line.html#a601918470f05fb3b4df6fda60ea63bb2" title=" " alt="" coords="257,80,330,107"/>
+<area shape="rect" id="node6" href="$class_line.html#abde9e6674a81864076bbd38c47074a75" title=" " alt="" coords="257,181,330,208"/>
+<area shape="rect" id="node9" href="$class_line.html#aba8be5f5dab07d51390f782e088acc8c" title=" " alt="" coords="200,131,387,157"/>
+<area shape="rect" id="node10" href="$class_point.html#acd364e308066f5997bce0546d82bf29f" title=" " alt="" coords="242,232,345,259"/>
+<area shape="rect" id="node12" href="$class_point.html#aa74e550bb9dc0da0e1ffec0fbf097825" title=" " alt="" coords="227,283,359,309"/>
+<area shape="rect" id="node13" href="$class_point.html#a3dc1ddbe89354d0336a70a2ac9b53fbd" title=" " alt="" coords="234,333,353,360"/>
+<area shape="rect" id="node4" href="$class_line.html#a558c5b1b10035aab9f8280d2c0a85762" title=" " alt="" coords="446,80,519,107"/>
+<area shape="rect" id="node5" href="$class_line.html#a0cedabb654f8f7c5f3494a5d1ae2cc20" title=" " alt="" coords="446,29,519,56"/>
+<area shape="rect" id="node7" href="$class_line.html#a1c667162027e53277ea2c617c1dc02b5" title=" " alt="" coords="446,181,519,208"/>
+<area shape="rect" id="node8" href="$class_line.html#ae56a4221e8198da95cee9127842b0b7b" title=" " alt="" coords="446,131,519,157"/>
+<area shape="rect" id="node11" href="$class_point.html#ad92f2337b839a94ce97dcdb439b4325a" title=" " alt="" coords="435,232,531,259"/>
+</map>

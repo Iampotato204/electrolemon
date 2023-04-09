@@ -1,0 +1,578 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_line" kind="class" language="C++" prot="public">
+    <compoundname>Line</compoundname>
+    <includes refid="physics__engine_8h" local="no">physics_engine.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_line_1a0c8832b19491c1157a55e81f92f48a44" prot="public" static="no" mutable="no">
+        <type><ref refid="class_point" kindref="compound">Point</ref></type>
+        <definition>Point Line::p0</definition>
+        <argsstring></argsstring>
+        <name>p0</name>
+        <qualifiedname>Line::p0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="38" column="11" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">Painter::drawArrow</referencedby>
+        <referencedby refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" compoundref="physics__engine_8cpp" startline="247" endline="250">Line</referencedby>
+        <referencedby refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" compoundref="physics__engine_8cpp" startline="267" endline="269">x0</referencedby>
+        <referencedby refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" compoundref="physics__engine_8cpp" startline="271" endline="273">y0</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" prot="public" static="no" mutable="no">
+        <type><ref refid="class_point" kindref="compound">Point</ref></type>
+        <definition>Point Line::p1</definition>
+        <argsstring></argsstring>
+        <name>p1</name>
+        <qualifiedname>Line::p1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="38" column="14" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">Painter::drawArrow</referencedby>
+        <referencedby refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" compoundref="physics__engine_8cpp" startline="247" endline="250">Line</referencedby>
+        <referencedby refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" compoundref="physics__engine_8cpp" startline="275" endline="277">x1</referencedby>
+        <referencedby refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" compoundref="physics__engine_8cpp" startline="279" endline="281">y1</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1a85e8158ee051bb734722490819beaae1" prot="public" static="no" mutable="no">
+        <type><ref refid="class_line__equation" kindref="compound">Line_equation</ref></type>
+        <definition>Line_equation Line::equation_of_self</definition>
+        <argsstring></argsstring>
+        <name>equation_of_self</name>
+        <qualifiedname>Line::equation_of_self</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="39" column="19" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">Painter::drawArrow</referencedby>
+        <referencedby refid="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" compoundref="physics__engine_8cpp" startline="63" endline="73">Physics_engine::find_base_of_perpendicular</referencedby>
+        <referencedby refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" compoundref="physics__engine_8cpp" startline="297" endline="303">find_equationOfSelf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1acf13ed04c74c28475f92b2e981ec4150" prot="public" static="no" mutable="no">
+        <type><ref refid="class_line__equation" kindref="compound">Line_equation</ref></type>
+        <definition>Line_equation Line::equation_of_perpendicular</definition>
+        <argsstring></argsstring>
+        <name>equation_of_perpendicular</name>
+        <qualifiedname>Line::equation_of_perpendicular</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="40" column="19" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" compoundref="physics__engine_8cpp" startline="63" endline="73">Physics_engine::find_base_of_perpendicular</referencedby>
+        <referencedby refid="class_line_1ad4c712851de289ce1c277e35e561b452" compoundref="physics__engine_8cpp" startline="305" endline="312">find_equationOfPerpendicular</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Line::Line</definition>
+        <argsstring>()</argsstring>
+        <name>Line</name>
+        <qualifiedname>Line::Line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="42" column="5" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="247" bodyend="250"/>
+        <references refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" compoundref="physics__engine_8h" startline="38">p0</references>
+        <references refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" compoundref="physics__engine_8h" startline="38">p1</references>
+        <referencedby refid="class_line_1aafde7d6efee1b66a5edf861ae389722e" compoundref="physics__engine_8h" startline="70" endline="76">extendedCopy</referencedby>
+        <referencedby refid="class_line_1a2d3081c2ab8ba0cd9a353ea40e24e1f9" compoundref="physics__engine_8h" startline="78" endline="84">movedCopy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1af9742c860cc6727ed40e7f6304a66d79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Line::Line</definition>
+        <argsstring>(Point _p0, Point _p1)</argsstring>
+        <name>Line</name>
+        <qualifiedname>Line::Line</qualifiedname>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <declname>_p0</declname>
+        </param>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <declname>_p1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="43" column="5" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="252" bodyend="255"/>
+        <references refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" compoundref="physics__engine_8h" startline="38">p0</references>
+        <references refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" compoundref="physics__engine_8h" startline="38">p1</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a84514c45e4442aca81f6823008931080" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Line::Line</definition>
+        <argsstring>(int _x0, int _y0, int _x1, int _y1)</argsstring>
+        <name>Line</name>
+        <qualifiedname>Line::Line</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>_x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_y0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_y1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="44" column="5" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="257" bodyend="260"/>
+        <references refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" compoundref="physics__engine_8h" startline="38">p0</references>
+        <references refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" compoundref="physics__engine_8h" startline="38">p1</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a842b9f079379ba02937427b224b74938" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Line::Line</definition>
+        <argsstring>(double _x0, double _y0, double _x1, double _y1)</argsstring>
+        <name>Line</name>
+        <qualifiedname>Line::Line</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>_x0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>_y0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>_x1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>_y1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="45" column="5" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="262" bodyend="265"/>
+        <references refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" compoundref="physics__engine_8h" startline="38">p0</references>
+        <references refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" compoundref="physics__engine_8h" startline="38">p1</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a6213a45b6df0eea9d0fdfff6d8c814c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QLineF</type>
+        <definition>QLineF Line::to_qline</definition>
+        <argsstring>()</argsstring>
+        <name>to_qline</name>
+        <qualifiedname>Line::to_qline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="46" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="314" bodyend="316"/>
+        <references refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" compoundref="physics__engine_8cpp" startline="267" endline="269">x0</references>
+        <references refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" compoundref="physics__engine_8cpp" startline="275" endline="277">x1</references>
+        <references refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" compoundref="physics__engine_8cpp" startline="271" endline="273">y0</references>
+        <references refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" compoundref="physics__engine_8cpp" startline="279" endline="281">y1</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a868f647b3eb4467c4cce5616fb082d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::find_equations</definition>
+        <argsstring>(Point _electron)</argsstring>
+        <name>find_equations</name>
+        <qualifiedname>Line::find_equations</qualifiedname>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <declname>_electron</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="47" column="10" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="292" bodyend="295"/>
+        <references refid="class_line_1ad4c712851de289ce1c277e35e561b452" compoundref="physics__engine_8cpp" startline="305" endline="312">find_equationOfPerpendicular</references>
+        <references refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" compoundref="physics__engine_8cpp" startline="297" endline="303">find_equationOfSelf</references>
+        <referencedby refid="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" compoundref="physics__engine_8cpp" startline="63" endline="73">Physics_engine::find_base_of_perpendicular</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1aba8be5f5dab07d51390f782e088acc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::find_equationOfSelf</definition>
+        <argsstring>()</argsstring>
+        <name>find_equationOfSelf</name>
+        <qualifiedname>Line::find_equationOfSelf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="48" column="10" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="297" bodyend="303"/>
+        <references refid="class_line_1a85e8158ee051bb734722490819beaae1" compoundref="physics__engine_8h" startline="39">equation_of_self</references>
+        <references refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" compoundref="physics__engine_8cpp" startline="267" endline="269">x0</references>
+        <references refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" compoundref="physics__engine_8cpp" startline="275" endline="277">x1</references>
+        <references refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" compoundref="physics__engine_8cpp" startline="271" endline="273">y0</references>
+        <references refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" compoundref="physics__engine_8cpp" startline="279" endline="281">y1</references>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">Painter::drawArrow</referencedby>
+        <referencedby refid="class_line_1a868f647b3eb4467c4cce5616fb082d68" compoundref="physics__engine_8cpp" startline="292" endline="295">find_equations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ad4c712851de289ce1c277e35e561b452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::find_equationOfPerpendicular</definition>
+        <argsstring>(Point _electron)</argsstring>
+        <name>find_equationOfPerpendicular</name>
+        <qualifiedname>Line::find_equationOfPerpendicular</qualifiedname>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <declname>_electron</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="49" column="10" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="305" bodyend="312"/>
+        <references refid="class_line_1acf13ed04c74c28475f92b2e981ec4150" compoundref="physics__engine_8h" startline="40">equation_of_perpendicular</references>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">Point::x</references>
+        <references refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" compoundref="physics__engine_8cpp" startline="267" endline="269">x0</references>
+        <references refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" compoundref="physics__engine_8cpp" startline="275" endline="277">x1</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">Point::y</references>
+        <references refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" compoundref="physics__engine_8cpp" startline="271" endline="273">y0</references>
+        <references refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" compoundref="physics__engine_8cpp" startline="279" endline="281">y1</references>
+        <referencedby refid="class_line_1a868f647b3eb4467c4cce5616fb082d68" compoundref="physics__engine_8cpp" startline="292" endline="295">find_equations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ab655933c08ce8e2ba3786273d9e349c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <qualifiedname>Line::length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="50" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="318" bodyend="320"/>
+        <references refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" compoundref="physics__engine_8cpp" startline="267" endline="269">x0</references>
+        <references refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" compoundref="physics__engine_8cpp" startline="275" endline="277">x1</references>
+        <references refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" compoundref="physics__engine_8cpp" startline="271" endline="273">y0</references>
+        <references refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" compoundref="physics__engine_8cpp" startline="279" endline="281">y1</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a072032f150b7e9ca22127973b9f1824a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::square_of_length</definition>
+        <argsstring>()</argsstring>
+        <name>square_of_length</name>
+        <qualifiedname>Line::square_of_length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="51" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="322" bodyend="324"/>
+        <references refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" compoundref="physics__engine_8cpp" startline="267" endline="269">x0</references>
+        <references refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" compoundref="physics__engine_8cpp" startline="275" endline="277">x1</references>
+        <references refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" compoundref="physics__engine_8cpp" startline="271" endline="273">y0</references>
+        <references refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" compoundref="physics__engine_8cpp" startline="279" endline="281">y1</references>
+        <referencedby refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" compoundref="physics__engine_8cpp" startline="22" endline="26">Physics_engine::get_acceleration_mantissa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a558c5b1b10035aab9f8280d2c0a85762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Line::x0</definition>
+        <argsstring>()</argsstring>
+        <name>x0</name>
+        <qualifiedname>Line::x0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="52" column="9" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="267" bodyend="269"/>
+        <references refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" compoundref="physics__engine_8h" startline="38">p0</references>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">Point::x</references>
+        <referencedby refid="class_painter_1a5611a5705c820e24bc2d5ee3589ad574" compoundref="painter_8cpp" startline="36" endline="38">Painter::drawLine</referencedby>
+        <referencedby refid="class_line_1a601918470f05fb3b4df6fda60ea63bb2" compoundref="physics__engine_8cpp" startline="283" endline="285">dx</referencedby>
+        <referencedby refid="class_line_1ad4c712851de289ce1c277e35e561b452" compoundref="physics__engine_8cpp" startline="305" endline="312">find_equationOfPerpendicular</referencedby>
+        <referencedby refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" compoundref="physics__engine_8cpp" startline="297" endline="303">find_equationOfSelf</referencedby>
+        <referencedby refid="class_line_1ab655933c08ce8e2ba3786273d9e349c4" compoundref="physics__engine_8cpp" startline="318" endline="320">length</referencedby>
+        <referencedby refid="class_line_1a072032f150b7e9ca22127973b9f1824a" compoundref="physics__engine_8cpp" startline="322" endline="324">square_of_length</referencedby>
+        <referencedby refid="class_line_1a6213a45b6df0eea9d0fdfff6d8c814c1" compoundref="physics__engine_8cpp" startline="314" endline="316">to_qline</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a1c667162027e53277ea2c617c1dc02b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Line::y0</definition>
+        <argsstring>()</argsstring>
+        <name>y0</name>
+        <qualifiedname>Line::y0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="53" column="9" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="271" bodyend="273"/>
+        <references refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" compoundref="physics__engine_8h" startline="38">p0</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">Point::y</references>
+        <referencedby refid="class_painter_1a5611a5705c820e24bc2d5ee3589ad574" compoundref="painter_8cpp" startline="36" endline="38">Painter::drawLine</referencedby>
+        <referencedby refid="class_line_1abde9e6674a81864076bbd38c47074a75" compoundref="physics__engine_8cpp" startline="287" endline="289">dy</referencedby>
+        <referencedby refid="class_line_1ad4c712851de289ce1c277e35e561b452" compoundref="physics__engine_8cpp" startline="305" endline="312">find_equationOfPerpendicular</referencedby>
+        <referencedby refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" compoundref="physics__engine_8cpp" startline="297" endline="303">find_equationOfSelf</referencedby>
+        <referencedby refid="class_line_1ab655933c08ce8e2ba3786273d9e349c4" compoundref="physics__engine_8cpp" startline="318" endline="320">length</referencedby>
+        <referencedby refid="class_line_1a072032f150b7e9ca22127973b9f1824a" compoundref="physics__engine_8cpp" startline="322" endline="324">square_of_length</referencedby>
+        <referencedby refid="class_line_1a6213a45b6df0eea9d0fdfff6d8c814c1" compoundref="physics__engine_8cpp" startline="314" endline="316">to_qline</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Line::x1</definition>
+        <argsstring>()</argsstring>
+        <name>x1</name>
+        <qualifiedname>Line::x1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="54" column="9" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="275" bodyend="277"/>
+        <references refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" compoundref="physics__engine_8h" startline="38">p1</references>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">Point::x</references>
+        <referencedby refid="class_painter_1a5611a5705c820e24bc2d5ee3589ad574" compoundref="painter_8cpp" startline="36" endline="38">Painter::drawLine</referencedby>
+        <referencedby refid="class_line_1a601918470f05fb3b4df6fda60ea63bb2" compoundref="physics__engine_8cpp" startline="283" endline="285">dx</referencedby>
+        <referencedby refid="class_line_1ad4c712851de289ce1c277e35e561b452" compoundref="physics__engine_8cpp" startline="305" endline="312">find_equationOfPerpendicular</referencedby>
+        <referencedby refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" compoundref="physics__engine_8cpp" startline="297" endline="303">find_equationOfSelf</referencedby>
+        <referencedby refid="class_line_1ab655933c08ce8e2ba3786273d9e349c4" compoundref="physics__engine_8cpp" startline="318" endline="320">length</referencedby>
+        <referencedby refid="class_line_1a072032f150b7e9ca22127973b9f1824a" compoundref="physics__engine_8cpp" startline="322" endline="324">square_of_length</referencedby>
+        <referencedby refid="class_line_1a6213a45b6df0eea9d0fdfff6d8c814c1" compoundref="physics__engine_8cpp" startline="314" endline="316">to_qline</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ae56a4221e8198da95cee9127842b0b7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Line::y1</definition>
+        <argsstring>()</argsstring>
+        <name>y1</name>
+        <qualifiedname>Line::y1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="55" column="9" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="279" bodyend="281"/>
+        <references refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" compoundref="physics__engine_8h" startline="38">p1</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">Point::y</references>
+        <referencedby refid="class_painter_1a5611a5705c820e24bc2d5ee3589ad574" compoundref="painter_8cpp" startline="36" endline="38">Painter::drawLine</referencedby>
+        <referencedby refid="class_line_1abde9e6674a81864076bbd38c47074a75" compoundref="physics__engine_8cpp" startline="287" endline="289">dy</referencedby>
+        <referencedby refid="class_line_1ad4c712851de289ce1c277e35e561b452" compoundref="physics__engine_8cpp" startline="305" endline="312">find_equationOfPerpendicular</referencedby>
+        <referencedby refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" compoundref="physics__engine_8cpp" startline="297" endline="303">find_equationOfSelf</referencedby>
+        <referencedby refid="class_line_1ab655933c08ce8e2ba3786273d9e349c4" compoundref="physics__engine_8cpp" startline="318" endline="320">length</referencedby>
+        <referencedby refid="class_line_1a072032f150b7e9ca22127973b9f1824a" compoundref="physics__engine_8cpp" startline="322" endline="324">square_of_length</referencedby>
+        <referencedby refid="class_line_1a6213a45b6df0eea9d0fdfff6d8c814c1" compoundref="physics__engine_8cpp" startline="314" endline="316">to_qline</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a601918470f05fb3b4df6fda60ea63bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Line::dx</definition>
+        <argsstring>()</argsstring>
+        <name>dx</name>
+        <qualifiedname>Line::dx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="57" column="9" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="283" bodyend="285"/>
+        <references refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" compoundref="physics__engine_8cpp" startline="267" endline="269">x0</references>
+        <references refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" compoundref="physics__engine_8cpp" startline="275" endline="277">x1</references>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">Painter::drawArrow</referencedby>
+        <referencedby refid="class_line_1a2d3081c2ab8ba0cd9a353ea40e24e1f9" compoundref="physics__engine_8h" startline="78" endline="84">movedCopy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1abde9e6674a81864076bbd38c47074a75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Line::dy</definition>
+        <argsstring>()</argsstring>
+        <name>dy</name>
+        <qualifiedname>Line::dy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="58" column="9" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="287" bodyend="289"/>
+        <references refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" compoundref="physics__engine_8cpp" startline="271" endline="273">y0</references>
+        <references refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" compoundref="physics__engine_8cpp" startline="279" endline="281">y1</references>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">Painter::drawArrow</referencedby>
+        <referencedby refid="class_line_1a2d3081c2ab8ba0cd9a353ea40e24e1f9" compoundref="physics__engine_8h" startline="78" endline="84">movedCopy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1aafde7d6efee1b66a5edf861ae389722e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_line" kindref="compound">Line</ref></type>
+        <definition>Line Line::extendedCopy</definition>
+        <argsstring>(int a)</argsstring>
+        <name>extendedCopy</name>
+        <qualifiedname>Line::extendedCopy</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="70" column="10" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="70" bodyend="76"/>
+        <references refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" compoundref="physics__engine_8cpp" startline="247" endline="250">Line</references>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">Point::x</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a2d3081c2ab8ba0cd9a353ea40e24e1f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_line" kindref="compound">Line</ref></type>
+        <definition>Line Line::movedCopy</definition>
+        <argsstring>(Line *vector)</argsstring>
+        <name>movedCopy</name>
+        <qualifiedname>Line::movedCopy</qualifiedname>
+        <param>
+          <type><ref refid="class_line" kindref="compound">Line</ref> *</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="78" column="10" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="78" bodyend="84"/>
+        <references refid="class_line_1a601918470f05fb3b4df6fda60ea63bb2" compoundref="physics__engine_8cpp" startline="283" endline="285">dx</references>
+        <references refid="class_line_1abde9e6674a81864076bbd38c47074a75" compoundref="physics__engine_8cpp" startline="287" endline="289">dy</references>
+        <references refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" compoundref="physics__engine_8cpp" startline="247" endline="250">Line</references>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">Point::x</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a1965a774ca2f52050bf7709d96466b2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_line" kindref="compound">Line</ref></type>
+        <definition>Line Line::movedCopy</definition>
+        <argsstring>(Line staticVector)</argsstring>
+        <name>movedCopy</name>
+        <qualifiedname>Line::movedCopy</qualifiedname>
+        <param>
+          <type><ref refid="class_line" kindref="compound">Line</ref></type>
+          <declname>staticVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="86" column="10" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="86" bodyend="92"/>
+        <references refid="class_line_1a601918470f05fb3b4df6fda60ea63bb2" compoundref="physics__engine_8cpp" startline="283" endline="285">dx</references>
+        <references refid="class_line_1abde9e6674a81864076bbd38c47074a75" compoundref="physics__engine_8cpp" startline="287" endline="289">dy</references>
+        <references refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" compoundref="physics__engine_8cpp" startline="247" endline="250">Line</references>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">Point::x</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_line_1a75392947251eb42c272c7e4da1839c00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Line &amp;L)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Line::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="class_line" kindref="compound">Line</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="60" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="60" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Line</label>
+        <link refid="class_line"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p0</edgelabel>
+          <edgelabel>p1</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>equation_of_perpendicular</edgelabel>
+          <edgelabel>equation_of_self</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Line_equation</label>
+        <link refid="class_line__equation"/>
+      </node>
+      <node id="2">
+        <label>Point</label>
+        <link refid="class_point"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/kirill/electrolemon/physics_engine.h" line="35" column="1" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="36" bodyend="93"/>
+    <listofallmembers>
+      <member refid="class_line_1a601918470f05fb3b4df6fda60ea63bb2" prot="public" virt="non-virtual"><scope>Line</scope><name>dx</name></member>
+      <member refid="class_line_1abde9e6674a81864076bbd38c47074a75" prot="public" virt="non-virtual"><scope>Line</scope><name>dy</name></member>
+      <member refid="class_line_1acf13ed04c74c28475f92b2e981ec4150" prot="public" virt="non-virtual"><scope>Line</scope><name>equation_of_perpendicular</name></member>
+      <member refid="class_line_1a85e8158ee051bb734722490819beaae1" prot="public" virt="non-virtual"><scope>Line</scope><name>equation_of_self</name></member>
+      <member refid="class_line_1aafde7d6efee1b66a5edf861ae389722e" prot="public" virt="non-virtual"><scope>Line</scope><name>extendedCopy</name></member>
+      <member refid="class_line_1ad4c712851de289ce1c277e35e561b452" prot="public" virt="non-virtual"><scope>Line</scope><name>find_equationOfPerpendicular</name></member>
+      <member refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" prot="public" virt="non-virtual"><scope>Line</scope><name>find_equationOfSelf</name></member>
+      <member refid="class_line_1a868f647b3eb4467c4cce5616fb082d68" prot="public" virt="non-virtual"><scope>Line</scope><name>find_equations</name></member>
+      <member refid="class_line_1ab655933c08ce8e2ba3786273d9e349c4" prot="public" virt="non-virtual"><scope>Line</scope><name>length</name></member>
+      <member refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" prot="public" virt="non-virtual"><scope>Line</scope><name>Line</name></member>
+      <member refid="class_line_1af9742c860cc6727ed40e7f6304a66d79" prot="public" virt="non-virtual"><scope>Line</scope><name>Line</name></member>
+      <member refid="class_line_1a84514c45e4442aca81f6823008931080" prot="public" virt="non-virtual"><scope>Line</scope><name>Line</name></member>
+      <member refid="class_line_1a842b9f079379ba02937427b224b74938" prot="public" virt="non-virtual"><scope>Line</scope><name>Line</name></member>
+      <member refid="class_line_1a2d3081c2ab8ba0cd9a353ea40e24e1f9" prot="public" virt="non-virtual"><scope>Line</scope><name>movedCopy</name></member>
+      <member refid="class_line_1a1965a774ca2f52050bf7709d96466b2b" prot="public" virt="non-virtual"><scope>Line</scope><name>movedCopy</name></member>
+      <member refid="class_line_1a75392947251eb42c272c7e4da1839c00" prot="public" virt="non-virtual"><scope>Line</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" prot="public" virt="non-virtual"><scope>Line</scope><name>p0</name></member>
+      <member refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" prot="public" virt="non-virtual"><scope>Line</scope><name>p1</name></member>
+      <member refid="class_line_1a072032f150b7e9ca22127973b9f1824a" prot="public" virt="non-virtual"><scope>Line</scope><name>square_of_length</name></member>
+      <member refid="class_line_1a6213a45b6df0eea9d0fdfff6d8c814c1" prot="public" virt="non-virtual"><scope>Line</scope><name>to_qline</name></member>
+      <member refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" prot="public" virt="non-virtual"><scope>Line</scope><name>x0</name></member>
+      <member refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" prot="public" virt="non-virtual"><scope>Line</scope><name>x1</name></member>
+      <member refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" prot="public" virt="non-virtual"><scope>Line</scope><name>y0</name></member>
+      <member refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" prot="public" virt="non-virtual"><scope>Line</scope><name>y1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

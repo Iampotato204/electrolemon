@@ -1,8 +1,13 @@
-<map id="/home/kirill/Desktop/cpp_projects/qt/electrolemon/main.cpp" name="/home/kirill/Desktop/cpp_projects/qt/electrolemon/main.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="147,5,361,61"/>
-<area shape="rect" id="node2" href="$mainwindow_8h.html" title=" " alt="" coords="5,109,121,136"/>
-<area shape="rect" id="node4" title=" " alt="" coords="145,109,251,136"/>
-<area shape="rect" id="node5" title=" " alt="" coords="274,109,349,136"/>
-<area shape="rect" id="node6" title=" " alt="" coords="373,109,469,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,184,121,211"/>
+<map id="main.cpp" name="main.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="368,5,450,32"/>
+<area shape="rect" id="node2" href="$debugtools_8h.html" title=" " alt="" coords="356,80,462,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="173,229,253,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="420,229,478,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="286,155,361,181"/>
+<area shape="rect" id="node6" href="$lemonade_8h.html" title=" " alt="" coords="164,155,262,181"/>
+<area shape="rect" id="node7" href="$mainwindow_8h.html" title=" " alt="" coords="114,80,230,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="538,80,643,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="666,80,741,107"/>
+<area shape="rect" id="node11" title=" " alt="" coords="766,80,863,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="23,155,139,181"/>
 </map>

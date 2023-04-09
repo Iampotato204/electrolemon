@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_preset" kind="class" language="C++" prot="public">
+    <compoundname>Preset</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_preset_1a05e9ac12938ace27ee55490659a57f9e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Preset::prebuilt_surface</definition>
+        <argsstring></argsstring>
+        <name>prebuilt_surface</name>
+        <qualifiedname>Preset::prebuilt_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.cpp" line="39" column="17" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_preset_1af779f83521f070aacf17a86454090b07" compoundref="dialog_8cpp" startline="34" endline="38">Preset</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_preset_1af779f83521f070aacf17a86454090b07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Preset::Preset</definition>
+        <argsstring>(std::vector&lt; int &gt; s, int fd, int fn)</argsstring>
+        <name>Preset</name>
+        <qualifiedname>Preset::Preset</qualifiedname>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/dialog.cpp" line="34" column="5" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="34" bodyend="38"/>
+        <references refid="lemonade_8cpp_1ae210f44407fdf7b1994c3be63ba3658b" compoundref="lemonade_8cpp" startline="22">animFrame_duration</references>
+        <references refid="lemonade_8cpp_1af84c9d43eb66f16a84f65f3af8ce5ace" compoundref="lemonade_8cpp" startline="23">animFrames</references>
+        <references refid="class_preset_1a05e9ac12938ace27ee55490659a57f9e" compoundref="dialog_8cpp" startline="39">prebuilt_surface</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kirill/electrolemon/dialog.cpp" line="32" column="1" bodyfile="/home/kirill/electrolemon/dialog.cpp" bodystart="32" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_preset_1a05e9ac12938ace27ee55490659a57f9e" prot="public" virt="non-virtual"><scope>Preset</scope><name>prebuilt_surface</name></member>
+      <member refid="class_preset_1af779f83521f070aacf17a86454090b07" prot="public" virt="non-virtual"><scope>Preset</scope><name>Preset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

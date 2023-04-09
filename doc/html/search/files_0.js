@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['mainwindow_2ecpp_1',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
-  ['mainwindow_2eh_2',['mainwindow.h',['../mainwindow_8h.html',1,'']]],
-  ['mainwindow_2eui_3',['mainwindow.ui',['../mainwindow_8ui.html',1,'']]]
+  ['debugtools_2eh_0',['debugtools.h',['../debugtools_8h.html',1,'']]],
+  ['dialog_2ecpp_1',['dialog.cpp',['../dialog_8cpp.html',1,'']]],
+  ['dialog_2eh_2',['dialog.h',['../dialog_8h.html',1,'']]],
+  ['dialog_2eui_3',['dialog.ui',['../dialog_8ui.html',1,'']]]
 ];

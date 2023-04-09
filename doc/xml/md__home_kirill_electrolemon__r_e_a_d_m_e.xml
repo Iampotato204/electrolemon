@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="md__home_kirill_electrolemon__r_e_a_d_m_e" kind="page">
+    <compoundname>md__home_kirill_electrolemon_README</compoundname>
+    <title>About program</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Simulates movement of charged particle...</para>
+<para>Created using QT (<ulink url="https://www.qt.io/">https://www.qt.io/</ulink>). <linebreak/>
+ Originally intended for Linux, may not work for Windows or MacOS.</para>
+<sect1 id="md__home_kirill_electrolemon__r_e_a_d_m_e_1autotoc_md1">
+<title>Documentation (to be added)</title>
+<para>Documentation lies in &apos;doc&apos; folder. To open it, open &apos;doc/html&apos; and run &apos;index.html&apos;.</para>
+</sect1>
+<sect1 id="md__home_kirill_electrolemon__r_e_a_d_m_e_1autotoc_md2">
+<title>How to run program:</title>
+<para><itemizedlist>
+<listitem><para>download source code</para>
+</listitem><listitem><para>install libraries (I could miss few, or add unrequired): <linebreak/>
+ qtbase5* qt5-qmake qtcreator* qtlocation5* qttools5-dev* qtwayland5 qtwebengine5-dev make cmake gcc mesa-utils freeglut3-dev mesa-common-dev libglew-dev</para>
+</listitem><listitem><para>build project</para>
+</listitem><listitem><para>put .qm files in build directory, if you want program to be translated (ru&amp;ua supported, +en as default) </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="/home/kirill/electrolemon/README.md"/>
+  </compounddef>
+</doxygen>

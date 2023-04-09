@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="physics__engine_8cpp" kind="file" language="C++">
+    <compoundname>physics_engine.cpp</compoundname>
+    <includes local="no">iomanip</includes>
+    <includes refid="debugtools_8h" local="yes">debugtools.h</includes>
+    <includes refid="physics__engine_8h" local="yes">physics_engine.h</includes>
+    <includes refid="lemonade_8h" local="yes">lemonade.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">typeinfo</includes>
+    <includes local="no">QPointF</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>debugtools.h</label>
+        <link refid="debugtools_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lemonade.h</label>
+        <link refid="lemonade_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>physics_engine.cpp</label>
+        <link refid="physics__engine_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>physics_engine.h</label>
+        <link refid="physics__engine_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>QLineF</label>
+      </node>
+      <node id="14">
+        <label>QPointF</label>
+      </node>
+      <node id="9">
+        <label>QPolygonF</label>
+      </node>
+      <node id="2">
+        <label>iomanip</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>math.h</label>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>typeinfo</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="debugtools_8h" kindref="compound">debugtools.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="physics__engine_8h" kindref="compound">physics_engine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lemonade_8h" kindref="compound">lemonade.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;typeinfo&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPointF&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::max;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::min;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>class<sp/>Physics_engine<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_physics__engine_1a9ba0ab7d4a6eb881f727e2d734f64ca6" refkind="member"><highlight class="normal"><ref refid="class_physics__engine_1a9ba0ab7d4a6eb881f727e2d734f64ca6" kindref="member">Physics_engine::Physics_engine</ref>(){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_physics__engine_1affafd899c7efd06aee9f4ab0c0c60f99" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_physics__engine_1affafd899c7efd06aee9f4ab0c0c60f99" kindref="member">Physics_engine::calculate_acceleration</ref>(){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_physics__engine_1a9f6fe51b8f5ff3e06bd8b924c3eb7b74" kindref="member">acceleration_mantissa</ref>=<ref refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" kindref="member">get_acceleration_mantissa</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_physics__engine_1abac6a014ca1cef69225b642aac2e40f2" kindref="member">acceleration_exponent</ref>=<ref refid="class_physics__engine_1a8826f833dee26671523256f2cc4b80cc" kindref="member">get_acceleration_exponent</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_physics__engine_1ae767412e35a22738ba95058b5dfab92b" kindref="member">acceleration</ref>=this-&gt;<ref refid="class_physics__engine_1a9f6fe51b8f5ff3e06bd8b924c3eb7b74" kindref="member">acceleration_mantissa</ref>*pow(10,this-&gt;<ref refid="class_physics__engine_1abac6a014ca1cef69225b642aac2e40f2" kindref="member">acceleration_exponent</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" kindref="member">Physics_engine::get_acceleration_mantissa</ref>(){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4<sp/>*<sp/><ref refid="lemonade_8cpp_1adc37ebb8a13551dbb5b4662c3fe20b09" kindref="member">k_mantissa</ref><sp/>*<sp/><ref refid="lemonade_8cpp_1a4c0174f3f60960de06298986da5114c3" kindref="member">p_q_mantissa</ref>*<ref refid="lemonade_8cpp_1a4c0174f3f60960de06298986da5114c3" kindref="member">p_q_mantissa</ref><sp/>/</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="lemonade_8cpp_1a7e35685e5045a32feab2328c43988870" kindref="member">p_m_mantissa</ref><sp/>*<sp/><ref refid="class_line" kindref="compound">Line</ref>(this-&gt;<ref refid="class_physics__engine_1af6bc08483a6e5b8305ea9190d31c1cbe" kindref="member">electron_genuine</ref>,this-&gt;<ref refid="class_physics__engine_1a72ed98ac0b80d1336762fc9c5a2b33b4" kindref="member">base_of_perpendicular</ref>).<ref refid="class_line_1a072032f150b7e9ca22127973b9f1824a" kindref="member">square_of_length</ref>());</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_physics__engine_1a8826f833dee26671523256f2cc4b80cc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_physics__engine_1a8826f833dee26671523256f2cc4b80cc" kindref="member">Physics_engine::get_acceleration_exponent</ref>(){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="lemonade_8cpp_1a97686c2cff1326d408854daf510dcdbf" kindref="member">k_exponent</ref><sp/>+<sp/><ref refid="lemonade_8cpp_1a7be8fff5ab7f5353b889c27a4d37cb8b" kindref="member">p_q_exponent</ref>*2<sp/>-<sp/><ref refid="lemonade_8cpp_1ab365ce012c509bcfb71692dc1872e71a" kindref="member">p_m_exponent</ref>;</highlight><highlight class="comment">//<sp/>+<sp/>distance_scale_exponent;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_physics__engine_1ab02e65f29552555962e04d800c6b2a9f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_physics__engine_1ab02e65f29552555962e04d800c6b2a9f" kindref="member">Physics_engine::movementVectorStart_length</ref>(){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(pow(<ref refid="lemonade_8cpp_1a64ce85b30a893c03da394bb97f9416b0" kindref="member">v0_x</ref>,2)+</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pow(<ref refid="lemonade_8cpp_1a5e1bd90c4349289033734b0e1282d024" kindref="member">v0_y</ref>,2));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_physics__engine_1aa68eb0c0ad7b5d5342afd695f8905e9c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_physics__engine_1aa68eb0c0ad7b5d5342afd695f8905e9c" kindref="member">Physics_engine::mod_i</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a&gt;=0?a:-a;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_physics__engine_1a2ad6ea682e2669e421776331c6edc6f0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_physics__engine_1a2ad6ea682e2669e421776331c6edc6f0" kindref="member">Physics_engine::mod_d</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a&gt;=0?a:-a;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_physics__engine_1aec625f6dc8232ded0ceefe115c0bb8a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_physics__engine_1aec625f6dc8232ded0ceefe115c0bb8a6" kindref="member">Physics_engine::radian</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_ang){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_ang*<ref refid="class_physics__engine_1ad3e01e7ae7817ad86e6484e9110218b9" kindref="member">PI</ref>/180;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_physics__engine_1aaee021e21d46292074ef1b93e531c302" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_physics__engine_1aaee021e21d46292074ef1b93e531c302" kindref="member">Physics_engine::angle</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_rad){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_rad*180/<ref refid="class_physics__engine_1ad3e01e7ae7817ad86e6484e9110218b9" kindref="member">PI</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_physics__engine_1a91903d386ccbcf88df328849c464f970" refkind="member"><highlight class="normal"><ref refid="class_line" kindref="compound">Line</ref><sp/><ref refid="class_physics__engine_1a91903d386ccbcf88df328849c464f970" kindref="member">Physics_engine::scaleVector</ref>(<ref refid="class_point" kindref="compound">Point</ref><sp/>p0,<sp/><ref refid="class_point" kindref="compound">Point</ref><sp/>p1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>multiplier){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x0=p0.<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y0=p0.<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x1=p1.<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>-x0,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y1=p1.<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>-y0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_line" kindref="compound">Line</ref>(p0,<ref refid="class_point" kindref="compound">Point</ref>(</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x0<sp/>+<sp/>x1*multiplier,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y0<sp/>+<sp/>y1*multiplier));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" kindref="member">Physics_engine::find_base_of_perpendicular</ref>(<ref refid="class_line" kindref="compound">Line</ref><sp/>l){</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>l.<ref refid="class_line_1a868f647b3eb4467c4cce5616fb082d68" kindref="member">find_equations</ref>(this-&gt;<ref refid="class_physics__engine_1af6bc08483a6e5b8305ea9190d31c1cbe" kindref="member">electron_genuine</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_x0=(l.<ref refid="class_line_1acf13ed04c74c28475f92b2e981ec4150" kindref="member">equation_of_perpendicular</ref>.<ref refid="class_line__equation_1af3b42994128dd31a5c7b123df91563a3" kindref="member">b</ref><sp/>-<sp/>l.<ref refid="class_line_1a85e8158ee051bb734722490819beaae1" kindref="member">equation_of_self</ref>.<ref refid="class_line__equation_1af3b42994128dd31a5c7b123df91563a3" kindref="member">b</ref>)/</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(l.<ref refid="class_line_1a85e8158ee051bb734722490819beaae1" kindref="member">equation_of_self</ref>.<ref refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" kindref="member">k</ref><sp/>-<sp/>l.<ref refid="class_line_1acf13ed04c74c28475f92b2e981ec4150" kindref="member">equation_of_perpendicular</ref>.<ref refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" kindref="member">k</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_y0=l.<ref refid="class_line_1a85e8158ee051bb734722490819beaae1" kindref="member">equation_of_self</ref>.<ref refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" kindref="member">k</ref>*_x0+l.<ref refid="class_line_1a85e8158ee051bb734722490819beaae1" kindref="member">equation_of_self</ref>.<ref refid="class_line__equation_1af3b42994128dd31a5c7b123df91563a3" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>std::cout&lt;&lt;&quot;-k0=<sp/>&quot;&lt;&lt;std::setprecision(5)&lt;&lt;-l.equation_of_self.k&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>std::cout&lt;&lt;&quot;x0=<sp/>&quot;&lt;&lt;std::setprecision(5)&lt;&lt;_x0&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>std::cout&lt;&lt;&quot;b0=<sp/>&quot;&lt;&lt;std::setprecision(5)&lt;&lt;l.equation_of_self.b&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_physics__engine_1a72ed98ac0b80d1336762fc9c5a2b33b4" kindref="member">base_of_perpendicular</ref>=<ref refid="class_point" kindref="compound">Point</ref>(_x0,<sp/>-_y0);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">bool<sp/>Physics_engine::findProjection(Point,<sp/>Line){</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>true;</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"></highlight></codeline>
+<codeline lineno="80"><highlight class="comment">bool<sp/>Physics_engine::findKollision(Line<sp/>moving,<sp/>Line<sp/>surface_line){</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/>Point<sp/>p1=moving.p0;</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/>Point<sp/>p2=moving.p1;</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/>Point<sp/>p3=surface_line.p0;</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/><sp/><sp/>Point<sp/>p4=surface_line.p1;</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>lines<sp/>are:<sp/>p1p2,<sp/>p3p4</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"></highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>start<sp/>point<sp/>of<sp/>each<sp/>line<sp/>should<sp/>be<sp/>at<sp/>left</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(p2.x&lt;p1.x)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Point<sp/>tmp=p1;</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p1=p2;</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p2=tmp;</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(p4.x&lt;p3.x)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Point<sp/>tmp=p3;</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p3=p4;</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p4=tmp;</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"></highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/><sp/>int<sp/>x[]={p1.x,<sp/>p2.x,<sp/>p3.x,<sp/>p4.x};</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/><sp/>int<sp/>y[]={p1.y,<sp/>p2.y,<sp/>p3.y,<sp/>p4.y};</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"></highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>f1(x)=k1*x+b1=y</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>f2(x)=k2*x+b2=y</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/>double<sp/>Xres,<sp/>Yres,<sp/>b1,<sp/>b2,<sp/>k1,<sp/>k2;</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"></highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>check<sp/>if<sp/>they<sp/>possibly<sp/>can<sp/>intersect</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(x[1]&lt;x[2])<sp/>{return<sp/>false;}</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>if<sp/>both<sp/>are<sp/>vertical</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/><sp/><sp/><sp/>if((x[0]-x[1]<sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(x[2]-x[3]<sp/>==<sp/>0))<sp/>{return<sp/>false;}</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"></highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>if<sp/>first<sp/>line<sp/>is<sp/>vertical</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(x[0]-x[1]<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Xres=<sp/>x[0];</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k2=<sp/>(y[2]-y[3])<sp/>/<sp/>(x[2]-x[3]);</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b2=<sp/>y[2]-k2<sp/>*<sp/>x[2];</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Yres=<sp/>k2*Xres+b2;</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>((x[2]&lt;=Xres<sp/>&amp;&amp;<sp/>x[3]&gt;=Xres)<sp/><sp/>&amp;&amp;<sp/><sp/>(min(y[0],y[1])&lt;=Yres<sp/>&amp;&amp;<sp/>max(y[0],y[1])&gt;=Yres))<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;kollision=Point(Xres,<sp/>Yres);</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>true;</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>false;</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"></highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>if<sp/>second<sp/>line<sp/>is<sp/>vertical</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(x[2]-x[3]<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Xres=<sp/>x[2];</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k1=<sp/>(y[0]-y[1])<sp/>/<sp/>(x[0]-x[1]);</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b1=<sp/>y[0]-k1*x[0];</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Yres=<sp/>k1*Xres+b1;</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>((x[0]&lt;=Xres<sp/>&amp;&amp;<sp/>x[1]&gt;=Xres)<sp/><sp/>&amp;&amp;<sp/><sp/>(min(y[2],y[3])&lt;=Yres<sp/>&amp;&amp;<sp/>max(y[2],y[3])&gt;=Yres))<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;kollision=Point(Xres,<sp/>Yres);</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>true;</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>false;</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"></highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/><sp/><sp/><sp/>k1=<sp/>(y[0]-y[1])<sp/>/<sp/>(x[0]-x[1]);</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/><sp/><sp/><sp/>k2=<sp/>(y[2]-y[3])<sp/>/<sp/>(x[2]-x[3]);</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(k1==k2)<sp/>{return<sp/>false;}</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"></highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/><sp/><sp/><sp/>b1=<sp/>y[0]-k1*x[0];</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/><sp/><sp/><sp/>b2=<sp/>y[2]-k2*x[2];</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"></highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/><sp/><sp/><sp/>Xres=(b2-b1)<sp/>/<sp/>(k1-k2);</highlight></codeline>
+<codeline lineno="145"><highlight class="comment">//<sp/><sp/><sp/><sp/>if<sp/>((Xres&lt;max(x[0],<sp/>x[2]))<sp/>||<sp/>(Xres<sp/>&gt;<sp/>min(<sp/>x[1],<sp/>x[3])))<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>false;</highlight></codeline>
+<codeline lineno="147"><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="comment">//<sp/><sp/><sp/><sp/>Yres=k1*Xres+b1;</highlight></codeline>
+<codeline lineno="149"><highlight class="comment">//<sp/><sp/><sp/><sp/>this-&gt;kollision=Point(Xres,<sp/>Yres);</highlight></codeline>
+<codeline lineno="150"><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>true;</highlight></codeline>
+<codeline lineno="151"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="152"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="156"><highlight class="comment">std::ostream<sp/>&amp;<sp/>operator&lt;&lt;(std::ostream<sp/>&amp;<sp/>out,<sp/>Point<sp/>&amp;<sp/>P){</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/><sp/><sp/><sp/>out&lt;&lt;&quot;(&quot;&lt;&lt;P.x&lt;&lt;&quot;;&quot;&lt;&lt;P.y&lt;&lt;&quot;)&quot;;</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>out;</highlight></codeline>
+<codeline lineno="159"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"></highlight></codeline>
+<codeline lineno="161"><highlight class="comment">std::ostream<sp/>&amp;<sp/>operator&lt;&lt;(std::ostream<sp/>&amp;<sp/>out,<sp/>Line<sp/>&amp;<sp/>L){</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/><sp/><sp/><sp/>out&lt;&lt;L.p0&lt;&lt;&quot;_&quot;&lt;&lt;L.p1;</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>out;</highlight></codeline>
+<codeline lineno="164"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"></highlight></codeline>
+<codeline lineno="166"><highlight class="comment">std::ostream<sp/>&amp;<sp/>operator&lt;&lt;(std::ostream<sp/>&amp;<sp/>out,<sp/>Polygon<sp/>&amp;<sp/>Poly){</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/><sp/><sp/><sp/>for(Line<sp/>l:<sp/>Poly.polygon){</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out&lt;&lt;&quot;&lt;&quot;&lt;&lt;l&lt;&lt;&quot;&gt;<sp/><sp/>&quot;;</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/><sp/><sp/><sp/>out&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="171"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">//<sp/>class<sp/>Point<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" refkind="member"><highlight class="normal"><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point::Point</ref>(){</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>=0;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>=0;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="class_point_1a483cf6bf601889eb922e89f5820045c1" refkind="member"><highlight class="normal"><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point::Point</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_y){</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>=_x;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>=_y;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="class_point_1acd364e308066f5997bce0546d82bf29f" refkind="member"><highlight class="normal"><ref refid="class_point" kindref="compound">Point</ref><sp/><ref refid="class_point_1acd364e308066f5997bce0546d82bf29f" kindref="member">Point::rotate</ref>(<ref refid="class_point" kindref="compound">Point</ref>*<sp/>center,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rad){</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dx=this-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>-center-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dy=-this-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>+center-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point</ref>(<sp/>center-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref><sp/>+<sp/>dx*cos(rad)-dy*sin(rad),</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>center-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref><sp/>-<sp/>(dx*sin(rad)+dy*cos(rad)));</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="class_point_1acd2fcff18ab1f602ceca73104ab5c9d5" refkind="member"><highlight class="normal"><ref refid="class_point" kindref="compound">Point</ref><sp/><ref refid="class_point_1acd2fcff18ab1f602ceca73104ab5c9d5" kindref="member">Point::rotateAround00</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rad){</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s=sin(rad),</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c=cos(rad);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point</ref>(this-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>*c+this-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>*s,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>*c-this-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>*s);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="class_point_1ad48a8bdbda80841860be5f76ba70ee3e" refkind="member"><highlight class="normal"><ref refid="class_point" kindref="compound">Point</ref>*<sp/><ref refid="class_point_1ad48a8bdbda80841860be5f76ba70ee3e" kindref="member">Point::move</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dx,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dy){</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>+=dx;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>+=dy;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="class_point_1aa74e550bb9dc0da0e1ffec0fbf097825" refkind="member"><highlight class="normal"><ref refid="class_point" kindref="compound">Point</ref><sp/><ref refid="class_point_1aa74e550bb9dc0da0e1ffec0fbf097825" kindref="member">Point::stat_move</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dx,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dy){</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>+=dx;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>+=dy;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="class_point_1a8fa9a62a33de3c414df4b86b1b358355" refkind="member"><highlight class="normal">QPointF<sp/><ref refid="class_point_1a8fa9a62a33de3c414df4b86b1b358355" kindref="member">Point::toQPointF</ref>(){</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QPointF(this-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>,<sp/>this-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="class_point_1a3dc1ddbe89354d0336a70a2ac9b53fbd" refkind="member"><highlight class="normal">QPoint<sp/><ref refid="class_point_1a3dc1ddbe89354d0336a70a2ac9b53fbd" kindref="member">Point::toQPoint</ref>(){</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QPoint(this-&gt;<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>,<sp/>this-&gt;<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">//<sp/>class<sp/>Line_equation<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="class_line__equation_1ab4fd48825d2af62859ff5c374db7c123" refkind="member"><highlight class="normal"><ref refid="class_line__equation_1ab4fd48825d2af62859ff5c374db7c123" kindref="member">Line_equation::Line_equation</ref>(){</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" kindref="member">k</ref>=1;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line__equation_1af3b42994128dd31a5c7b123df91563a3" kindref="member">b</ref>=0;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="class_line__equation_1a086ea79415f717a4af28346559dd950c" refkind="member"><highlight class="normal"><ref refid="class_line__equation_1ab4fd48825d2af62859ff5c374db7c123" kindref="member">Line_equation::Line_equation</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_k,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_b){</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" kindref="member">k</ref>=_k;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line__equation_1af3b42994128dd31a5c7b123df91563a3" kindref="member">b</ref>=_b;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">//<sp/>class<sp/>Line<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" refkind="member"><highlight class="normal"><ref refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" kindref="member">Line::Line</ref>(){</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" kindref="member">p0</ref>=<ref refid="class_point" kindref="compound">Point</ref>();</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" kindref="member">p1</ref>=<ref refid="class_point" kindref="compound">Point</ref>();</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="class_line_1af9742c860cc6727ed40e7f6304a66d79" refkind="member"><highlight class="normal"><ref refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" kindref="member">Line::Line</ref>(<ref refid="class_point" kindref="compound">Point</ref><sp/>_p0,<sp/><ref refid="class_point" kindref="compound">Point</ref><sp/>_p1){</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" kindref="member">p0</ref>=_p0;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" kindref="member">p1</ref>=_p1;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="class_line_1a84514c45e4442aca81f6823008931080" refkind="member"><highlight class="normal"><ref refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" kindref="member">Line::Line</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_x0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_y0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_y1){</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" kindref="member">p0</ref>=<ref refid="class_point" kindref="compound">Point</ref>(_x0,_y0);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" kindref="member">p1</ref>=<ref refid="class_point" kindref="compound">Point</ref>(_x1,_y1);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="class_line_1a842b9f079379ba02937427b224b74938" refkind="member"><highlight class="normal"><ref refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" kindref="member">Line::Line</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_x0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_y0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_x1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_y1){</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" kindref="member">p0</ref>=<ref refid="class_point" kindref="compound">Point</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)_x0,(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)_y0);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" kindref="member">p1</ref>=<ref refid="class_point" kindref="compound">Point</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)_x1,(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)_y1);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" kindref="member">Line::x0</ref>(){</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" kindref="member">p0</ref>.<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" kindref="member">Line::y0</ref>(){</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" kindref="member">p0</ref>.<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" kindref="member">Line::x1</ref>(){</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" kindref="member">p1</ref>.<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" kindref="member">Line::y1</ref>(){</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" kindref="member">p1</ref>.<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="class_line_1a601918470f05fb3b4df6fda60ea63bb2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_line_1a601918470f05fb3b4df6fda60ea63bb2" kindref="member">Line::dx</ref>(){</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" kindref="member">x1</ref>()-this-&gt;<ref refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" kindref="member">x0</ref>();</highlight></codeline>
+<codeline lineno="285"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="class_line_1abde9e6674a81864076bbd38c47074a75" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_line_1abde9e6674a81864076bbd38c47074a75" kindref="member">Line::dy</ref>(){</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" kindref="member">y0</ref>()-this-&gt;<ref refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" kindref="member">y1</ref>();</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="comment">//left<sp/>for<sp/>backwards<sp/>compatibility</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="class_line_1a868f647b3eb4467c4cce5616fb082d68" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_line_1a868f647b3eb4467c4cce5616fb082d68" kindref="member">Line::find_equations</ref>(<ref refid="class_point" kindref="compound">Point</ref><sp/>_electron){</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" kindref="member">find_equationOfSelf</ref>();</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1ad4c712851de289ce1c277e35e561b452" kindref="member">find_equationOfPerpendicular</ref>(_electron);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" kindref="member">Line::find_equationOfSelf</ref>(){</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>k1=((double)(<ref refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" kindref="member">y0</ref>()-<ref refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" kindref="member">y1</ref>()))<sp/>/<sp/>((double)(<ref refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" kindref="member">x1</ref>()-<ref refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" kindref="member">x0</ref>()));<sp/></highlight><highlight class="comment">//-(y1-y0)/(x1-x0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b1=(double)-<ref refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" kindref="member">y0</ref>()<sp/>-<sp/>((double)<ref refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" kindref="member">x0</ref>())*k1;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1a85e8158ee051bb734722490819beaae1" kindref="member">equation_of_self</ref>=<ref refid="class_line__equation" kindref="compound">Line_equation</ref>(k1,b1);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;k1=<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::setprecision(5)&lt;&lt;k1&lt;&lt;std::endl&lt;&lt;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;b1=<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::setprecision(5)&lt;&lt;b1&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="class_line_1ad4c712851de289ce1c277e35e561b452" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_line_1ad4c712851de289ce1c277e35e561b452" kindref="member">Line::find_equationOfPerpendicular</ref>(<ref refid="class_point" kindref="compound">Point</ref><sp/>_electron){</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>k1=((double)(<ref refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" kindref="member">y0</ref>()-<ref refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" kindref="member">y1</ref>()))<sp/>/<sp/>((double)(<ref refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" kindref="member">x1</ref>()-<ref refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" kindref="member">x0</ref>()));<sp/></highlight><highlight class="comment">//-(y1-y0)/(x1-x0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>k2=-1.0/k1;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b2=(double)-_electron.<ref refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kindref="member">y</ref><sp/>-<sp/>((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)_electron.<ref refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kindref="member">x</ref>)*k2;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_line_1acf13ed04c74c28475f92b2e981ec4150" kindref="member">equation_of_perpendicular</ref>=<ref refid="class_line__equation" kindref="compound">Line_equation</ref>(k2,b2);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;k2=<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::setprecision(5)&lt;&lt;k2&lt;&lt;std::endl&lt;&lt;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;b2=<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::setprecision(5)&lt;&lt;b2&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="class_line_1a6213a45b6df0eea9d0fdfff6d8c814c1" refkind="member"><highlight class="normal">QLineF<sp/><ref refid="class_line_1a6213a45b6df0eea9d0fdfff6d8c814c1" kindref="member">Line::to_qline</ref>(){</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QLineF(QPointF(<ref refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" kindref="member">x0</ref>(),<sp/><ref refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" kindref="member">y0</ref>()),<sp/>QPointF(<ref refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" kindref="member">x1</ref>(),<sp/><ref refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" kindref="member">y1</ref>()));</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="class_line_1ab655933c08ce8e2ba3786273d9e349c4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_line_1ab655933c08ce8e2ba3786273d9e349c4" kindref="member">Line::length</ref>(){</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(pow(<ref refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" kindref="member">x1</ref>()-<ref refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" kindref="member">x0</ref>(),2)+pow(<ref refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" kindref="member">y1</ref>()-<ref refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" kindref="member">y0</ref>(),2));</highlight></codeline>
+<codeline lineno="320"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322" refid="class_line_1a072032f150b7e9ca22127973b9f1824a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_line_1a072032f150b7e9ca22127973b9f1824a" kindref="member">Line::square_of_length</ref>(){</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pow(<ref refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" kindref="member">x1</ref>()-<ref refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" kindref="member">x0</ref>(),2)+pow(<ref refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" kindref="member">y1</ref>()-<ref refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" kindref="member">y0</ref>(),2);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="comment">//<sp/>class<sp/>Polygon<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330" refid="class_polygon_1ac183e712f8be1e13f1c9d5b4d4512ead" refkind="member"><highlight class="normal"><ref refid="class_polygon_1ac183e712f8be1e13f1c9d5b4d4512ead" kindref="member">Polygon::Polygon</ref>(){</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_polygon_1abb9d0483da9b6cefaa62a17e19751fce" kindref="member">polygon</ref>={};</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Line(-100,<sp/>-100,<sp/>100,<sp/>-100),</highlight></codeline>
+<codeline lineno="333"><highlight class="comment"><sp/><sp/><sp/><sp/>Line(100,<sp/>-100,<sp/>100,<sp/>100),</highlight></codeline>
+<codeline lineno="334"><highlight class="comment"><sp/><sp/><sp/><sp/>Line(100,<sp/>100,<sp/>-100,<sp/>100),</highlight></codeline>
+<codeline lineno="335"><highlight class="comment"><sp/><sp/><sp/><sp/>Line(-100,<sp/>100,<sp/>-100,<sp/>-100)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="338"><highlight class="comment">Polygon::Polygon(QPolygon*<sp/>qpoly){</highlight></codeline>
+<codeline lineno="339"><highlight class="comment"><sp/><sp/><sp/><sp/>std::cout&lt;&lt;&quot;Type<sp/>of<sp/>returned<sp/>array:<sp/>&quot;&lt;&lt;typeid(qpoly-&gt;toStdVector()).name()&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="340"><highlight class="comment"><sp/><sp/><sp/><sp/>vector&lt;QPoint&gt;<sp/>qpolyVector=qpoly-&gt;toStdVector();</highlight></codeline>
+<codeline lineno="341"><highlight class="comment"></highlight></codeline>
+<codeline lineno="342"><highlight class="comment"><sp/><sp/><sp/><sp/>for<sp/>(int<sp/>i=0;<sp/>i&lt;qpolyVector.size()-1;<sp/>i+=1)</highlight></codeline>
+<codeline lineno="343"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;polygon.push_back(</highlight></codeline>
+<codeline lineno="344"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Line(qpolyVector.at(i).x(),<sp/>qpolyVector.at(i).y(),</highlight></codeline>
+<codeline lineno="345"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qpolyVector.at(i+1).x(),<sp/>qpolyVector.at(i+1).y()));</highlight></codeline>
+<codeline lineno="346"><highlight class="comment"><sp/><sp/><sp/><sp/>this-&gt;polygon.push_back(</highlight></codeline>
+<codeline lineno="347"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Line(qpolyVector.at(qpolyVector.size()-1).x(),</highlight></codeline>
+<codeline lineno="348"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qpolyVector.at(qpolyVector.size()-1).y(),</highlight></codeline>
+<codeline lineno="349"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qpolyVector.at(0).x(),</highlight></codeline>
+<codeline lineno="350"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qpolyVector.at(0).y()));</highlight></codeline>
+<codeline lineno="351"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="352"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="class_polygon_1ac5a70b02b151d29559cbabac3185ff73" refkind="member"><highlight class="normal"><ref refid="class_polygon_1ac183e712f8be1e13f1c9d5b4d4512ead" kindref="member">Polygon::Polygon</ref>(std::vector&lt;Line&gt;<sp/>poly){</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_polygon_1abb9d0483da9b6cefaa62a17e19751fce" kindref="member">polygon</ref>=poly;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="class_polygon_1a7e0d17eb79c5ff1e9ea310cb6e748b14" refkind="member"><highlight class="normal">QPolygonF<sp/><ref refid="class_polygon_1a7e0d17eb79c5ff1e9ea310cb6e748b14" kindref="member">Polygon::to_qpoly</ref>(){</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>QVector&lt;QPointF&gt;<sp/>qpoints;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="class_line" kindref="compound">Line</ref><sp/>l:<sp/>this-&gt;<ref refid="class_polygon_1abb9d0483da9b6cefaa62a17e19751fce" kindref="member">polygon</ref>){</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qpoints.push_back(QPointF(l.x0(),l.y0()));</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QPolygonF(qpoints);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/kirill/electrolemon/physics_engine.cpp"/>
+  </compounddef>
+</doxygen>

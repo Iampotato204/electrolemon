@@ -1,0 +1,527 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_physics__engine" kind="class" language="C++" prot="public">
+    <compoundname>Physics_engine</compoundname>
+    <includes refid="physics__engine_8h" local="no">physics_engine.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_physics__engine_1ac6880936ad9d4ea1a01d224d0b8f1fb9" prot="public" static="no" mutable="no">
+        <type><ref refid="class_polygon" kindref="compound">Polygon</ref></type>
+        <definition>Polygon Physics_engine::metasurface_genuine</definition>
+        <argsstring></argsstring>
+        <name>metasurface_genuine</name>
+        <qualifiedname>Physics_engine::metasurface_genuine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="114" column="13" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1a36f76e7216c4d5eefaa313b2329c3c54" prot="public" static="no" mutable="no">
+        <type><ref refid="class_line" kindref="compound">Line</ref> *</type>
+        <definition>Line* Physics_engine::interactive_surface</definition>
+        <argsstring></argsstring>
+        <name>interactive_surface</name>
+        <qualifiedname>Physics_engine::interactive_surface</qualifiedname>
+        <initializer>=nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="115" column="10" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1af6bc08483a6e5b8305ea9190d31c1cbe" prot="public" static="no" mutable="no">
+        <type><ref refid="class_point" kindref="compound">Point</ref></type>
+        <definition>Point Physics_engine::electron_genuine</definition>
+        <argsstring></argsstring>
+        <name>electron_genuine</name>
+        <qualifiedname>Physics_engine::electron_genuine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="116" column="11" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" compoundref="physics__engine_8cpp" startline="63" endline="73">find_base_of_perpendicular</referencedby>
+        <referencedby refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" compoundref="physics__engine_8cpp" startline="22" endline="26">get_acceleration_mantissa</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1abb0809cb7111d9fad31760ac827118f9" prot="public" static="no" mutable="no">
+        <type><ref refid="class_point" kindref="compound">Point</ref></type>
+        <definition>Point Physics_engine::virt_genuine</definition>
+        <argsstring></argsstring>
+        <name>virt_genuine</name>
+        <qualifiedname>Physics_engine::virt_genuine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="117" column="11" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1ad6aae224f0a30822f6ace57fda558087" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Physics_engine::movementTimeCounter_real</definition>
+        <argsstring></argsstring>
+        <name>movementTimeCounter_real</name>
+        <qualifiedname>Physics_engine::movementTimeCounter_real</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="120" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1a5d1405e17e98bce011ca825d35fbd31c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Physics_engine::movementTimeTotal_real</definition>
+        <argsstring></argsstring>
+        <name>movementTimeTotal_real</name>
+        <qualifiedname>Physics_engine::movementTimeTotal_real</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="121" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1ad3e05725ee5e37805a3322ec2864cc18" prot="public" static="no" mutable="no">
+        <type><ref refid="class_point" kindref="compound">Point</ref></type>
+        <definition>Point Physics_engine::endpoint</definition>
+        <argsstring></argsstring>
+        <name>endpoint</name>
+        <qualifiedname>Physics_engine::endpoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="123" column="11" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1a9630d6cdb225f5e26767d037bca6fc6c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Physics_engine::angle_V0_absolute</definition>
+        <argsstring></argsstring>
+        <name>angle_V0_absolute</name>
+        <qualifiedname>Physics_engine::angle_V0_absolute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="126" column="9" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1a0c5b1a45430ceabfce479579ae48d37f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Physics_engine::angle_surface_absolute</definition>
+        <argsstring></argsstring>
+        <name>angle_surface_absolute</name>
+        <qualifiedname>Physics_engine::angle_surface_absolute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="127" column="9" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1ad7becc7b6bfc9577fc0eb1b65d253fff" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Physics_engine::angle_V0_relative</definition>
+        <argsstring></argsstring>
+        <name>angle_V0_relative</name>
+        <qualifiedname>Physics_engine::angle_V0_relative</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="128" column="9" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1a9f6fe51b8f5ff3e06bd8b924c3eb7b74" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Physics_engine::acceleration_mantissa</definition>
+        <argsstring></argsstring>
+        <name>acceleration_mantissa</name>
+        <qualifiedname>Physics_engine::acceleration_mantissa</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="130" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="class_physics__engine_1affafd899c7efd06aee9f4ab0c0c60f99" compoundref="physics__engine_8cpp" startline="16" endline="20">calculate_acceleration</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1abac6a014ca1cef69225b642aac2e40f2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Physics_engine::acceleration_exponent</definition>
+        <argsstring></argsstring>
+        <name>acceleration_exponent</name>
+        <qualifiedname>Physics_engine::acceleration_exponent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="130" column="34" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="class_physics__engine_1affafd899c7efd06aee9f4ab0c0c60f99" compoundref="physics__engine_8cpp" startline="16" endline="20">calculate_acceleration</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1ae767412e35a22738ba95058b5dfab92b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Physics_engine::acceleration</definition>
+        <argsstring></argsstring>
+        <name>acceleration</name>
+        <qualifiedname>Physics_engine::acceleration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="130" column="56" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="class_physics__engine_1affafd899c7efd06aee9f4ab0c0c60f99" compoundref="physics__engine_8cpp" startline="16" endline="20">calculate_acceleration</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_physics__engine_1a72ed98ac0b80d1336762fc9c5a2b33b4" prot="public" static="no" mutable="no">
+        <type><ref refid="class_point" kindref="compound">Point</ref></type>
+        <definition>Point Physics_engine::base_of_perpendicular</definition>
+        <argsstring></argsstring>
+        <name>base_of_perpendicular</name>
+        <qualifiedname>Physics_engine::base_of_perpendicular</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="147" column="11" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" compoundref="physics__engine_8cpp" startline="63" endline="73">find_base_of_perpendicular</referencedby>
+        <referencedby refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" compoundref="physics__engine_8cpp" startline="22" endline="26">get_acceleration_mantissa</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physics__engine_1ad3e01e7ae7817ad86e6484e9110218b9" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr double</type>
+        <definition>constexpr double Physics_engine::PI</definition>
+        <argsstring></argsstring>
+        <name>PI</name>
+        <qualifiedname>Physics_engine::PI</qualifiedname>
+        <initializer>=3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117068</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="135" column="29" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="135" bodyend="-1"/>
+        <referencedby refid="class_physics__engine_1aaee021e21d46292074ef1b93e531c302" compoundref="physics__engine_8cpp" startline="49" endline="51">angle</referencedby>
+        <referencedby refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" compoundref="painter_8cpp" startline="50" endline="112">Painter::drawArrow</referencedby>
+        <referencedby refid="class_physics__engine_1aec625f6dc8232ded0ceefe115c0bb8a6" compoundref="physics__engine_8cpp" startline="45" endline="47">radian</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physics__engine_1ab02e65f29552555962e04d800c6b2a9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Physics_engine::movementVectorStart_length</definition>
+        <argsstring>()</argsstring>
+        <name>movementVectorStart_length</name>
+        <qualifiedname>Physics_engine::movementVectorStart_length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="119" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="32" bodyend="35"/>
+        <references refid="lemonade_8cpp_1a64ce85b30a893c03da394bb97f9416b0" compoundref="lemonade_8cpp" startline="8">v0_x</references>
+        <references refid="lemonade_8cpp_1a5e1bd90c4349289033734b0e1282d024" compoundref="lemonade_8cpp" startline="8">v0_y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_physics__engine_1affafd899c7efd06aee9f4ab0c0c60f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Physics_engine::calculate_acceleration</definition>
+        <argsstring>()</argsstring>
+        <name>calculate_acceleration</name>
+        <qualifiedname>Physics_engine::calculate_acceleration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="131" column="10" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="16" bodyend="20"/>
+        <references refid="class_physics__engine_1ae767412e35a22738ba95058b5dfab92b" compoundref="physics__engine_8h" startline="130">acceleration</references>
+        <references refid="class_physics__engine_1abac6a014ca1cef69225b642aac2e40f2" compoundref="physics__engine_8h" startline="130">acceleration_exponent</references>
+        <references refid="class_physics__engine_1a9f6fe51b8f5ff3e06bd8b924c3eb7b74" compoundref="physics__engine_8h" startline="130">acceleration_mantissa</references>
+        <references refid="class_physics__engine_1a8826f833dee26671523256f2cc4b80cc" compoundref="physics__engine_8cpp" startline="28" endline="30">get_acceleration_exponent</references>
+        <references refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" compoundref="physics__engine_8cpp" startline="22" endline="26">get_acceleration_mantissa</references>
+      </memberdef>
+      <memberdef kind="function" id="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Physics_engine::get_acceleration_mantissa</definition>
+        <argsstring>()</argsstring>
+        <name>get_acceleration_mantissa</name>
+        <qualifiedname>Physics_engine::get_acceleration_mantissa</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="132" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="22" bodyend="26"/>
+        <references refid="class_physics__engine_1a72ed98ac0b80d1336762fc9c5a2b33b4" compoundref="physics__engine_8h" startline="147">base_of_perpendicular</references>
+        <references refid="class_physics__engine_1af6bc08483a6e5b8305ea9190d31c1cbe" compoundref="physics__engine_8h" startline="116">electron_genuine</references>
+        <references refid="lemonade_8cpp_1adc37ebb8a13551dbb5b4662c3fe20b09" compoundref="lemonade_8cpp" startline="13">k_mantissa</references>
+        <references refid="lemonade_8cpp_1a7e35685e5045a32feab2328c43988870" compoundref="lemonade_8cpp" startline="11">p_m_mantissa</references>
+        <references refid="lemonade_8cpp_1a4c0174f3f60960de06298986da5114c3" compoundref="lemonade_8cpp" startline="11">p_q_mantissa</references>
+        <references refid="class_line_1a072032f150b7e9ca22127973b9f1824a" compoundref="physics__engine_8cpp" startline="322" endline="324">Line::square_of_length</references>
+        <referencedby refid="class_physics__engine_1affafd899c7efd06aee9f4ab0c0c60f99" compoundref="physics__engine_8cpp" startline="16" endline="20">calculate_acceleration</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_physics__engine_1a8826f833dee26671523256f2cc4b80cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Physics_engine::get_acceleration_exponent</definition>
+        <argsstring>()</argsstring>
+        <name>get_acceleration_exponent</name>
+        <qualifiedname>Physics_engine::get_acceleration_exponent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="133" column="9" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="28" bodyend="30"/>
+        <references refid="lemonade_8cpp_1a97686c2cff1326d408854daf510dcdbf" compoundref="lemonade_8cpp" startline="20">k_exponent</references>
+        <references refid="lemonade_8cpp_1ab365ce012c509bcfb71692dc1872e71a" compoundref="lemonade_8cpp" startline="18">p_m_exponent</references>
+        <references refid="lemonade_8cpp_1a7be8fff5ab7f5353b889c27a4d37cb8b" compoundref="lemonade_8cpp" startline="18">p_q_exponent</references>
+        <referencedby refid="class_physics__engine_1affafd899c7efd06aee9f4ab0c0c60f99" compoundref="physics__engine_8cpp" startline="16" endline="20">calculate_acceleration</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_physics__engine_1a9ba0ab7d4a6eb881f727e2d734f64ca6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Physics_engine::Physics_engine</definition>
+        <argsstring>()</argsstring>
+        <name>Physics_engine</name>
+        <qualifiedname>Physics_engine::Physics_engine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="136" column="5" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physics__engine_1a91903d386ccbcf88df328849c464f970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_line" kindref="compound">Line</ref></type>
+        <definition>Line Physics_engine::scaleVector</definition>
+        <argsstring>(Point p0, Point p1, double)</argsstring>
+        <name>scaleVector</name>
+        <qualifiedname>Physics_engine::scaleVector</qualifiedname>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>multiplier</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="145" column="10" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="53" bodyend="61"/>
+        <references refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" compoundref="physics__engine_8h" startline="12">Point::x</references>
+        <references refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" compoundref="physics__engine_8h" startline="12">Point::y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Physics_engine::find_base_of_perpendicular</definition>
+        <argsstring>(Line)</argsstring>
+        <name>find_base_of_perpendicular</name>
+        <qualifiedname>Physics_engine::find_base_of_perpendicular</qualifiedname>
+        <param>
+          <type><ref refid="class_line" kindref="compound">Line</ref></type>
+          <defname>l</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="148" column="10" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="63" bodyend="73"/>
+        <references refid="class_line__equation_1af3b42994128dd31a5c7b123df91563a3" compoundref="physics__engine_8h" startline="32">Line_equation::b</references>
+        <references refid="class_physics__engine_1a72ed98ac0b80d1336762fc9c5a2b33b4" compoundref="physics__engine_8h" startline="147">base_of_perpendicular</references>
+        <references refid="class_physics__engine_1af6bc08483a6e5b8305ea9190d31c1cbe" compoundref="physics__engine_8h" startline="116">electron_genuine</references>
+        <references refid="class_line_1acf13ed04c74c28475f92b2e981ec4150" compoundref="physics__engine_8h" startline="40">Line::equation_of_perpendicular</references>
+        <references refid="class_line_1a85e8158ee051bb734722490819beaae1" compoundref="physics__engine_8h" startline="39">Line::equation_of_self</references>
+        <references refid="class_line_1a868f647b3eb4467c4cce5616fb082d68" compoundref="physics__engine_8cpp" startline="292" endline="295">Line::find_equations</references>
+        <references refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" compoundref="physics__engine_8h" startline="31">Line_equation::k</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physics__engine_1aa68eb0c0ad7b5d5342afd695f8905e9c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Physics_engine::mod_i</definition>
+        <argsstring>(int)</argsstring>
+        <name>mod_i</name>
+        <qualifiedname>Physics_engine::mod_i</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="138" column="16" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physics__engine_1a2ad6ea682e2669e421776331c6edc6f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Physics_engine::mod_d</definition>
+        <argsstring>(double)</argsstring>
+        <name>mod_d</name>
+        <qualifiedname>Physics_engine::mod_d</qualifiedname>
+        <param>
+          <type>double</type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="139" column="19" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physics__engine_1aec625f6dc8232ded0ceefe115c0bb8a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Physics_engine::radian</definition>
+        <argsstring>(double angle)</argsstring>
+        <name>radian</name>
+        <qualifiedname>Physics_engine::radian</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="142" column="19" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="45" bodyend="47"/>
+        <references refid="class_physics__engine_1ad3e01e7ae7817ad86e6484e9110218b9" compoundref="physics__engine_8h" startline="135">PI</references>
+      </memberdef>
+      <memberdef kind="function" id="class_physics__engine_1aaee021e21d46292074ef1b93e531c302" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Physics_engine::angle</definition>
+        <argsstring>(double radian)</argsstring>
+        <name>angle</name>
+        <qualifiedname>Physics_engine::angle</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>radian</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="143" column="19" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="49" bodyend="51"/>
+        <references refid="class_physics__engine_1ad3e01e7ae7817ad86e6484e9110218b9" compoundref="physics__engine_8h" startline="135">PI</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Line</label>
+        <link refid="class_line"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>p0</edgelabel>
+          <edgelabel>p1</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>equation_of_perpendicular</edgelabel>
+          <edgelabel>equation_of_self</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Line_equation</label>
+        <link refid="class_line__equation"/>
+      </node>
+      <node id="1">
+        <label>Physics_engine</label>
+        <link refid="class_physics__engine"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>metasurface_genuine</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>interactive_surface</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>base_of_perpendicular</edgelabel>
+          <edgelabel>electron_genuine</edgelabel>
+          <edgelabel>endpoint</edgelabel>
+          <edgelabel>virt_genuine</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Point</label>
+        <link refid="class_point"/>
+      </node>
+      <node id="2">
+        <label>Polygon</label>
+        <link refid="class_polygon"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/kirill/electrolemon/physics_engine.h" line="111" column="1" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="112" bodyend="152"/>
+    <listofallmembers>
+      <member refid="class_physics__engine_1ae767412e35a22738ba95058b5dfab92b" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>acceleration</name></member>
+      <member refid="class_physics__engine_1abac6a014ca1cef69225b642aac2e40f2" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>acceleration_exponent</name></member>
+      <member refid="class_physics__engine_1a9f6fe51b8f5ff3e06bd8b924c3eb7b74" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>acceleration_mantissa</name></member>
+      <member refid="class_physics__engine_1aaee021e21d46292074ef1b93e531c302" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>angle</name></member>
+      <member refid="class_physics__engine_1a0c5b1a45430ceabfce479579ae48d37f" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>angle_surface_absolute</name></member>
+      <member refid="class_physics__engine_1a9630d6cdb225f5e26767d037bca6fc6c" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>angle_V0_absolute</name></member>
+      <member refid="class_physics__engine_1ad7becc7b6bfc9577fc0eb1b65d253fff" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>angle_V0_relative</name></member>
+      <member refid="class_physics__engine_1a72ed98ac0b80d1336762fc9c5a2b33b4" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>base_of_perpendicular</name></member>
+      <member refid="class_physics__engine_1affafd899c7efd06aee9f4ab0c0c60f99" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>calculate_acceleration</name></member>
+      <member refid="class_physics__engine_1af6bc08483a6e5b8305ea9190d31c1cbe" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>electron_genuine</name></member>
+      <member refid="class_physics__engine_1ad3e05725ee5e37805a3322ec2864cc18" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>endpoint</name></member>
+      <member refid="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>find_base_of_perpendicular</name></member>
+      <member refid="class_physics__engine_1a8826f833dee26671523256f2cc4b80cc" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>get_acceleration_exponent</name></member>
+      <member refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>get_acceleration_mantissa</name></member>
+      <member refid="class_physics__engine_1a36f76e7216c4d5eefaa313b2329c3c54" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>interactive_surface</name></member>
+      <member refid="class_physics__engine_1ac6880936ad9d4ea1a01d224d0b8f1fb9" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>metasurface_genuine</name></member>
+      <member refid="class_physics__engine_1a2ad6ea682e2669e421776331c6edc6f0" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>mod_d</name></member>
+      <member refid="class_physics__engine_1aa68eb0c0ad7b5d5342afd695f8905e9c" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>mod_i</name></member>
+      <member refid="class_physics__engine_1ad6aae224f0a30822f6ace57fda558087" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>movementTimeCounter_real</name></member>
+      <member refid="class_physics__engine_1a5d1405e17e98bce011ca825d35fbd31c" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>movementTimeTotal_real</name></member>
+      <member refid="class_physics__engine_1ab02e65f29552555962e04d800c6b2a9f" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>movementVectorStart_length</name></member>
+      <member refid="class_physics__engine_1a9ba0ab7d4a6eb881f727e2d734f64ca6" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>Physics_engine</name></member>
+      <member refid="class_physics__engine_1ad3e01e7ae7817ad86e6484e9110218b9" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>PI</name></member>
+      <member refid="class_physics__engine_1aec625f6dc8232ded0ceefe115c0bb8a6" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>radian</name></member>
+      <member refid="class_physics__engine_1a91903d386ccbcf88df328849c464f970" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>scaleVector</name></member>
+      <member refid="class_physics__engine_1abb0809cb7111d9fad31760ac827118f9" prot="public" virt="non-virtual"><scope>Physics_engine</scope><name>virt_genuine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

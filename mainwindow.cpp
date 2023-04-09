@@ -10,10 +10,9 @@ MainWindow::MainWindow(QWidget *parent):
 {
     ui->setupUi(this);
 
-    Dialog d(this);
-    d.exec();
+    //skip main window
+    this->on_pushButton_2_clicked();
     std::exit(1);
-    //this->on_pushButton_2_clicked();
 }
 
 MainWindow::~MainWindow(){
@@ -34,20 +33,15 @@ void MainWindow::read_input_data(){
     v_x=qLineEdit2double(ui->xVector_line);
     v_y=qLineEdit2double(ui->yVector_line);*/
 }
-
+    // ¯\_( ͡° ͜ʖ ͡°)_/¯
 void MainWindow::on_pushButton_clicked(){
     /*this->read_input_data();
     this->on_pushButton_2_clicked();*/
 }
 
 void MainWindow::on_pushButton_2_clicked(){
-    /*debug_output_available_data();
-
-    DebugTools Debugger;
-    resulting_exponent=p_q_exponent-p_m_exponent+9;//9 is k exponent;
-
-    Debugger.strMsgInline("resulting_exponent=");Debugger.doubMsg(resulting_exponent);
+    debug_output_available_data();
 
     Dialog d(this);
-    d.exec();*/
+    d.exec();
 }

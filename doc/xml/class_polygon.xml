@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_polygon" kind="class" language="C++" prot="public">
+    <compoundname>Polygon</compoundname>
+    <includes refid="physics__engine_8h" local="no">physics_engine.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_polygon_1abb9d0483da9b6cefaa62a17e19751fce" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_line" kindref="compound">Line</ref> &gt;</type>
+        <definition>std::vector&lt;Line&gt; Polygon::polygon</definition>
+        <argsstring></argsstring>
+        <name>polygon</name>
+        <qualifiedname>Polygon::polygon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="98" column="17" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="class_polygon_1ac183e712f8be1e13f1c9d5b4d4512ead" compoundref="physics__engine_8cpp" startline="330" endline="336">Polygon</referencedby>
+        <referencedby refid="class_polygon_1a7e0d17eb79c5ff1e9ea310cb6e748b14" compoundref="physics__engine_8cpp" startline="357" endline="363">to_qpoly</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_polygon_1ac183e712f8be1e13f1c9d5b4d4512ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Polygon::Polygon</definition>
+        <argsstring>()</argsstring>
+        <name>Polygon</name>
+        <qualifiedname>Polygon::Polygon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="100" column="5" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="330" bodyend="336"/>
+        <references refid="class_polygon_1abb9d0483da9b6cefaa62a17e19751fce" compoundref="physics__engine_8h" startline="98">polygon</references>
+      </memberdef>
+      <memberdef kind="function" id="class_polygon_1ac5a70b02b151d29559cbabac3185ff73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Polygon::Polygon</definition>
+        <argsstring>(std::vector&lt; Line &gt;)</argsstring>
+        <name>Polygon</name>
+        <qualifiedname>Polygon::Polygon</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="class_line" kindref="compound">Line</ref> &gt;</type>
+          <defname>poly</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="102" column="5" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="353" bodyend="355"/>
+        <references refid="class_polygon_1abb9d0483da9b6cefaa62a17e19751fce" compoundref="physics__engine_8h" startline="98">polygon</references>
+      </memberdef>
+      <memberdef kind="function" id="class_polygon_1a7e0d17eb79c5ff1e9ea310cb6e748b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QPolygonF</type>
+        <definition>QPolygonF Polygon::to_qpoly</definition>
+        <argsstring>()</argsstring>
+        <name>to_qpoly</name>
+        <qualifiedname>Polygon::to_qpoly</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="103" column="15" bodyfile="/home/kirill/electrolemon/physics_engine.cpp" bodystart="357" bodyend="363"/>
+        <references refid="class_polygon_1abb9d0483da9b6cefaa62a17e19751fce" compoundref="physics__engine_8h" startline="98">polygon</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_polygon_1a3b2d06ab256ee3b217335a108c937f35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Polygon &amp;Poly)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Polygon::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="class_polygon" kindref="compound">Polygon</ref> &amp;</type>
+          <declname>Poly</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kirill/electrolemon/physics_engine.h" line="105" column="12" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="105" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kirill/electrolemon/physics_engine.h" line="95" column="1" bodyfile="/home/kirill/electrolemon/physics_engine.h" bodystart="96" bodyend="108"/>
+    <listofallmembers>
+      <member refid="class_polygon_1a3b2d06ab256ee3b217335a108c937f35" prot="public" virt="non-virtual"><scope>Polygon</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_polygon_1abb9d0483da9b6cefaa62a17e19751fce" prot="public" virt="non-virtual"><scope>Polygon</scope><name>polygon</name></member>
+      <member refid="class_polygon_1ac183e712f8be1e13f1c9d5b4d4512ead" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Polygon</name></member>
+      <member refid="class_polygon_1ac5a70b02b151d29559cbabac3185ff73" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Polygon</name></member>
+      <member refid="class_polygon_1a7e0d17eb79c5ff1e9ea310cb6e748b14" prot="public" virt="non-virtual"><scope>Polygon</scope><name>to_qpoly</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

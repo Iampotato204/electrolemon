@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.4" xml:lang="en-US">
+  <compound refid="struct_debug_tools" kind="struct"><name>DebugTools</name>
+    <member refid="struct_debug_tools_1a18ef815a1af33c03d5377dc99b57648c" kind="function"><name>DebugTools</name></member>
+    <member refid="struct_debug_tools_1a33b341a2df03617ab361ef9d44bedad0" kind="function"><name>strMsgInline</name></member>
+    <member refid="struct_debug_tools_1a97709eb7bb82ad8222d10963b967293d" kind="function"><name>strMsg</name></member>
+    <member refid="struct_debug_tools_1af1aea84fac2252882572fd442a1c19b0" kind="function"><name>intMsg</name></member>
+    <member refid="struct_debug_tools_1aa2e1fe880075a54b4bc02fe93484c19a" kind="function"><name>doubMsg</name></member>
+    <member refid="struct_debug_tools_1a8643ae9a3f155fcd6b0a3405b66fe04e" kind="function"><name>boolMsg</name></member>
+  </compound>
+  <compound refid="class_dialog" kind="class"><name>Dialog</name>
+    <member refid="class_dialog_1a9fdebda9ae05e29ae71dcc2d655ba7e2" kind="variable"><name>DISPLAY_WIDTH</name></member>
+    <member refid="class_dialog_1a4efd81fdde71371af645d939490c441a" kind="variable"><name>DISPLAY_HEIGTH</name></member>
+    <member refid="class_dialog_1a47868ba69d8f731ba552dcb5f14f607b" kind="variable"><name>BUTTON_WIDTH</name></member>
+    <member refid="class_dialog_1aac4ec026ba1c3faeb69ee06510179103" kind="variable"><name>BUTTON_HEIGTH</name></member>
+    <member refid="class_dialog_1a669a5650388052e3f044269adff7ed3c" kind="variable"><name>SMOL_LABEL_WIDTH</name></member>
+    <member refid="class_dialog_1ad60f408d92c43bd3c57c3fc5735e0562" kind="variable"><name>SMOL_LABEL_HEIGTH</name></member>
+    <member refid="class_dialog_1a97fedc679cf81b550c4ef1b2be82acb1" kind="variable"><name>BIG_LABEL_WIDTH</name></member>
+    <member refid="class_dialog_1aa2e8a7e1dfd2555bee0a001b8c342e06" kind="variable"><name>BIG_LABEL_HEIGTH</name></member>
+    <member refid="class_dialog_1ab5265624f6d8909b4f9277a4614ba7a4" kind="variable"><name>SPACER_WIDTH</name></member>
+    <member refid="class_dialog_1af4054ba32920a861de19f480432f22d8" kind="variable"><name>SPACER_HEIGTH</name></member>
+    <member refid="class_dialog_1a8f9aea78af0c82653a913196240509ad" kind="variable"><name>DISPLAY_BACKGROUND_COLOR</name></member>
+    <member refid="class_dialog_1a24dc81452f5f4c8e0cbcff0d2f35afb5" kind="variable"><name>painter</name></member>
+    <member refid="class_dialog_1a1a2449be77814677fe409fa32d059b9a" kind="variable"><name>canvas</name></member>
+    <member refid="class_dialog_1aebd4b630e4a42400c0695ed45ba0b579" kind="variable"><name>environmentHandler</name></member>
+    <member refid="class_dialog_1a8dfd0d8de4b38cdfacbbcf211d1174dd" kind="variable"><name>movementCurves</name></member>
+    <member refid="class_dialog_1aed16dca9a35dec15de193366edb73a3f" kind="variable"><name>surface_holder</name></member>
+    <member refid="class_dialog_1a53ccee8599b73c6a9215c9853d48508b" kind="variable"><name>presets</name></member>
+    <member refid="class_dialog_1aaa4b5bfb9a0f64900d524f14bc32e6df" kind="variable"><name>ui</name></member>
+    <member refid="class_dialog_1a06e96b5c2fcaa8147da1b966126aa3a6" kind="variable"><name>isRunning</name></member>
+    <member refid="class_dialog_1ab30ac48588a82983f653f58d50a52ddc" kind="function"><name>Dialog</name></member>
+    <member refid="class_dialog_1a2a1fe6ef28513eed13bfcd3a4da83ccb" kind="function"><name>~Dialog</name></member>
+    <member refid="class_dialog_1a863cd93e83ea1bbc775ac7021eb89fc1" kind="slot"><name>on_test1_clicked</name></member>
+    <member refid="class_dialog_1a91f295aec4716c79905ba73c764b732d" kind="slot"><name>on_test0_clicked</name></member>
+    <member refid="class_dialog_1a332850f13482e1cc89fbe6322d2b67ba" kind="slot"><name>on_test2_clicked</name></member>
+    <member refid="class_dialog_1a64bcfd95693aeed1a1467fbcbad453b0" kind="slot"><name>on_spinBox0_valueChanged</name></member>
+    <member refid="class_dialog_1adb5aa96aa1079846eeb1716248d30078" kind="slot"><name>on_spinBox1_valueChanged</name></member>
+    <member refid="class_dialog_1ab41cd56c0365fd26e6d0cd6c0f9cf99b" kind="slot"><name>on_spinBox0_2_valueChanged</name></member>
+    <member refid="class_dialog_1a6c37481aa89ddd20944a2e2cc85c9efd" kind="slot"><name>on_spinBox1_2_valueChanged</name></member>
+    <member refid="class_dialog_1aa9af39bc16465f5daae5f0cad005fb9b" kind="slot"><name>on_spinBox0_3_valueChanged</name></member>
+    <member refid="class_dialog_1a01a421b595f231a359e4063683ab0ad8" kind="slot"><name>on_spinBox1_3_valueChanged</name></member>
+    <member refid="class_dialog_1a2ef0672da45114f21b29ce2a515f98c7" kind="function"><name>run_preset</name></member>
+    <member refid="class_dialog_1a37ae41fed771fa4f1aa0166e5494b0d9" kind="function"><name>resetData</name></member>
+    <member refid="class_dialog_1a34ad1264dc3ea1e6341ea66ca014b671" kind="function"><name>resetData</name></member>
+    <member refid="class_dialog_1a6e2c001232048d5d4cd8ed56ffb9b4be" kind="function"><name>resetData</name></member>
+    <member refid="class_dialog_1a93c6228ca30fe7f7400d383937b562dc" kind="function"><name>generate_surface</name></member>
+    <member refid="class_dialog_1aba56e45513a0452d7899a956fa2d7676" kind="function"><name>drawVector</name></member>
+    <member refid="class_dialog_1a7f65ba9793051278f291b5b8de6c6028" kind="function"><name>simulate</name></member>
+    <member refid="class_dialog_1a28d0d14db21c7debc82c2b914c825756" kind="function"><name>updateFrame</name></member>
+    <member refid="class_dialog_1a87542a9ebc93d710a428398aa622371c" kind="function"><name>debug_items_count</name></member>
+  </compound>
+  <compound refid="class_line" kind="class"><name>Line</name>
+    <member refid="class_line_1a0c8832b19491c1157a55e81f92f48a44" kind="variable"><name>p0</name></member>
+    <member refid="class_line_1a2ae082894080ee1d0757c40c2b4a7daf" kind="variable"><name>p1</name></member>
+    <member refid="class_line_1a85e8158ee051bb734722490819beaae1" kind="variable"><name>equation_of_self</name></member>
+    <member refid="class_line_1acf13ed04c74c28475f92b2e981ec4150" kind="variable"><name>equation_of_perpendicular</name></member>
+    <member refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" kind="function"><name>Line</name></member>
+    <member refid="class_line_1af9742c860cc6727ed40e7f6304a66d79" kind="function"><name>Line</name></member>
+    <member refid="class_line_1a84514c45e4442aca81f6823008931080" kind="function"><name>Line</name></member>
+    <member refid="class_line_1a842b9f079379ba02937427b224b74938" kind="function"><name>Line</name></member>
+    <member refid="class_line_1a6213a45b6df0eea9d0fdfff6d8c814c1" kind="function"><name>to_qline</name></member>
+    <member refid="class_line_1a868f647b3eb4467c4cce5616fb082d68" kind="function"><name>find_equations</name></member>
+    <member refid="class_line_1aba8be5f5dab07d51390f782e088acc8c" kind="function"><name>find_equationOfSelf</name></member>
+    <member refid="class_line_1ad4c712851de289ce1c277e35e561b452" kind="function"><name>find_equationOfPerpendicular</name></member>
+    <member refid="class_line_1ab655933c08ce8e2ba3786273d9e349c4" kind="function"><name>length</name></member>
+    <member refid="class_line_1a072032f150b7e9ca22127973b9f1824a" kind="function"><name>square_of_length</name></member>
+    <member refid="class_line_1a558c5b1b10035aab9f8280d2c0a85762" kind="function"><name>x0</name></member>
+    <member refid="class_line_1a1c667162027e53277ea2c617c1dc02b5" kind="function"><name>y0</name></member>
+    <member refid="class_line_1a0cedabb654f8f7c5f3494a5d1ae2cc20" kind="function"><name>x1</name></member>
+    <member refid="class_line_1ae56a4221e8198da95cee9127842b0b7b" kind="function"><name>y1</name></member>
+    <member refid="class_line_1a601918470f05fb3b4df6fda60ea63bb2" kind="function"><name>dx</name></member>
+    <member refid="class_line_1abde9e6674a81864076bbd38c47074a75" kind="function"><name>dy</name></member>
+    <member refid="class_line_1aafde7d6efee1b66a5edf861ae389722e" kind="function"><name>extendedCopy</name></member>
+    <member refid="class_line_1a2d3081c2ab8ba0cd9a353ea40e24e1f9" kind="function"><name>movedCopy</name></member>
+    <member refid="class_line_1a1965a774ca2f52050bf7709d96466b2b" kind="function"><name>movedCopy</name></member>
+    <member refid="class_line_1a75392947251eb42c272c7e4da1839c00" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="class_line__equation" kind="class"><name>Line_equation</name>
+    <member refid="class_line__equation_1a2c1c7ff7b3f1485e69b0555274c6727e" kind="variable"><name>k</name></member>
+    <member refid="class_line__equation_1af3b42994128dd31a5c7b123df91563a3" kind="variable"><name>b</name></member>
+    <member refid="class_line__equation_1ab4fd48825d2af62859ff5c374db7c123" kind="function"><name>Line_equation</name></member>
+    <member refid="class_line__equation_1a086ea79415f717a4af28346559dd950c" kind="function"><name>Line_equation</name></member>
+  </compound>
+  <compound refid="class_main_window" kind="class"><name>MainWindow</name>
+    <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kind="variable"><name>ui</name></member>
+    <member refid="class_main_window_1a996c5a2b6f77944776856f08ec30858d" kind="function"><name>MainWindow</name></member>
+    <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kind="function"><name>~MainWindow</name></member>
+    <member refid="class_main_window_1a0c9101652e99fc1630c4c75811f54dfa" kind="function"><name>read_input_data</name></member>
+    <member refid="class_main_window_1a4de79c63c7fa0b8d7c468ac71f20be81" kind="slot"><name>on_pushButton_clicked</name></member>
+    <member refid="class_main_window_1ae0e46dc3da4ee07bf66e73e20300220c" kind="slot"><name>on_pushButton_2_clicked</name></member>
+  </compound>
+  <compound refid="class_painter" kind="class"><name>Painter</name>
+    <member refid="class_painter_1abc0504fdc377f64061ad7c9a5af23e88" kind="variable"><name>animation_timer</name></member>
+    <member refid="class_painter_1a5380186a44e26f665d8af30325efcccd" kind="variable"><name>animation_genuine</name></member>
+    <member refid="class_painter_1ac0920a270cd0cf379d0a4ee53b61137f" kind="variable"><name>animation_virt</name></member>
+    <member refid="class_painter_1a2dd77da1c8a8dc8f040bf9a9525f319d" kind="variable"><name>brush</name></member>
+    <member refid="class_painter_1ac24cc2eb7e96436af0afd69acafcb40a" kind="variable"><name>pen</name></member>
+    <member refid="class_painter_1a95e3b9cbe4d2b0bf2718fe6632018092" kind="variable"><name>canvas</name></member>
+    <member refid="class_painter_1a5975275e10d270be3542d582468c2274" kind="variable"><name>total_animation_duration</name></member>
+    <member refid="class_painter_1ab01456297851ae8f2e5221c11cbf3689" kind="variable"><name>frames</name></member>
+    <member refid="class_painter_1a32e59ad4d0e130f57c419bd9e9c84675" kind="function"><name>Painter</name></member>
+    <member refid="class_painter_1aa02d19d9d05da7472bdcc516d429bcf9" kind="function"><name>Painter</name></member>
+    <member refid="class_painter_1a487a624af9706236405295fde9c060a7" kind="function"><name>drawSurface</name></member>
+    <member refid="class_painter_1a55234592e4decf145be2971fa4d3325a" kind="function"><name>drawElectron</name></member>
+    <member refid="class_painter_1a1c74e6555aa34d788a0a620f07fc2e69" kind="function"><name>drawVirt</name></member>
+    <member refid="class_painter_1a742c49bb37dd00766c5edfb5cb263477" kind="function"><name>drawVector</name></member>
+    <member refid="class_painter_1acf76ac2a782c9a105b8aebc56d735960" kind="function"><name>drawLine</name></member>
+    <member refid="class_painter_1a5611a5705c820e24bc2d5ee3589ad574" kind="function"><name>drawLine</name></member>
+    <member refid="class_painter_1a6340d4d45585abc64f8cf50190084554" kind="function"><name>drawLine</name></member>
+    <member refid="class_painter_1aa7810c70fbb1df121b5791eabac4eea2" kind="function"><name>drawLine</name></member>
+    <member refid="class_painter_1a411f71e9d65e9a68e0266987e2d090f6" kind="function"><name>drawArrow</name></member>
+    <member refid="class_painter_1a3f48b1183dd1d68a7a83c8fd2d17c14b" kind="function"><name>drawArrow</name></member>
+    <member refid="class_painter_1a5f9cb100b56f1010179cba0ccb0f0798" kind="function"><name>setupAnimations</name></member>
+    <member refid="class_painter_1af24d488ff401cb1a0a2d4a37492a06bc" kind="function"><name>init_timer</name></member>
+    <member refid="class_painter_1a9143ca2b5047a9815abd26ac55b25b09" kind="function"><name>stop_timer</name></member>
+    <member refid="class_painter_1adebbcc8f2c6ef0b46912c7b5f417cdcc" kind="function"><name>drawPoly</name></member>
+    <member refid="class_painter_1aba0385e9285908fae00437fff4762805" kind="function"><name>drawPoly</name></member>
+    <member refid="class_painter_1a77bacd964244b38bc35371e84cf476b5" kind="function"><name>drawCircle</name></member>
+  </compound>
+  <compound refid="class_physics__engine" kind="class"><name>Physics_engine</name>
+    <member refid="class_physics__engine_1ac6880936ad9d4ea1a01d224d0b8f1fb9" kind="variable"><name>metasurface_genuine</name></member>
+    <member refid="class_physics__engine_1a36f76e7216c4d5eefaa313b2329c3c54" kind="variable"><name>interactive_surface</name></member>
+    <member refid="class_physics__engine_1af6bc08483a6e5b8305ea9190d31c1cbe" kind="variable"><name>electron_genuine</name></member>
+    <member refid="class_physics__engine_1abb0809cb7111d9fad31760ac827118f9" kind="variable"><name>virt_genuine</name></member>
+    <member refid="class_physics__engine_1ad6aae224f0a30822f6ace57fda558087" kind="variable"><name>movementTimeCounter_real</name></member>
+    <member refid="class_physics__engine_1a5d1405e17e98bce011ca825d35fbd31c" kind="variable"><name>movementTimeTotal_real</name></member>
+    <member refid="class_physics__engine_1ad3e05725ee5e37805a3322ec2864cc18" kind="variable"><name>endpoint</name></member>
+    <member refid="class_physics__engine_1a9630d6cdb225f5e26767d037bca6fc6c" kind="variable"><name>angle_V0_absolute</name></member>
+    <member refid="class_physics__engine_1a0c5b1a45430ceabfce479579ae48d37f" kind="variable"><name>angle_surface_absolute</name></member>
+    <member refid="class_physics__engine_1ad7becc7b6bfc9577fc0eb1b65d253fff" kind="variable"><name>angle_V0_relative</name></member>
+    <member refid="class_physics__engine_1a9f6fe51b8f5ff3e06bd8b924c3eb7b74" kind="variable"><name>acceleration_mantissa</name></member>
+    <member refid="class_physics__engine_1abac6a014ca1cef69225b642aac2e40f2" kind="variable"><name>acceleration_exponent</name></member>
+    <member refid="class_physics__engine_1ae767412e35a22738ba95058b5dfab92b" kind="variable"><name>acceleration</name></member>
+    <member refid="class_physics__engine_1a72ed98ac0b80d1336762fc9c5a2b33b4" kind="variable"><name>base_of_perpendicular</name></member>
+    <member refid="class_physics__engine_1ad3e01e7ae7817ad86e6484e9110218b9" kind="variable"><name>PI</name></member>
+    <member refid="class_physics__engine_1ab02e65f29552555962e04d800c6b2a9f" kind="function"><name>movementVectorStart_length</name></member>
+    <member refid="class_physics__engine_1affafd899c7efd06aee9f4ab0c0c60f99" kind="function"><name>calculate_acceleration</name></member>
+    <member refid="class_physics__engine_1a975fa317c8a08b67f1fe198482db4c39" kind="function"><name>get_acceleration_mantissa</name></member>
+    <member refid="class_physics__engine_1a8826f833dee26671523256f2cc4b80cc" kind="function"><name>get_acceleration_exponent</name></member>
+    <member refid="class_physics__engine_1a9ba0ab7d4a6eb881f727e2d734f64ca6" kind="function"><name>Physics_engine</name></member>
+    <member refid="class_physics__engine_1a91903d386ccbcf88df328849c464f970" kind="function"><name>scaleVector</name></member>
+    <member refid="class_physics__engine_1a9d74dcf83c8c506a7e75e2ef48ff177f" kind="function"><name>find_base_of_perpendicular</name></member>
+    <member refid="class_physics__engine_1aa68eb0c0ad7b5d5342afd695f8905e9c" kind="function"><name>mod_i</name></member>
+    <member refid="class_physics__engine_1a2ad6ea682e2669e421776331c6edc6f0" kind="function"><name>mod_d</name></member>
+    <member refid="class_physics__engine_1aec625f6dc8232ded0ceefe115c0bb8a6" kind="function"><name>radian</name></member>
+    <member refid="class_physics__engine_1aaee021e21d46292074ef1b93e531c302" kind="function"><name>angle</name></member>
+  </compound>
+  <compound refid="class_point" kind="class"><name>Point</name>
+    <member refid="class_point_1ab99c56589bc8ad5fa5071387110a5bc7" kind="variable"><name>x</name></member>
+    <member refid="class_point_1afa38be143ae800e6ad69ce8ed4df62d8" kind="variable"><name>y</name></member>
+    <member refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kind="function"><name>Point</name></member>
+    <member refid="class_point_1a483cf6bf601889eb922e89f5820045c1" kind="function"><name>Point</name></member>
+    <member refid="class_point_1acd364e308066f5997bce0546d82bf29f" kind="function"><name>rotate</name></member>
+    <member refid="class_point_1acd2fcff18ab1f602ceca73104ab5c9d5" kind="function"><name>rotateAround00</name></member>
+    <member refid="class_point_1a3dc1ddbe89354d0336a70a2ac9b53fbd" kind="function"><name>toQPoint</name></member>
+    <member refid="class_point_1a8fa9a62a33de3c414df4b86b1b358355" kind="function"><name>toQPointF</name></member>
+    <member refid="class_point_1ad48a8bdbda80841860be5f76ba70ee3e" kind="function"><name>move</name></member>
+    <member refid="class_point_1aa74e550bb9dc0da0e1ffec0fbf097825" kind="function"><name>stat_move</name></member>
+    <member refid="class_point_1ad4d60c28b5651241ec693dcd2f6762c3" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="class_polygon" kind="class"><name>Polygon</name>
+    <member refid="class_polygon_1abb9d0483da9b6cefaa62a17e19751fce" kind="variable"><name>polygon</name></member>
+    <member refid="class_polygon_1ac183e712f8be1e13f1c9d5b4d4512ead" kind="function"><name>Polygon</name></member>
+    <member refid="class_polygon_1ac5a70b02b151d29559cbabac3185ff73" kind="function"><name>Polygon</name></member>
+    <member refid="class_polygon_1a7e0d17eb79c5ff1e9ea310cb6e748b14" kind="function"><name>to_qpoly</name></member>
+    <member refid="class_polygon_1a3b2d06ab256ee3b217335a108c937f35" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="class_preset" kind="class"><name>Preset</name>
+    <member refid="class_preset_1a05e9ac12938ace27ee55490659a57f9e" kind="variable"><name>prebuilt_surface</name></member>
+    <member refid="class_preset_1af779f83521f070aacf17a86454090b07" kind="function"><name>Preset</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespace_ui" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="debugtools_8h" kind="file"><name>debugtools.h</name>
+  </compound>
+  <compound refid="dialog_8cpp" kind="file"><name>dialog.cpp</name>
+    <member refid="dialog_8cpp_1a598a3330b3c21701223ee0ca14316eca" kind="define"><name>PI</name></member>
+    <member refid="dialog_8cpp_1af168266b2bb73b316d04916b467be0c6" kind="define"><name>drawLineInGroup</name></member>
+  </compound>
+  <compound refid="dialog_8h" kind="file"><name>dialog.h</name>
+  </compound>
+  <compound refid="dialog_8ui" kind="file"><name>dialog.ui</name>
+  </compound>
+  <compound refid="lemonade_8cpp" kind="file"><name>lemonade.cpp</name>
+    <member refid="lemonade_8cpp_1a162c38e92cbb73ab04f73bf590ece400" kind="variable"><name>exec_dir</name></member>
+    <member refid="lemonade_8cpp_1ac3ca5b1f6c77b23663b004b1bfea29b4" kind="variable"><name>p_x</name></member>
+    <member refid="lemonade_8cpp_1af2dd1f4f1aa6696f64fa6a65a5a00cb3" kind="variable"><name>p_y</name></member>
+    <member refid="lemonade_8cpp_1a64ce85b30a893c03da394bb97f9416b0" kind="variable"><name>v0_x</name></member>
+    <member refid="lemonade_8cpp_1a5e1bd90c4349289033734b0e1282d024" kind="variable"><name>v0_y</name></member>
+    <member refid="lemonade_8cpp_1a7e35685e5045a32feab2328c43988870" kind="variable"><name>p_m_mantissa</name></member>
+    <member refid="lemonade_8cpp_1a4c0174f3f60960de06298986da5114c3" kind="variable"><name>p_q_mantissa</name></member>
+    <member refid="lemonade_8cpp_1adc37ebb8a13551dbb5b4662c3fe20b09" kind="variable"><name>k_mantissa</name></member>
+    <member refid="lemonade_8cpp_1ab30c765b9be1b7776c97c899a12a66bb" kind="variable"><name>g</name></member>
+    <member refid="lemonade_8cpp_1ab365ce012c509bcfb71692dc1872e71a" kind="variable"><name>p_m_exponent</name></member>
+    <member refid="lemonade_8cpp_1a7be8fff5ab7f5353b889c27a4d37cb8b" kind="variable"><name>p_q_exponent</name></member>
+    <member refid="lemonade_8cpp_1a97686c2cff1326d408854daf510dcdbf" kind="variable"><name>k_exponent</name></member>
+    <member refid="lemonade_8cpp_1ae210f44407fdf7b1994c3be63ba3658b" kind="variable"><name>animFrame_duration</name></member>
+    <member refid="lemonade_8cpp_1af84c9d43eb66f16a84f65f3af8ce5ace" kind="variable"><name>animFrames</name></member>
+    <member refid="lemonade_8cpp_1aea24f3b6ac46bdd65548611033359668" kind="function"><name>debug_output_available_data</name></member>
+  </compound>
+  <compound refid="lemonade_8h" kind="file"><name>lemonade.h</name>
+    <member refid="lemonade_8h_1abbbdb8132419dba5172967c87a88b740" kind="variable"><name>exec_dir</name></member>
+    <member refid="lemonade_8h_1ac3ca5b1f6c77b23663b004b1bfea29b4" kind="variable"><name>p_x</name></member>
+    <member refid="lemonade_8h_1af2dd1f4f1aa6696f64fa6a65a5a00cb3" kind="variable"><name>p_y</name></member>
+    <member refid="lemonade_8h_1a64ce85b30a893c03da394bb97f9416b0" kind="variable"><name>v0_x</name></member>
+    <member refid="lemonade_8h_1a5e1bd90c4349289033734b0e1282d024" kind="variable"><name>v0_y</name></member>
+    <member refid="lemonade_8h_1a7e35685e5045a32feab2328c43988870" kind="variable"><name>p_m_mantissa</name></member>
+    <member refid="lemonade_8h_1a4c0174f3f60960de06298986da5114c3" kind="variable"><name>p_q_mantissa</name></member>
+    <member refid="lemonade_8h_1adc37ebb8a13551dbb5b4662c3fe20b09" kind="variable"><name>k_mantissa</name></member>
+    <member refid="lemonade_8h_1ab365ce012c509bcfb71692dc1872e71a" kind="variable"><name>p_m_exponent</name></member>
+    <member refid="lemonade_8h_1a7be8fff5ab7f5353b889c27a4d37cb8b" kind="variable"><name>p_q_exponent</name></member>
+    <member refid="lemonade_8h_1a97686c2cff1326d408854daf510dcdbf" kind="variable"><name>k_exponent</name></member>
+    <member refid="lemonade_8h_1a7c100074c99e31e91f41fc74ec4f01dc" kind="variable"><name>resulting_exponent</name></member>
+    <member refid="lemonade_8h_1af84c9d43eb66f16a84f65f3af8ce5ace" kind="variable"><name>animFrames</name></member>
+    <member refid="lemonade_8h_1ae210f44407fdf7b1994c3be63ba3658b" kind="variable"><name>animFrame_duration</name></member>
+    <member refid="lemonade_8h_1aea24f3b6ac46bdd65548611033359668" kind="function"><name>debug_output_available_data</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0e2b48ba6b1dddd93fe5c2ec62cd86ca" kind="function"><name>get_cwd</name></member>
+    <member refid="main_8cpp_1adeab346fbbd59aae472e97478e72237b" kind="function"><name>str2qstr</name></member>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+    <member refid="mainwindow_8cpp_1a8f6d2352d2300306c527b7a236d47b5f" kind="function"><name>qLineEdit2int</name></member>
+    <member refid="mainwindow_8cpp_1a841521830042f5ce02638c5bb5e6ef5b" kind="function"><name>qLineEdit2double</name></member>
+  </compound>
+  <compound refid="mainwindow_8h" kind="file"><name>mainwindow.h</name>
+  </compound>
+  <compound refid="mainwindow_8ui" kind="file"><name>mainwindow.ui</name>
+  </compound>
+  <compound refid="painter_8cpp" kind="file"><name>painter.cpp</name>
+  </compound>
+  <compound refid="painter_8h" kind="file"><name>painter.h</name>
+  </compound>
+  <compound refid="physics__engine_8cpp" kind="file"><name>physics_engine.cpp</name>
+  </compound>
+  <compound refid="physics__engine_8h" kind="file"><name>physics_engine.h</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md__home_kirill_electrolemon__r_e_a_d_m_e" kind="page"><name>md__home_kirill_electrolemon_README</name>
+  </compound>
+</doxygenindex>

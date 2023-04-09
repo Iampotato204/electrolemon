@@ -25,6 +25,10 @@
 var NAVTREE =
 [
   [ "electrolemon_doc", "index.html", [
+    [ "About program", "md__home_kirill_electrolemon__r_e_a_d_m_e.html", [
+      [ "Documentation (to be added)", "md__home_kirill_electrolemon__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "How to run program:", "md__home_kirill_electrolemon__r_e_a_d_m_e.html#autotoc_md2", null ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -34,14 +38,18 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
