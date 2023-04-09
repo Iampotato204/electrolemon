@@ -1,5 +1,0 @@
-#!/bin/bash
-for i in debugtools.h dialog.h lemonade.h mainwindow.h other painter.h physics_engine.cpp physics_engine.h dialog.cpp lemonade.cpp main.cpp mainwindow.cpp painter.cpp physics_engine.cpp
-do
-	cat $i|wc -l
-done
