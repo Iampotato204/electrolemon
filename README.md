@@ -1,5 +1,5 @@
 # About program
-//My first C++ project ever. That`s a final release, nothing is planned to be added.
+//My first C++ project ever. That`s a final release, nothing is planned to be added, but feel free to suggest features you need.
 
 Simulates movement of charged particle near the infinite non-charged metal plate
 
